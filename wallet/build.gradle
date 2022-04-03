@@ -48,8 +48,9 @@ android {
     }
 
     defaultConfig {
-        applicationId 'de.schildbach.wallet_test'
+        //applicationId 'de.schildbach.wallet_test'
         generatedDensities = ['hdpi', 'xhdpi']
+        vectorDrawables.useSupportLibrary = true
 
         dexOptions {
             preDexLibraries false
