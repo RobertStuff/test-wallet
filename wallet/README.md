@@ -69,7 +69,7 @@ Install the NDK:
     # first time only
     $ANDROID_HOME/bin/tools/sdkmanager ndk-bundle
 
-Finally, you can build Bitcoin Wallet and sign it with your development key. Again in your workspace,
+Finally, you can build Woodcoin Wallet and sign it with your development key. Again in your workspace,
 use:
 
     # first time only
@@ -140,7 +140,7 @@ corrected manually.
 
 ### NFC (Near field communication)
 
-Bitcoin Wallet supports reading Bitcoin requests via NFC, either from a passive NFC tag or from
+Woodcoin Wallet supports reading Woodcoin requests via NFC, either from a passive NFC tag or from
 another NFC capable Android device that is requesting coins.
 
 For this to work, just enable NFC in your phone and hold your phone to the tag or device (with
@@ -153,14 +153,14 @@ Instructions for preparing an NFC tag with your address:
 
 - Some tags have less than 50 bytes capacity, those won't work. 1 KB tags recommended.
 
-- The tag needs to contain a Bitcoin URI. You can construct one with the "Request coins" dialog,
+- The tag needs to contain a Woodcoin URI. You can construct one with the "Request coins" dialog,
   then share with messaging or email. You can also construct the URI manually. Mainnet example:
-  `bitcoin:1G2Y2jP5YFZ5RGk2PXaeWwbeA5y1ZtFhoL`
+  `woodcoin:WZDmRTrXTRpJngKmYH8WdN3ptCHsSGiJVV`
 
 - The type of the message needs to be URI or URL (not Text).
 
 - If you put your tag at a public place, don't forget to enable write protect. Otherwise, someone
-  could overwrite the tag with his own Bitcoin address.
+  could overwrite the tag with his own Woodcoin address.
 
 
 ### BITCOINJ
@@ -170,7 +170,7 @@ Bitcoin Wallet uses [bitcoinj](https://bitcoinj.github.io/) for Bitcoin specific
 
 ### EXCHANGE RATES
 
-Bitcoin Wallet reads this feed from "BitcoinAverage" for getting exchange rates:
+Woodcoin Wallet reads this feed from "BitcoinAverage" for getting exchange rates:
 
     https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC
 

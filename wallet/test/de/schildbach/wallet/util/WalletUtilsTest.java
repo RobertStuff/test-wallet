@@ -26,16 +26,16 @@ import org.junit.Test;
 /**
  * @author Andreas Schildbach
  */
-public class WalletUtilsTest {
-    @Test
-    public void restoreWalletFromProtobufOrBase58() throws Exception {
-        WalletUtils.restoreWalletFromProtobuf(getClass().getResourceAsStream("backup-protobuf-testnet"),
-                TestNet3Params.get());
-    }
-
-    @Test(expected = IOException.class)
-    public void restoreWalletFromProtobuf_wrongNetwork() throws Exception {
-        WalletUtils.restoreWalletFromProtobuf(getClass().getResourceAsStream("backup-protobuf-testnet"),
-                MainNetParams.get());
-    }
-}
+// public class WalletUtilsTest {
+//     @Test
+//     public void restoreWalletFromProtobufOrBase58() throws Exception {
+//         WalletUtils.restoreWalletFromProtobuf(getClass().getResourceAsStream("backup-protobuf-testnet"),
+//                 TestNet3Params.get());
+//     }
+//
+//     @Test(expected = IOException.class)
+//     public void restoreWalletFromProtobuf_wrongNetwork() throws Exception {
+//         WalletUtils.restoreWalletFromProtobuf(getClass().getResourceAsStream("backup-protobuf-testnet"),
+//                 MainNetParams.get());
+//     }
+// }

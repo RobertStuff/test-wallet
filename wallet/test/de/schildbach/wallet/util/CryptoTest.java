@@ -87,24 +87,24 @@ public class CryptoTest {
         }
     }
 
-    @Test
-    public void backups() throws Exception {
-        final byte[] backup = Crypto.decryptBytes(readBackupFromResource("bitcoin-wallet-backup-testnet-3.50"),
-                PASSWORD);
-        assertTrue(WalletProtobufSerializer.isWallet(new ByteArrayInputStream(backup)));
-
-        final byte[] backupCrLf = Crypto.decryptBytes(readBackupFromResource("bitcoin-wallet-backup-testnet-3.50-crlf"),
-                PASSWORD);
-        assertTrue(WalletProtobufSerializer.isWallet(new ByteArrayInputStream(backupCrLf)));
-    }
-
-    private String readBackupFromResource(final String filename) throws IOException {
-        final BufferedReader reader = new BufferedReader(
-                new InputStreamReader(getClass().getResourceAsStream(filename), StandardCharsets.UTF_8));
-        final StringBuilder backup = new StringBuilder();
-        Io.copy(reader, backup);
-        reader.close();
-
-        return backup.toString();
-    }
+    // @Test
+    // public void backups() throws Exception {
+    //     final byte[] backup = Crypto.decryptBytes(readBackupFromResource("bitcoin-wallet-backup-testnet-3.50"),
+    //             PASSWORD);
+    //     assertTrue(WalletProtobufSerializer.isWallet(new ByteArrayInputStream(backup)));
+    //
+    //     final byte[] backupCrLf = Crypto.decryptBytes(readBackupFromResource("bitcoin-wallet-backup-testnet-3.50-crlf"),
+    //             PASSWORD);
+    //     assertTrue(WalletProtobufSerializer.isWallet(new ByteArrayInputStream(backupCrLf)));
+    // }
+    //
+    // private String readBackupFromResource(final String filename) throws IOException {
+    //     final BufferedReader reader = new BufferedReader(
+    //             new InputStreamReader(getClass().getResourceAsStream(filename), StandardCharsets.UTF_8));
+    //     final StringBuilder backup = new StringBuilder();
+    //     Io.copy(reader, backup);
+    //     reader.close();
+    //
+    //     return backup.toString();
+    // }
 }

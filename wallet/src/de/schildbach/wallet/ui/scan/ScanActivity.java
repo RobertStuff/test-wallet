@@ -39,6 +39,7 @@ import de.schildbach.wallet.R;
 import de.schildbach.wallet.ui.AbstractWalletActivity;
 import de.schildbach.wallet.ui.DialogBuilder;
 import de.schildbach.wallet.util.OnFirstPreDraw;
+import de.schildbach.wallet.ui.Event;
 
 import android.Manifest;
 import android.animation.Animator;
@@ -142,20 +143,39 @@ public final class ScanActivity extends AbstractWalletActivity
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         viewModel = ViewModelProviders.of(this).get(ScanViewModel.class);
-        viewModel.showPermissionWarnDialog.observe(this, new Observer<Void>() {
+        viewModel.showPermissionWarnDialog.observe(this, new Event.Observer<Void>() {
             @Override
-            public void onChanged(final Void v) {
+            public void onEvent(final Void v) {
                 WarnDialogFragment.show(getSupportFragmentManager(), R.string.scan_camera_permission_dialog_title,
                         getString(R.string.scan_camera_permission_dialog_message));
             }
         });
-        viewModel.showProblemWarnDialog.observe(this, new Observer<Void>() {
+        viewModel.showProblemWarnDialog.observe(this, new Event.Observer<Void>() {
             @Override
-            public void onChanged(final Void v) {
+            public void onEvent(final Void v) {
                 WarnDialogFragment.show(getSupportFragmentManager(), R.string.scan_camera_problem_dialog_title,
                         getString(R.string.scan_camera_problem_dialog_message));
             }
         });
+
+        viewModel.maybeStartSceneTransition.observe(this, new Event.Observer<Void>() {
+            @Override
+            public void onEvent(final Void v) {
+                if (sceneTransition != null) {
+                    contentView.setAlpha(1);
+                    sceneTransition.addListener(new AnimatorListenerAdapter() {
+                        @Override
+                        public void onAnimationEnd(Animator animation) {
+                            getWindow().setBackgroundDrawable(new ColorDrawable(
+                                    ContextCompat.getColor(ScanActivity.this, android.R.color.black)));
+                        }
+                    });
+                    sceneTransition.start();
+                    sceneTransition = null;
+                }
+            }
+        });
+
 
         // Stick to the orientation the activity was started with. We cannot declare this in the
         // AndroidManifest.xml, because it's not allowed in combination with the windowIsTranslucent=true
@@ -209,20 +229,20 @@ public final class ScanActivity extends AbstractWalletActivity
         }
     }
 
-    private void maybeTriggerSceneTransition() {
-        if (sceneTransition != null) {
-            contentView.setAlpha(1);
-            sceneTransition.addListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    getWindow()
-                            .setBackgroundDrawable(new ColorDrawable(getResources().getColor(android.R.color.black)));
-                }
-            });
-            sceneTransition.start();
-            sceneTransition = null;
-        }
-    }
+    // private void maybeTriggerSceneTransition() {
+    //     if (sceneTransition != null) {
+    //         contentView.setAlpha(1);
+    //         sceneTransition.addListener(new AnimatorListenerAdapter() {
+    //             @Override
+    //             public void onAnimationEnd(Animator animation) {
+    //                 getWindow()
+    //                         .setBackgroundDrawable(new ColorDrawable(getResources().getColor(android.R.color.black)));
+    //             }
+    //         });
+    //         sceneTransition.start();
+    //         sceneTransition = null;
+    //     }
+    // }
 
     @Override
     protected void onResume() {
@@ -259,7 +279,7 @@ public final class ScanActivity extends AbstractWalletActivity
             maybeOpenCamera();
         } else {
             log.info("missing {}, showing error", Manifest.permission.CAMERA);
-            viewModel.showPermissionWarnDialog.call();
+            viewModel.showPermissionWarnDialog.setValue(Event.simple());
         }
     }
 
@@ -368,12 +388,12 @@ public final class ScanActivity extends AbstractWalletActivity
 
                 if (nonContinuousAutoFocus)
                     cameraHandler.post(new AutoFocusRunnable(camera));
-
-                maybeTriggerSceneTransition();
+                viewModel.maybeStartSceneTransition.postValue(Event.simple());
+                // maybeTriggerSceneTransition();
                 cameraHandler.post(fetchAndDecodeRunnable);
             } catch (final Exception x) {
                 log.info("problem opening camera", x);
-                viewModel.showProblemWarnDialog.postCall();
+                viewModel.showProblemWarnDialog.postValue(Event.simple());
             }
         }
 
