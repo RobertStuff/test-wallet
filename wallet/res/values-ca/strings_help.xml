@@ -3,7 +3,7 @@
   <string name="help_wallet">
 <![CDATA[
 		<p>
-			La part superior esquerra de la pantalla mostra l\'adreça Woodcoin que has seleccionat, que és la que ha de conèixer l\'altra gent per a poder enviar-te bitcoins.
+			La part superior esquerra de la pantalla mostra l\'adreça Woodcoin que has seleccionat, que és la que ha de conèixer l\'altra gent per a poder enviar-te woodcoins.
 			Prem per canviar l\'adreça.
 		</p>
 		<p>
@@ -90,7 +90,7 @@
 			Conserva la teva còpia de seguretat segura i recorda la teva paraula de pas.
 		</p>
 		<p>
-			<b>Abans de desinstal·lar</b> (o esborrar les dades de l\'aplicació/formatar el teu dispositiu), <b>transfereix els teus Bitcoins cap a una altra cartera</b>.
+			<b>Abans de desinstal·lar</b> (o esborrar les dades de l\'aplicació/formatar el teu dispositiu), <b>transfereix els teus Woodcoins cap a una altra cartera</b>.
 			Els woodcoins que es quedin es perdran.
 		</p>
 		<p>

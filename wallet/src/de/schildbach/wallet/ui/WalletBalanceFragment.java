@@ -221,7 +221,7 @@ public final class WalletBalanceFragment extends Fragment {
                 if (showLocalBalance) {
                     if (exchangeRate != null) {
                         final Fiat localValue = exchangeRate.rate.coinToFiat(balance);
-                        viewBalanceLocal.setVisibility(View.VISIBLE);
+                        viewBalanceLocal.setVisibility(View.INVISIBLE);
                         viewBalanceLocal.setFormat(Constants.LOCAL_FORMAT.code(0,
                                 Constants.PREFIX_ALMOST_EQUAL_TO + exchangeRate.getCurrencyCode()));
                         viewBalanceLocal.setAmount(localValue);

@@ -329,7 +329,7 @@ public final class SendingAddressesFragment extends FancyListFragment {
     }
 
     private void handleCopyToClipboard(final String address) {
-        viewModel.clip.setClipData(ClipData.newPlainText("Bitcoin address", address));
+        viewModel.clip.setClipData(ClipData.newPlainText("Woodcoin address", address));
         log.info("sending address copied to clipboard: {}", address.toString());
         new Toast(activity).toast(R.string.wallet_address_fragment_clipboard_msg);
     }

@@ -1,22 +1,22 @@
-<b>Ten tus Bitcoins siempre contigo, ¡en tu bolsillo!</b> Paga rápidamente leyendo el código QR. Como comercio puedes recibir pagos de forma fiable e instantánea. Bitcoin Wallet es la primera aplicación móvil Bitcoin. ¡Y posiblemente también la más segura!
+<b>Ten tus Woodcoins siempre contigo, ¡en tu bolsillo!</b> Paga rápidamente leyendo el código QR. Como comercio puedes recibir pagos de forma fiable e instantánea. Woodcoin Wallet es la primera aplicación móvil Woodcoin. ¡Y posiblemente también la más segura!
 
 
 <b>CARACTERÍSTICAS</b>
 
 • ¡No requiere registro, servidor en la nube o servicio web! Este monedero es auténticamente descentralizado y entre pares (peer-to-peer).
-• Muestra la cantidad de bitcoins en BTC, mBTC, y µBTC.
+• Muestra la cantidad de woodcoins en BTC, mBTC, y µBTC.
 • Conversión hacia y desde divisas nacionales.
-• Envío y recepción de bitcoins mediante NFC, códigos QR o identificadores URL Bitcoin.
-• Libreta de direcciones para guardar las direcciones Bitcoin más utilizadas.
+• Envío y recepción de woodcoins mediante NFC, códigos QR o identificadores URL Woodcoin.
+• Libreta de direcciones para guardar las direcciones Woodcoin más utilizadas.
 • Cuando no tienes conexión, puedes pagar via Bluetooth.
-• Notificación del sistema al recibir bitcoins.
+• Notificación del sistema al recibir woodcoins.
 • Barrido de monederos de papel (por ejemplo, los que se utilizan para custodia en frio).
-• Widget para el saldo de bitcoins.
+• Widget para el saldo de woodcoins.
 
 
 <b>CONTRIBUIR</b>
 
-Bitcoin Wallet es <b>código abierto</b> y <b>software libre</b>. Licencia: GPLv3
+Woodcoin Wallet es <b>código abierto</b> y <b>software libre</b>. Licencia: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Nuestro código fuente está disponible en GitHub:
@@ -28,7 +28,7 @@ https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
 
 <b>TESTIMONIOS</b>
 
-• Muchos monederos móviles basan su código en Bitcoin Wallet. Ejemplos: blockchain.info y BTCX.
+• Muchos monederos móviles basan su código en Woodcoin Wallet. Ejemplos: blockchain.info y BTCX.
 • Recomendado por BitPay.
 
 

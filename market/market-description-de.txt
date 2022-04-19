@@ -1,17 +1,17 @@
-<b>Hab deine Bitcoins immer dabei, in deiner Hosentasche!</b> Du zahlst, indem du rasch einen QR-Code scannst. Als Händler empfängst du Zahlungen zuverlässig und sofort. Bitcoin Wallet ist die erste mobile Bitcoin app, und wohl auch die sicherste!
+<b>Hab deine Woodcoins immer dabei, in deiner Hosentasche!</b> Du zahlst, indem du rasch einen QR-Code scannst. Als Händler empfängst du Zahlungen zuverlässig und sofort. Woodcoin Wallet ist die erste mobile Woodcoin app, und wohl auch die sicherste!
 
 
 <b>FEATURES</b>
 
 • Keine Registrierung, Web-Dienst oder Cloud nötig! Diese Wallet ist dezentral und Peer to Peer.
-• Anzeige von Bitcoin-Werten in BTC, mBTC und µBTC.
+• Anzeige von Woodcoin-Werten in BTC, mBTC und µBTC.
 • Umrechnung von und zu den nationalen Währungen.
-• Senden und Empfangen von Bitcoin via NFC, QR-Codes oder Bitcoin URLs.
+• Senden und Empfangen von Woodcoin via NFC, QR-Codes oder Woodcoin URLs.
 • Adressbuch für regelmäßig genutzte Empfänger.
 • Wenn du offline bist, kannst du trotzdem über Bluetooth zahlen.
 • System-Benachrichtigung für den Empfang von Zahlungen.
 • Entleeren von Paper-Wallets (die z.B. für Cold-Storage genutzt wurden).
-• App-Widget zeigt Bitcoin-Guthaben an.
+• App-Widget zeigt Woodcoin-Guthaben an.
 
 
 <b>MITWIRKEN</b>
@@ -28,7 +28,7 @@ https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
 
 <b>EMPFEHLUNGEN</b>
 
-• Viele mobile Wallets basieren auf Bitcoin Wallet. Beispiele: blockchain.info und BTCX.
+• Viele mobile Wallets basieren auf Woodcoin Wallet. Beispiele: blockchain.info und BTCX.
 • Von BitPay empfohlen.
 
 

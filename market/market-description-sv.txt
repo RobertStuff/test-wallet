@@ -1,22 +1,22 @@
-<b>Ha alltid dina bitcoin med dig i fickan!</b> Du gör betalningar genom att snabbt scanna en QR-kod. Handlare får betalningar tillförlitligt och omedelbart. Bitcoin Wallet är den första mobila bitcoin-appen, och utan tvekan den mest säkra!
+<b>Ha alltid dina woodcoin med dig i fickan!</b> Du gör betalningar genom att snabbt scanna en QR-kod. Handlare får betalningar tillförlitligt och omedelbart. Woodcoin Wallet är den första mobila woodcoin-appen, och utan tvekan den mest säkra!
 
 
 <b>FUNKTIONER</b>
 
-• Ingen registrering, web- eller molntjänst behövs! Bitcoin Wallet är decentraliserad och peer-to-peer.
-• Visa summa bitcoin i BTC, mBTC eller µBTC.
+• Ingen registrering, web- eller molntjänst behövs! Woodcoin Wallet är decentraliserad och peer-to-peer.
+• Visa summa woodcoin i BTC, mBTC eller µBTC.
 • Konventering till och från nationell valuta.
-• Skicka och ta emot bitcoin via NFC, QR-koder eller en Bitcoin-URL.
-• Adressbok för de Bitcoinadresser man använder ofta.
+• Skicka och ta emot woodcoin via NFC, QR-koder eller en Woodcoin-URL.
+• Adressbok för de Woodcoinadresser man använder ofta.
 • När du är nedkopplad kan du fortfarande betala via Bluetooth.
-• Meddelande om mottagna bitcoin.
+• Meddelande om mottagna woodcoin.
 • Inläsning av pappersplånbok (tex. sådan som används för permanent lagring).
 • App widget som visar ditt saldo.
 
 
 <b>BIDRA</b>
 
-Bitcoin Wallet är <b>öppen mjukvara</b> och <b>fri mjukvara</b>. Licens: GPLv3
+Woodcoin Wallet är <b>öppen mjukvara</b> och <b>fri mjukvara</b>. Licens: GPLv3
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Vår källkod finns tillgänglig på GitHub:
@@ -28,7 +28,7 @@ https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
 
 <b>REKOMMENDATIONER</b>
 
-• Många mobila plånböcker baserar sin kod på Bitcoin Wallet. Exempelvis: blockchain.info och BTCX.
+• Många mobila plånböcker baserar sin kod på Woodcoin Wallet. Exempelvis: blockchain.info och BTCX.
 • Rekommenderad av BitPay.
 
 

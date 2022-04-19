@@ -1,21 +1,21 @@
-<b>Imaj svoje Bitcoin-e uvijek sa sobom, u svom džepu.</b> Plaćaj brzim skeniranjem QR koda. Kao trgovac, primaj uplate sigurno i brzo. Bitcoin Wallet je prva mobilna Bitcoin aplikacija, i ne porecivo najsigurnija!
+<b>Imaj svoje Woodcoin-e uvijek sa sobom, u svom džepu.</b> Plaćaj brzim skeniranjem QR koda. Kao trgovac, primaj uplate sigurno i brzo. Woodcoin Wallet je prva mobilna Woodcoin aplikacija, i ne porecivo najsigurnija!
 
 
 <b>ZNAČAJKE</b>
 
 • Bez registracije, web servis ili cloud potreban! Ovaj novčanik je de-centraliziran i klijent prema klijentu.
-• Prikaži Bitcoin iznos u BTC, mBTC i uBTC.
+• Prikaži Woodcoin iznos u BTC, mBTC i uBTC.
 • Pretvorba u ili iz nacionalnih valuta.
-• Slanje i primanje Bitcoina s NFC, QR kodom ili Bitcoin URL-om.
-• Adresar za često korištene Bitcoin adrese.
+• Slanje i primanje Woodcoina s NFC, QR kodom ili Woodcoin URL-om.
+• Adresar za često korištene Woodcoin adrese.
 • Kada si izvan mreže, možete još uvijek preko Bluetooth-a.
 • Sistemske obavjesti za primljene coin-ove.
-• Widgeti aplikacije za balansiranje Bitcoin-ova.
+• Widgeti aplikacije za balansiranje Woodcoin-ova.
 
 
 <b>DOPRINOS</b>
 
-Bitcoin Wallet je <b>javno dostupan kod</b> i <b>besplatna aplikacija</b>. Licencirana pod GPLv3.
+Woodcoin Wallet je <b>javno dostupan kod</b> i <b>besplatna aplikacija</b>. Licencirana pod GPLv3.
 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 Naš izvorni kod je dostušan na GitHub-u:
@@ -27,7 +27,7 @@ https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
 
 <b>IZJAVE</b>
 
-• Mnoge  mobilne aplikacije temelje svoj kod na Bitcoin Wallet. Primjer: blockchain.info i BTCX.
+• Mnoge  mobilne aplikacije temelje svoj kod na Woodcoin Wallet. Primjer: blockchain.info i BTCX.
 • Preporučava BitPay.
 
 

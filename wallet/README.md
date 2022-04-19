@@ -10,7 +10,7 @@ storage:
     Testnet: /data/data/de.schildbach.wallet_test/files/wallet-protobuf-testnet
 
 The wallet file format is not compatible to wallet.dat (Satoshi client). Rather, it uses a custom protobuf format
-which should be compatible between clients using bitcoinj.
+which should be compatible between clients using woodcoinj.
 
 Certain actions cause automatic rolling backups of your wallet to app-private storage:
 
@@ -19,8 +19,8 @@ Certain actions cause automatic rolling backups of your wallet to app-private st
 
 Your wallet can be manually backed up to and restored from a share of the storage access framework (likely Google Drive):
 
-    Mainnet: bitcoin-wallet-backup-<yyyy-MM-dd>
-    Testnet: bitcoin-wallet-backup-testnet-<yyyy-MM-dd>
+    Mainnet: woodcoin-wallet-backup-<yyyy-MM-dd>
+    Testnet: woodcoin-wallet-backup-testnet-<yyyy-MM-dd>
 
 If you want to recover coins from manual backups and for whatever reason you cannot use the app
 itself to restore from the backup, see the separate [README.recover.md](README.recover.md) guide.
@@ -165,14 +165,14 @@ Instructions for preparing an NFC tag with your address:
 
 ### BITCOINJ
 
-Bitcoin Wallet uses [bitcoinj](https://bitcoinj.github.io/) for Bitcoin specific logic.
+Woodcoin Wallet uses [bitcoinj](https://bitcoinj.github.io/) for Bitcoin specific logic.
 
 
 ### EXCHANGE RATES
 
-Woodcoin Wallet reads this feed from "BitcoinAverage" for getting exchange rates:
+Woodcoin Wallet reads this feed from "Coingecko" for getting exchange rates:
 
-    https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC
+    https://api.coingecko.com/api/v3/coins/woodcoin
 
 We chose this feed because it is not dependent on a single exchange. This feature can be disabled
 with the compile-time flag
@@ -182,7 +182,7 @@ with the compile-time flag
 
 ### SWEEPING WALLETS
 
-When sweeping wallets, Bitcoin Wallet uses a set of Electrum servers to query for unspent transaction
+When sweeping wallets, Woodcoin Wallet uses a set of Electrum servers to query for unspent transaction
 outputs (UTXOs). This feature can be disabled with the compile-time flag:
 
     Constants.ENABLE_SWEEP_WALLET

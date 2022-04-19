@@ -1,17 +1,17 @@
-<b>Mějte své Bitcoiny vždy s sebou ve své kapse!</b> Plaťte rychlým oskenováním QR kódu. A jako prodejce můžete přijímat platby spolehlivě a rychle. Bitcoin Wallet je mobilní Bitcoin aplikace číslo jedna a jedna z nejbezpečnějších!
+<b>Mějte své Woodcoiny vždy s sebou ve své kapse!</b> Plaťte rychlým oskenováním QR kódu. A jako prodejce můžete přijímat platby spolehlivě a rychle. Woodcoin Wallet je mobilní Woodcoin aplikace číslo jedna a jedna z nejbezpečnějších!
 
 
 <b>FUNKCE</b>
 
 • Není třeba žádná registrace, webová služba ani cloud! Toto je peer to peer decentralizovaná peněženka.
-• Zobrazení Bitcoin částek v BTC, mBTC a µBTC.
+• Zobrazení Woodcoin částek v BTC, mBTC a µBTC.
 • Přepočet z a do národních měn.
-• Odesílání a přijímání plateb přes NFC, QR kódy nebo Bitcoin URL.
-• Adresář pro často používané Bitcoin adresy.
+• Odesílání a přijímání plateb přes NFC, QR kódy nebo Woodcoin URL.
+• Adresář pro často používané Woodcoin adresy.
 • Pokud jste offline, stále můžete platit přes Bluetooth.
 • Systémové notifikace při přijaté platbě
 • Načítání papírových peněženek (např. ty co se používají u cold storage).
-• Widget pro zobrazení Bitcoin bilance.
+• Widget pro zobrazení Woodcoin bilance.
 
 
 <b>PŘISPĚJTE</b>
@@ -28,7 +28,7 @@ https://www.transifex.com/bitcoin-wallet/bitcoin-wallet/
 
 <b>UZNÁNÍ</b>
 
-• Mnoho mobilních peněženek využívá zdrojový kód Bitcoin Wallet. Například: blockchain.info a BTCX.
+• Mnoho mobilních peněženek využívá zdrojový kód Woodcoin Wallet. Například: blockchain.info a BTCX.
 • Doporučeno službou BitPay.
 
 

@@ -75,8 +75,12 @@ public class ExchangeRatesProvider extends ContentProvider {
     private long lastUpdated = 0;
 
     private static final HttpUrl BITCOINAVERAGE_URL = HttpUrl
-            .parse("https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC");
-    private static final String BITCOINAVERAGE_SOURCE = "BitcoinAverage.com";
+            .parse("https://api.coingecko.com/api/v3/coins/woodcoin");
+    private static final String BITCOINAVERAGE_SOURCE = "coingecko.com";
+
+    // private static final HttpUrl BITCOINAVERAGE_URL = HttpUrl
+    //         .parse("https://apiv2.bitcoinaverage.com/indices/global/ticker/short?crypto=BTC");
+    // private static final String BITCOINAVERAGE_SOURCE = "BitcoinAverage.com";
 
     private static final long UPDATE_FREQ_MS = 10 * DateUtils.MINUTE_IN_MILLIS;
 
@@ -200,11 +204,15 @@ public class ExchangeRatesProvider extends ContentProvider {
     public static ExchangeRate getExchangeRate(final Cursor cursor) {
         final String currencyCode = cursor
                 .getString(cursor.getColumnIndexOrThrow(ExchangeRatesProvider.KEY_CURRENCY_CODE));
+        System.out.println("test currency code:" + currencyCode);
         final Coin rateCoin = Coin
                 .valueOf(cursor.getLong(cursor.getColumnIndexOrThrow(ExchangeRatesProvider.KEY_RATE_COIN)));
+        System.out.println("test rate coin:" + rateCoin);
         final Fiat rateFiat = Fiat.valueOf(currencyCode,
                 cursor.getLong(cursor.getColumnIndexOrThrow(ExchangeRatesProvider.KEY_RATE_FIAT)));
+        System.out.println("test rate fiat:" + rateFiat);
         final String source = cursor.getString(cursor.getColumnIndexOrThrow(ExchangeRatesProvider.KEY_SOURCE));
+        System.out.println("test source:" + source);
 
         return new ExchangeRate(new org.bitcoinj.utils.ExchangeRate(rateCoin, rateFiat), source);
     }
@@ -242,27 +250,53 @@ public class ExchangeRatesProvider extends ContentProvider {
             if (response.isSuccessful()) {
                 final String content = response.body().string();
                 final JSONObject head = new JSONObject(content);
+                log.info("fetched exchange head testing robert {}", head);
+                final JSONObject market = head.getJSONObject("market_data");
+                log.info("fetched exchange currencyCode testing robert {}", market);
+                final JSONObject current = market.getJSONObject("current_price");
+                log.info("fetched exchange current price testing robert {}", current);
+                //final JSONObject current = market.getString("current_price");
                 final Map<String, ExchangeRate> rates = new TreeMap<String, ExchangeRate>();
 
-                for (final Iterator<String> i = head.keys(); i.hasNext();) {
-                    final String currencyCode = i.next();
-                    if (currencyCode.startsWith("BTC")) {
-                        final String fiatCurrencyCode = currencyCode.substring(3);
-                        if (!fiatCurrencyCode.equals(MonetaryFormat.CODE_BTC)
-                                && !fiatCurrencyCode.equals(MonetaryFormat.CODE_MBTC)
-                                && !fiatCurrencyCode.equals(MonetaryFormat.CODE_UBTC)) {
-                            final JSONObject exchangeRate = head.getJSONObject(currencyCode);
-                            try {
-                                final Fiat rate = parseFiatInexact(fiatCurrencyCode, exchangeRate.getString("last"));
-                                if (rate.signum() > 0)
-                                    rates.put(fiatCurrencyCode, new ExchangeRate(
-                                            new org.bitcoinj.utils.ExchangeRate(rate), BITCOINAVERAGE_SOURCE));
-                            } catch (final IllegalArgumentException x) {
-                                log.warn("problem fetching {} exchange rate from {}: {}", currencyCode,
-                                        BITCOINAVERAGE_URL, x.getMessage());
-                            }
-                        }
-                    }
+                // for (final Iterator<String> i = current.keys(); i.hasNext();) {
+                //     final String currencyCode = i.next();
+                //     log.info("fetched exchange market currency code testing robert {}", currencyCode);
+                //
+                //     if (currencyCode.startsWith("BTC")) {
+                //         final String fiatCurrencyCode = currencyCode.substring(3);
+                //         log.info("fetched exchange rates head testing robert {}", fiatCurrencyCode);
+                //         if (!fiatCurrencyCode.equals(MonetaryFormat.CODE_BTC)
+                //                 && !fiatCurrencyCode.equals(MonetaryFormat.CODE_MBTC)
+                //                 && !fiatCurrencyCode.equals(MonetaryFormat.CODE_UBTC)) {
+                //             final JSONObject exchangeRate = head.getJSONObject(currencyCode);
+                //             log.info("fetched exchange rates fiat testing robert {}", exchangeRate);
+                //             try {
+                //                 final Fiat rate = parseFiatInexact(fiatCurrencyCode, exchangeRate.getString("last"));
+                //                 log.info("fetched exchange rates get last {}", rate);
+                //                 if (rate.signum() > 0)
+                //                     rates.put(fiatCurrencyCode, new ExchangeRate(
+                //                             new org.bitcoinj.utils.ExchangeRate(rate), BITCOINAVERAGE_SOURCE));
+                //             } catch (final IllegalArgumentException x) {
+                //                 log.warn("problem fetching {} exchange rate from {}: {}", currencyCode,
+                //                         BITCOINAVERAGE_URL, x.getMessage());
+                //             }
+                //         }
+                //     }
+
+                  for (final Iterator<String> i = current.keys(); i.hasNext();) {
+                     final String currencyCode = i.next();
+                     log.info("fetched exchange market currency code testing robert {}", currencyCode);
+                     try {
+                         final Fiat rate = parseFiatInexact(currencyCode, current.getString(currencyCode));
+                         log.info("fetched exchange rates get last {}", rate);
+                         if (rate.signum() > 0)
+                             rates.put(currencyCode, new ExchangeRate(
+                                     new org.bitcoinj.utils.ExchangeRate(rate), BITCOINAVERAGE_SOURCE));
+                     } catch (final IllegalArgumentException x) {
+                         log.warn("problem fetching {} exchange rate from {}: {}", currencyCode,
+                                 BITCOINAVERAGE_URL, x.getMessage());
+                     }
+
                 }
 
                 watch.stop();
