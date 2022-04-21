@@ -7,7 +7,7 @@ Your wallet contains your private keys and various transaction related metadata.
 storage:
 
     Mainnet: /data/data/de.schildbach.wallet/files/wallet-protobuf
-    Testnet: /data/data/de.schildbach.wallet_test/files/wallet-protobuf-testnet
+    Testnet: /data/data/de.schildbach.wallet_woodcoin/files/wallet-protobuf-testnet
 
 The wallet file format is not compatible to wallet.dat (Satoshi client). Rather, it uses a custom protobuf format
 which should be compatible between clients using woodcoinj.
@@ -15,7 +15,7 @@ which should be compatible between clients using woodcoinj.
 Certain actions cause automatic rolling backups of your wallet to app-private storage:
 
     Mainnet: /data/data/de.schildbach.wallet/files/key-backup-protobuf
-    Testnet: /data/data/de.schildbach.wallet_test/files/key-backup-protobuf-testnet
+    Testnet: /data/data/de.schildbach.wallet_woodcoin/files/key-backup-protobuf-testnet
 
 Your wallet can be manually backed up to and restored from a share of the storage access framework (likely Google Drive):
 
@@ -29,14 +29,14 @@ The current fee rate for each of the fee categories (economic, normal, priority)
 app-private storage:
 
     Mainnet: /data/data/de.schildbach.wallet/files/fees.txt
-    Testnet: /data/data/de.schildbach.wallet_test/files/fees-testnet.txt
+    Testnet: /data/data/de.schildbach.wallet_woodcoin/files/fees-testnet.txt
 
 
 ### DEBUGGING
 
 Wallet file for Testnet can be pulled from an (even un-rooted) device using:
 
-    adb pull /data/data/de.schildbach.wallet_test/files/wallet-protobuf-testnet
+    adb pull /data/data/de.schildbach.wallet_woodcoin/files/wallet-protobuf-testnet
 
 Log messages can be viewed by:
 

@@ -56,7 +56,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'de.schildbach.wallet_test'
+        applicationId 'de.schildbach.wallet_woodcoin'
         generatedDensities = ['hdpi', 'xhdpi']
         vectorDrawables.useSupportLibrary = true
 
