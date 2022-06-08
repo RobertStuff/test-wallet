@@ -14,8 +14,7 @@
   <string name="wallet_address_fragment_clipboard_msg">Woodcoinadressen kopierades</string>
   <string name="wallet_address_dialog_fragment_hint">För att skydda din integritet ändras din adress varje gång du mottar en betalning.</string>
   <string name="wallet_balance_fragment_too_much">Det här är ett stort belopp att bära omkring på i fickan. Flytta gärna över en del till en säkrare plats.</string>
-  <string name="wallet_balance_fragment_replaying">Saldot är otillgängligt under reprisen.</string>
-  <string name="exchange_rates_activity_title">Växlingskurser</string>
+    <string name="exchange_rates_activity_title">Växlingskurser</string>
   <string name="exchange_rates_fragment_empty_text">Kunde inte hämta växlingskurser.</string>
   <string name="exchange_rates_fragment_empty_search">Kunde inte hitta växlingskurs</string>
   <string name="exchange_rates_fragment_default">(standard)</string>
@@ -50,13 +49,10 @@
   <string name="wallet_version_dialog_msg_deprecated">Om du inte ser en uppdatering så beror det förmodligen på att din version av Android inte längre stöds.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Ladda ner</string>
-  <string name="wallet_old_sdk_dialog_title">Android-versionen är inaktuell</string>
-  <string name="wallet_old_sdk_dialog_message">Chansen är stor att någon av de kommande releaserna av Woodcoin Wallet inte kommer att fungera på din enhet längre. I vissa fall kan det bli svårt att spendera dina tillgångar med den här enheten.\n\nSåvida du inte vet vad du gör, rekommenderas att du flyttar dina woodoin snart.</string>
-  <string name="send_coins_activity_title">Skicka woodoin</string>
+    <string name="send_coins_activity_title">Skicka woodoin</string>
   <string name="send_coins_fragment_request_payment_request_progress">Hämtar signatur från %s</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Hämtning av signatur misslyckades</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Felaktig signatur!</string>
-  <string name="send_coins_fragment_payee_verified_by">Verifierad av: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">Verifierad av: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">okänd</string>
   <string name="send_coins_fragment_receiving_address_label">Betala till</string>
   <string name="send_coins_fragment_receiving_address_hint">skriv adress eller namn</string>
@@ -136,8 +132,7 @@
   <string name="address_book_context_remove_title">Ta bort adressen</string>
   <string name="address_book_context_copy_to_clipboard_title">Kopiera till urklipp</string>
   <string name="address_book_options_paste_from_clipboard_title">Klistra in från urklipp</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Urklippet är tomt</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Inklippt data är oigenkännlig</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Inklippt data är oigenkännlig</string>
   <string name="address_book_options_paste_from_clipboard_own_address">Adressen i urklippet är din egen.</string>
   <string name="address_book_options_scan_title">Scanna adress</string>
   <string name="address_book_options_scan_invalid">Avläst data är oigenkännlig</string>
@@ -189,8 +184,7 @@
   <string name="export_keys_dialog_title">Säkerhetskopiera plånbok</string>
   <string name="backup_wallet_dialog_message">Din säkerhetskopia kommer att krypteras med ett valt lösenord och lagras på extern plats.</string>
   <string name="backup_wallet_dialog_warning_encrypted">Din plånbok är skyddad av en betalnings-PIN. Se till att du kommer ihåg din PIN-kod tillsammans med lösenordet för säkerhetskopian.</string>
-  <string name="export_keys_dialog_button_export">Säkerhetskopiera</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Din plånbok har säkerhetskopierats till <tt>%s</tt></p><p><b>Om enheten är den enda platsen säkerhetskopian finns på finns det en risk att du förlorar både enheten och säkerhetskopian samtidigt!</b></p><p>I alla fall, se till att du kommer ihåg ditt lösenord till din säkerhetskopia.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Din plånbok har säkerhetskopierats till <tt>%s</tt></p><p><b>Om enheten är den enda platsen säkerhetskopian finns på finns det en risk att du förlorar både enheten och säkerhetskopian samtidigt!</b></p><p>I alla fall, se till att du kommer ihåg ditt lösenord till din säkerhetskopia.</p>]]></string>
   <string name="export_keys_dialog_failure">Din plånbok kunde in säkerhetskopieras:\n%s</string>
   <string name="import_export_keys_dialog_password">lösenord</string>
   <string name="backup_wallet_dialog_password_again">igen</string>
@@ -223,8 +217,7 @@
   <string name="input_parser_invalid_transaction">Ogiltig transaktion:\n%s</string>
   <string name="preferences_activity_title">Inställningar</string>
   <string name="preferences_category_diagnostics">Diagnostik</string>
-  <string name="preferences_category_labs">Labb</string>
-  <string name="preferences_precision_title">Valör och precision</string>
+    <string name="preferences_precision_title">Valör och precision</string>
   <string name="preferences_precision_summary">Enhet för att visa belopp i. Det här påverkar inte uträkningar.</string>
   <string name="preferences_precision_labels_8">LOG, 8 decimaler</string>
   <string name="preferences_precision_labels_6">LOG, 6 decimaler</string>
@@ -311,8 +304,7 @@
   <string name="action_show_qr">Visa QR-kod</string>
   <string name="action_browse">Bläddra</string>
   <!--generic strings-->
-  <string name="time_today">idag</string>
-  <string name="address_unlabeled">(saknar etikett)</string>
+    <string name="address_unlabeled">(saknar etikett)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">fel PIN!</string>
   <!--generic error messages-->

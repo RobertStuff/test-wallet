@@ -13,8 +13,7 @@
 	<string name="blockchain_state_progress_problem_storage">Synchronizowanie: Problem z pamięcią</string>
 	<string name="blockchain_state_progress_problem_network">Synchronizowanie: Problem z siecią</string>
 	<string name="wallet_address_fragment_clipboard_msg">Adres Woodcoin skopiowano do schowka</string>
-	<string name="wallet_balance_fragment_replaying">Saldo nie jest dostępne w trakcie odtwarzania.</string>
-	<string name="exchange_rates_activity_title">Kursy wymiany walut</string>
+    <string name="exchange_rates_activity_title">Kursy wymiany walut</string>
 	<string name="exchange_rates_fragment_empty_text">Załadowanie kursu wymiany walut nie powiodło się</string>
 	<string name="exchange_rates_fragment_default">(domyślnie)</string>
 	<string name="exchange_rates_fragment_rate">kurs</string>
@@ -41,9 +40,7 @@
 	<string name="wallet_version_dialog_msg">W tej wersji poprawiono ważne błędy. Więcej szczegółów znajdziesz w dzienniku zmian na Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Pobierz</string>
-	<string name="wallet_old_sdk_dialog_title">Wersja Androida jest przestarzała</string>
-	<string name="wallet_old_sdk_dialog_message">Istnieje szansa że wraz z kolejnymi wydaniami Woodcoin Wallet zakończy wsparcie dla twojego urządzenia. W niektórych przypadkach wydawanie monet z tego urządzenia może ulec utrudnieniu.\n\nZalecane jest przeniesienie swoich monet w najbliższym czasie, chyba że wiesz co robisz.</string>
-	<string name="send_coins_activity_title">Wyślij Woodcoiny</string>
+    <string name="send_coins_activity_title">Wyślij Woodcoiny</string>
 	<string name="send_coins_fragment_receiving_address_label">Zapłać dla</string>
 	<string name="send_coins_fragment_receiving_address_hint">wpisz adres lub nazwę</string>
 	<string name="send_coins_fragment_receiving_address_error">Nieprawidłowy adres Woodcoin!</string>
@@ -73,8 +70,7 @@
 	<string name="address_book_context_remove_title">Usuń adres</string>
 	<string name="address_book_context_copy_to_clipboard_title">Skopiuj do schowka</string>
 	<string name="address_book_options_paste_from_clipboard_title">Wklej ze schowka</string>
-	<string name="address_book_options_paste_from_clipboard_empty">Schowek jest pusty</string>
-	<string name="address_book_options_scan_title">Zeskanuj adres</string>
+    <string name="address_book_options_scan_title">Zeskanuj adres</string>
 	<string name="address_book_row_message_compromised_key">Ten adres mógł zostać podrobiony. Nie powinieneś go więcej używać do odbierania transferów.</string>
 	<string name="edit_address_book_entry_dialog_title_add">Dodaj adres</string>
 	<string name="edit_address_book_entry_dialog_title_edit">Zmień adres</string>
@@ -103,8 +99,7 @@
 	<string name="import_keys_dialog_failure">Nie udało się zaimportować kluczy prywatnych:\n\n%s\n\nBłędne hasło?</string>
 	<string name="export_keys_dialog_title">Eksportuj prywatne klucze</string>
 	<string name="backup_wallet_dialog_message">Twoje prywatne klucze zostaną zaszyfrowane wybranym hasłem a następnie zapisane na zewnętrznym nośniku.</string>
-	<string name="export_keys_dialog_button_export">Kopia zapasowa</string>
-	<string name="export_keys_dialog_success">Twoje klucze prywatne zostały eksportowane do\n\n%s\n\nZabezpiecz je wraz z hasłem!</string>
+    <string name="export_keys_dialog_success">Twoje klucze prywatne zostały eksportowane do\n\n%s\n\nZabezpiecz je wraz z hasłem!</string>
 	<string name="export_keys_dialog_failure">Twoje prywatne klucze nie mogły być wyeksportowane:\n%s</string>
 	<string name="import_export_keys_dialog_password">hasło</string>
 	<string name="import_export_keys_dialog_show">Wyświetl hasło</string>
@@ -118,8 +113,7 @@
 	<string name="input_parser_invalid_transaction">Transakcja nie powiodła się:\n%s</string>
 	<string name="preferences_activity_title">Ustawienia</string>
 	<string name="preferences_category_diagnostics">Diagnostyka</string>
-	<string name="preferences_category_labs">Eksperymentalne</string>
-	<string name="preferences_precision_title">Waluta i precyzja</string>
+    <string name="preferences_precision_title">Waluta i precyzja</string>
 	<string name="preferences_precision_summary">Jednostka w której ma być podawana ilość. Nie wpływa na obliczenia.</string>
 	<string name="preferences_connectivity_notification_title">Wskaźnik połączenia</string>
 	<string name="preferences_connectivity_notification_summary">Wyświetl obecną liczbę połączonych partnerów w przestrzeni powiadomień.</string>
@@ -172,7 +166,6 @@
 	<string name="button_settings">Ustawienia</string>
 	<string name="action_show_qr">Pokaż kod QR</string>
 	<string name="action_browse">Przeglądaj</string>
-	<string name="time_today">dzisiaj</string>
-	<string name="address_unlabeled">(nieopisane)</string>
+    <string name="address_unlabeled">(nieopisane)</string>
 
 </resources>

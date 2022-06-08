@@ -14,8 +14,7 @@
   <string name="wallet_address_fragment_clipboard_msg">Adresa zkopírována do schránky</string>
   <string name="wallet_address_dialog_fragment_hint">Z důvodu ochrany soukromí dojde ke změně této adresy po každé přijaté platbě.</string>
   <string name="wallet_balance_fragment_too_much">Tato částka je poměrně vysoká na nosení v kapse. Převeďte ji prosím na bezpečnější místo.</string>
-  <string name="wallet_balance_fragment_replaying">Bilance je nedostupná během synchronizace.</string>
-  <string name="exchange_rates_activity_title">Směnné kurzy</string>
+    <string name="exchange_rates_activity_title">Směnné kurzy</string>
   <string name="exchange_rates_fragment_empty_text">Nepodařilo se nahrát směnné kurzy.</string>
   <string name="exchange_rates_fragment_empty_search">Nelze najít směnný kurz.</string>
   <string name="exchange_rates_fragment_default">(výchozí)</string>
@@ -50,13 +49,10 @@
   <string name="wallet_version_dialog_msg_deprecated">Pokud nevidíte aktualizaci, znamená to, že verze vašeho operačního systému Android již není podporována.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Stáhnout</string>
-  <string name="wallet_old_sdk_dialog_title">Verze systému Android je příliš stará</string>
-  <string name="wallet_old_sdk_dialog_message">Je pravděpodobné, že jedna z následujících verzí Woodcoin Wallet nebude podporovat vaše zařízení. V některých případech může být v takové situaci komplikované utratit Woodcoiny na tomto zařízení.\n\nPokud si nejste jistí co dělat, tak doporučujeme tyto Woodcoiny přemístit brzy do jiného zařízení.</string>
-  <string name="send_coins_activity_title">Zaslat Woodcoiny</string>
+    <string name="send_coins_activity_title">Zaslat Woodcoiny</string>
   <string name="send_coins_fragment_request_payment_request_progress">Stahuji podpis z %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Stahováni podpisu selhalo</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Špatný podpis!</string>
-  <string name="send_coins_fragment_payee_verified_by">ověřeno kým: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">ověřeno kým: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">neznámý</string>
   <string name="send_coins_fragment_receiving_address_label">Příjemce</string>
   <string name="send_coins_fragment_receiving_address_hint">napište adresu či jméno</string>
@@ -138,8 +134,7 @@
   <string name="address_book_context_remove_title">Odebrat adresu</string>
   <string name="address_book_context_copy_to_clipboard_title">Kopírovat do schránky</string>
   <string name="address_book_options_paste_from_clipboard_title">Vložit ze schránky</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Schránka je prázdná</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Data ze schránky jsou nerozpoznatelná</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Data ze schránky jsou nerozpoznatelná</string>
   <string name="address_book_options_paste_from_clipboard_own_address">Adresa ve schránce je vaše vlastní.</string>
   <string name="address_book_options_scan_title">Skenovat adresu</string>
   <string name="address_book_options_scan_invalid">Naskenovaná data jsou nerozpoznatelná</string>
@@ -191,8 +186,7 @@
   <string name="export_keys_dialog_title">Zálohovat peněženku</string>
   <string name="backup_wallet_dialog_message">Vaše peněženka bude zašifrována zvoleným heslem a zapsána do externího úložiště.</string>
   <string name="backup_wallet_dialog_warning_encrypted">Vaše peněženka je zabezpečena PINem pro utrácení. Ujistěte se, že si pamatujete nejenom PIN ale také heslo k záloze.</string>
-  <string name="export_keys_dialog_button_export">Zálohovat</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Vaše peněženka byla zazálohována do <tt>%s</tt></p><p><b>Pokud je záloha pouze na tomto zařízení tak se vystavujete riziku že ztratíte oboje zároveň!</b></p><p>Každopádně se ujistěte, že si pamatujete heslo.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Vaše peněženka byla zazálohována do <tt>%s</tt></p><p><b>Pokud je záloha pouze na tomto zařízení tak se vystavujete riziku že ztratíte oboje zároveň!</b></p><p>Každopádně se ujistěte, že si pamatujete heslo.</p>]]></string>
   <string name="export_keys_dialog_failure">Vaše peněženka nemohla být zazálohována:\n%s</string>
   <string name="import_export_keys_dialog_password">heslo</string>
   <string name="backup_wallet_dialog_password_again">znovu</string>
@@ -225,8 +219,7 @@
   <string name="input_parser_invalid_transaction">Neplatná transakce:\n%s</string>
   <string name="preferences_activity_title">Nastavení</string>
   <string name="preferences_category_diagnostics">Diagnostika</string>
-  <string name="preferences_category_labs">Laboratoř</string>
-  <string name="preferences_precision_title">Denominace a přesnost</string>
+    <string name="preferences_precision_title">Denominace a přesnost</string>
   <string name="preferences_precision_summary">Jednotka pro zobrazování částek. Neovlivňuje výpočty.</string>
   <string name="preferences_precision_labels_8">LOG, 8 desetinných míst</string>
   <string name="preferences_precision_labels_6">LOG, 6 desetinných míst</string>
@@ -313,8 +306,7 @@
   <string name="action_show_qr">Zobrazit QR kód</string>
   <string name="action_browse">Prohlédnout</string>
   <!--generic strings-->
-  <string name="time_today">dnes</string>
-  <string name="address_unlabeled">(nepojmenováno)</string>
+    <string name="address_unlabeled">(nepojmenováno)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">špatný PIN!</string>
   <!--generic error messages-->

@@ -12,8 +12,7 @@
   <string name="blockchain_state_progress_problem_storage">Usklajevanje: težava s hrambo podatkov</string>
   <string name="blockchain_state_progress_problem_network">Usklajevanje: težava z omrežjem</string>
   <string name="wallet_address_fragment_clipboard_msg">Naslov kopiran na odložišče</string>
-  <string name="wallet_balance_fragment_replaying">Pregled stanja med ponastavitvijo ni mogoč.</string>
-  <string name="exchange_rates_activity_title">Menjalni tečaji</string>
+    <string name="exchange_rates_activity_title">Menjalni tečaji</string>
   <string name="exchange_rates_fragment_empty_text">Nalaganje menjalnih tečajev je spodletelo.</string>
   <string name="exchange_rates_fragment_empty_search">Ne najdem menjalnega tečaja.</string>
   <string name="exchange_rates_fragment_default">(privzeto)</string>
@@ -44,13 +43,10 @@
   <string name="wallet_version_dialog_msg_deprecated">Če ne vidite nove verzije, vaša verzija Androida najbrž ni več podprta.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Prenos</string>
-  <string name="wallet_old_sdk_dialog_title">Verzija Androida je zastarela</string>
-  <string name="wallet_old_sdk_dialog_message">Možno je, da bližnja naslednja verzija aplikacije Woodcoin Wallet vaše naprave ne bo več podpirala. V nekaterih primerih bo potem lahko težko priti do novcev, ki jih imate shranjene tu.\n\nČe niste popolnoma prepričani, kaj počnete, svetujemo, da novce čim prej prenesete drugam.</string>
-  <string name="send_coins_activity_title">Pošlji novce</string>
+    <string name="send_coins_activity_title">Pošlji novce</string>
   <string name="send_coins_fragment_request_payment_request_progress">Pridobivam podpis od %s..</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Pridobivanje podpisa spodletelo</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Napačen podpis!</string>
-  <string name="send_coins_fragment_payee_verified_by">preverjeno: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">preverjeno: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">neznano</string>
   <string name="send_coins_fragment_receiving_address_label">V dobro</string>
   <string name="send_coins_fragment_receiving_address_hint">vpišite naslov ali ime</string>
@@ -92,8 +88,7 @@
   <string name="address_book_context_remove_title">Odstrani naslov</string>
   <string name="address_book_context_copy_to_clipboard_title">Kopiraj na odložišče</string>
   <string name="address_book_options_paste_from_clipboard_title">Prilepi z odložišča</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Odložišče je prazno</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Podatki na odložišču niso prepoznavni</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Podatki na odložišču niso prepoznavni</string>
   <string name="address_book_options_scan_title">Prečitaj naslov</string>
   <string name="address_book_options_scan_invalid">Prečitani podatki niso prepoznavni</string>
   <string name="address_book_row_message_compromised_key">Ta naslov morda ni več varen. Ne uporabljajte ga več za prejemanje novcev.</string>
@@ -127,8 +122,7 @@
   <string name="restore_wallet_dialog_success">Denarnica je bila obnovljena.</string>
   <string name="import_keys_dialog_failure">Zasebnih ključev ni bilo mogoče obnoviti:\n\n%s\n\nNapačno geslo?</string>
   <string name="export_keys_dialog_title">Ustvari rezervno kopijo denarnice</string>
-  <string name="export_keys_dialog_button_export">Rezervno kopiraj</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Ustvarjena je bila rezervna kopija vaše denarnice na lokaciji <tt>%s</tt></p><p><b>Če imate rezervno kopijo samo na tej napravi, tvegate, da hkrati izgubite denarnico in rezervo!</b></p><p>V vsakem primeru poskrbite, da si boste geslo rezervne kopije dobro zapomnili.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Ustvarjena je bila rezervna kopija vaše denarnice na lokaciji <tt>%s</tt></p><p><b>Če imate rezervno kopijo samo na tej napravi, tvegate, da hkrati izgubite denarnico in rezervo!</b></p><p>V vsakem primeru poskrbite, da si boste geslo rezervne kopije dobro zapomnili.</p>]]></string>
   <string name="import_export_keys_dialog_password">geslo</string>
   <string name="import_export_keys_dialog_show">Prikaži geslo</string>
   <string name="import_export_keys_dialog_failure_title">Napaka</string>
@@ -144,8 +138,7 @@
   <string name="input_parser_invalid_transaction">Neveljavno nakazilo:\n%s</string>
   <string name="preferences_activity_title">Nastavitve</string>
   <string name="preferences_category_diagnostics">Diagnostika</string>
-  <string name="preferences_category_labs">V razvoju</string>
-  <string name="preferences_precision_title">Enota in prikaz številk</string>
+    <string name="preferences_precision_title">Enota in prikaz številk</string>
   <string name="preferences_precision_summary">Enota za prikaz. Ne vpliva na računanje.</string>
   <string name="preferences_connectivity_notification_title">Kazalnik povezanosti</string>
   <string name="preferences_connectivity_notification_summary">Prikaži število trenutno povezanih vrstnikov v področju za obvestila.</string>
@@ -202,8 +195,7 @@
   <string name="action_show_qr">Prikazi QR-kodo</string>
   <string name="action_browse">Ogled v brskalniku</string>
   <!--generic strings-->
-  <string name="time_today">danes</string>
-  <string name="address_unlabeled">(neoznačen)</string>
+    <string name="address_unlabeled">(neoznačen)</string>
   <!--generic error messages-->
   <string name="error_io">Bralno/pisalna napaka: %s</string>
   <string name="error_http">HTTP napaka %1$s:\n%2$s</string>

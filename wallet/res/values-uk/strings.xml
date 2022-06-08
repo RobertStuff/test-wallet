@@ -12,8 +12,7 @@
   <string name="blockchain_state_progress_problem_storage">Синхронізація: проблема з сховищем</string>
   <string name="blockchain_state_progress_problem_network">Синхронізація: проблема з мережею</string>
   <string name="wallet_address_fragment_clipboard_msg">Адреса скопійована в буфер обміну</string>
-  <string name="wallet_balance_fragment_replaying">Під час відтворення баланс недоступний.</string>
-  <string name="exchange_rates_activity_title">Курси валют</string>
+    <string name="exchange_rates_activity_title">Курси валют</string>
   <string name="exchange_rates_fragment_empty_text">Не вдалося завантажити курси валют.</string>
   <string name="exchange_rates_fragment_empty_search">Не вдалося знайти обмінний курс.</string>
   <string name="exchange_rates_fragment_default">(за замовчуванням)</string>
@@ -44,13 +43,10 @@
   <string name="wallet_version_dialog_msg_deprecated">Якщо ви не бачите оновлення, це значить, що ваша версія Android більше не підтримується.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Завантажити</string>
-  <string name="wallet_old_sdk_dialog_title">Версія для Android застаріла</string>
-  <string name="wallet_old_sdk_dialog_message">Ймовірно що одна з майбутніх версій Woodcoin Wallet перестане підтримувати ваш пристрій. В деяких випадках буде складно витратити монети з цього пристрою.\n\nЯкщо ви не впевнені в тому що робите, рекомендується як найшвидше вивести монети з пристрою.</string>
-  <string name="send_coins_activity_title">Відправка Woodcoin</string>
+    <string name="send_coins_activity_title">Відправка Woodcoin</string>
   <string name="send_coins_fragment_request_payment_request_progress">Отримання підпису %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Помилка при отриманні підпису</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Неправильний підпис!</string>
-  <string name="send_coins_fragment_payee_verified_by">Перевіряється: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">Перевіряється: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">невідомо</string>
   <string name="send_coins_fragment_receiving_address_label">Оплатити</string>
   <string name="send_coins_fragment_receiving_address_hint">введіть адресу чи ім\'я</string>
@@ -103,8 +99,7 @@
   <string name="address_book_context_remove_title">Видалити адресу</string>
   <string name="address_book_context_copy_to_clipboard_title">Скопіювати в буфер обміну</string>
   <string name="address_book_options_paste_from_clipboard_title">Вставити з буфера обміну</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Буфер обміну порожній</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Неможливо розпізнати дані буфера обміну</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Неможливо розпізнати дані буфера обміну</string>
   <string name="address_book_options_scan_title">Сканувати адресу</string>
   <string name="address_book_options_scan_invalid">Дані сканування невпізнані</string>
   <string name="address_book_row_message_compromised_key">Ця адреса могла скомпрометуватися. Не використовуйте її більше для отримання коштів.</string>
@@ -140,8 +135,7 @@
   <string name="import_keys_dialog_failure">Гаманець не можливо відновити:\n\n%s\n\Неправильний пароль?</string>
   <string name="export_keys_dialog_title">Резервна копія гаманця</string>
   <string name="backup_wallet_dialog_message">Ваш гаманець буде зашифрований за допомогою пароля і будет записаний на зовнішній накопичувач.</string>
-  <string name="export_keys_dialog_button_export">Резервна копія</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Створена резервна копія гаманця <tt>%s</tt></p><p><b>Якщо ваш пристрій це єдине місце де зберігається резервна копія, то ви ризикуєте втрати гаманець, втративши пристрій!</b></p><p>В будь якому випадку, впевніться, що ви пам\'ятаєте пароль від резервної копії.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Створена резервна копія гаманця <tt>%s</tt></p><p><b>Якщо ваш пристрій це єдине місце де зберігається резервна копія, то ви ризикуєте втрати гаманець, втративши пристрій!</b></p><p>В будь якому випадку, впевніться, що ви пам\'ятаєте пароль від резервної копії.</p>]]></string>
   <string name="export_keys_dialog_failure">Резервна копія вашого гаманця не була створена:\n%s</string>
   <string name="import_export_keys_dialog_password">пароль</string>
   <string name="import_export_keys_dialog_show">Показати пароль</string>
@@ -158,8 +152,7 @@
   <string name="input_parser_invalid_transaction">Помилкова транзакція:\n%s</string>
   <string name="preferences_activity_title">Налаштування</string>
   <string name="preferences_category_diagnostics">Діагностика</string>
-  <string name="preferences_category_labs">Лабораторія</string>
-  <string name="preferences_precision_title">Деномінація і точність</string>
+    <string name="preferences_precision_title">Деномінація і точність</string>
   <string name="preferences_precision_summary">Одиниці, в яких показуються суми. Не впливає на вирахування.</string>
   <string name="preferences_connectivity_notification_title">Індикатор з\'єднання</string>
   <string name="preferences_connectivity_notification_summary">Показати поточну кількість підключень в області сповіщень.</string>
@@ -216,8 +209,7 @@
   <string name="button_settings">Налаштування</string>
   <string name="action_show_qr">Показати QR код</string>
   <string name="action_browse">Огляд</string>
-  <string name="time_today">сьогодні</string>
-  <string name="address_unlabeled">(без мітки)</string>
+    <string name="address_unlabeled">(без мітки)</string>
   <!--generic error messages-->
   <string name="error_io">Помилка I/O: %s</string>
   <string name="error_parse">Помилка обробки: %s</string>

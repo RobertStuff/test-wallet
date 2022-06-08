@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">プライバシー保護のため、アドレスは支払いを受け取るごとに変化します。</string>
   <string name="wallet_balance_fragment_insecure_device">このデバイスは古く、安全ではありません。少額のみ扱うようにしてください。</string>
   <string name="wallet_balance_fragment_too_much">この額はポケットに入れて運ぶには多すぎます。一部をもっと安全な場所に移してください。</string>
-  <string name="wallet_balance_fragment_replaying">再生中は残高情報は利用できません。</string>
-  <string name="exchange_rates_activity_title">為替レート</string>
+    <string name="exchange_rates_activity_title">為替レート</string>
   <string name="exchange_rates_fragment_empty_text">為替レートを読み込めません。</string>
   <string name="exchange_rates_fragment_empty_search">為替レートが見つかりません。</string>
   <string name="exchange_rates_fragment_default">(既定外貨)</string>
@@ -55,15 +54,12 @@
   <string name="wallet_version_dialog_msg_deprecated">アップデートが表示されない場合、それはおそらくあなたのバージョンのAndroidはもうサポートされないということです。</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">ダウンロード</string>
-  <string name="wallet_old_sdk_dialog_title">Androidのバージョンが古すぎます</string>
-  <string name="wallet_old_sdk_dialog_message">次のWoodcoin Walletのリリースの際、このデバイスはもうサポートされないかもしれません。場合によっては、このデバイスでのコインの利用が困難になるかもしれません。\n\n意図的にしているのでない限り、あなたのコインをすぐにでも移動させることをおすすめします。</string>
-  <string name="alert_dialogs_fragment_settings_failed_title">設定を開けませんでした</string>
+    <string name="alert_dialogs_fragment_settings_failed_title">設定を開けませんでした</string>
   <string name="send_coins_activity_title">ビットコインの送金</string>
   <string name="send_coins_fragment_request_payment_request_progress">%s から署名の取得中……</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">支払いリクエストの取得に失敗しました</string>
   <string name="send_coins_fragment_request_payment_request_failed_message">受取人 (%1$s) は互換性がない支払いプロトコルを使用しています (原因: %2$s)。</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">不正な署名です!</string>
-  <string name="send_coins_fragment_payee_verified_by">認証者: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">認証者: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">不明</string>
   <string name="send_coins_fragment_receiving_address_label">支払先</string>
   <string name="send_coins_fragment_receiving_address_hint">アドレスもしくは名前を入力</string>
@@ -150,8 +146,7 @@
   <string name="address_book_context_remove_title">アドレスを削除</string>
   <string name="address_book_context_copy_to_clipboard_title">クリップボードへコピー</string>
   <string name="address_book_options_paste_from_clipboard_title">クリップボードから貼付け</string>
-  <string name="address_book_options_paste_from_clipboard_empty">クリップボートは空です</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">クリップボードからのデータを認識できません</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">クリップボードからのデータを認識できません</string>
   <string name="address_book_options_paste_from_clipboard_own_address">クリップボードにあるアドレスはあなたのアドレスです。</string>
   <string name="address_book_options_scan_title">アドレスをスキャン</string>
   <string name="address_book_options_scan_invalid">スキャンしたデータが認識できません</string>
@@ -171,8 +166,7 @@
   <string name="transaction_row_message_received_direct">この支払は直接届きました。利用可能とならないリスクがあります。</string>
   <string name="transaction_row_message_received_unconfirmed_delayed">この支払いの確認が遅れています。おそらくビットコインネットワークの過負荷によるものです。</string>
   <string name="transaction_row_message_received_unconfirmed_unlocked">この支払は数分程度で利用可能となります。</string>
-  <string name="transaction_row_message_received_unconfirmed_chain_forking">ビットコインネットワークがメンテナンス中のため、このトランザクションは完全に確認されるまで信用するべきではありません。</string>
-  <string name="transaction_row_message_received_in_conflict">この支払いは、送金者によって引き戻されるリスクが高くなっています! 可能であれば確認されるのを待ってください。</string>
+    <string name="transaction_row_message_received_in_conflict">この支払いは、送金者によって引き戻されるリスクが高くなっています! 可能であれば確認されるのを待ってください。</string>
   <string name="transaction_row_message_received_dead">この支払は送金者により、引き戻されました。</string>
   <string name="transaction_row_message_received_dust">少額すぎて、通常の支払等には使用できないでしょう。</string>
   <string name="transaction_row_message_received_pay_to_many">この支払いはあなた以外にも多くのウォレットに支払っており、徐々にアプリを遅くする可能性があります。可能であればあなただけに支払う支払いを受けてください。</string>
@@ -206,8 +200,7 @@
   <string name="export_keys_dialog_title">ウォレットのバックアップ</string>
   <string name="backup_wallet_dialog_message">バックアップはあなたが決めたパスワードで暗号化され、外部ストレージに書き込まれます。</string>
   <string name="backup_wallet_dialog_warning_encrypted">あなたのウォレットは送金用PINで保護されています。バックアップ用パスワードに加えてPINも忘れないようにしてください。</string>
-  <string name="export_keys_dialog_button_export">バックアップ</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>あなたのウォレットは<tt>%s</tt>にバックアップされました。</p><p><b>バックアップがこのデバイスにしか無い場合、両方を同時に紛失する危険があります!</b></p><p>どちらにしろ、バックアップパスワードは忘れないようにしてください。</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>あなたのウォレットは<tt>%s</tt>にバックアップされました。</p><p><b>バックアップがこのデバイスにしか無い場合、両方を同時に紛失する危険があります!</b></p><p>どちらにしろ、バックアップパスワードは忘れないようにしてください。</p>]]></string>
   <string name="export_keys_dialog_failure">ウォレットをバックアップできませんでした:\n%s</string>
   <string name="import_export_keys_dialog_password">パスワード</string>
   <string name="backup_wallet_dialog_password_again">もう一度</string>
@@ -240,8 +233,7 @@
   <string name="input_parser_invalid_transaction">無効なトランザクション:\n%s</string>
   <string name="preferences_activity_title">設定</string>
   <string name="preferences_category_diagnostics">診断</string>
-  <string name="preferences_category_labs">ラボ</string>
-  <string name="preferences_precision_title">通貨単位の切り下げと切り上げ</string>
+    <string name="preferences_precision_title">通貨単位の切り下げと切り上げ</string>
   <string name="preferences_precision_summary">総額の表示単位。これは計算に影響しません。</string>
   <string name="preferences_precision_labels_8">LOG、小数点以下8桁</string>
   <string name="preferences_precision_labels_6">LOG、小数点以下6桁</string>
@@ -301,9 +293,7 @@
   <string name="about_credits_scrypt_title">Will GlozerとColin Percivalによって実装されたScrypt</string>
   <string name="about_market_app_title">Google Playのページ</string>
   <string name="about_market_app_summary">アプリのレビューや評価をしてください</string>
-  <string name="about_faq_title">よくある質問</string>
-  <string name="about_faq_summary">このアプリに関するよくある質問</string>
-  <string name="notification_coins_received_msg">%sを受け取りました</string>
+    <string name="notification_coins_received_msg">%sを受け取りました</string>
   <string name="notification_peers_connected_msg">%dピアが接続済</string>
   <string name="notification_inactivity_title">まだこの端末にビットコインが残っています!</string>
   <string name="notification_inactivity_message">残金を他の場所に移さずにWoodcoin Walletアプリをアンインストールした場合、%sの残金は失なわれてしまうことに注意してください。</string>
@@ -336,8 +326,7 @@
   <string name="action_show_qr">QRコードを表示</string>
   <string name="action_browse">ブラウズ</string>
   <!--generic strings-->
-  <string name="time_today">今日</string>
-  <string name="address_unlabeled">(ラベルなし)</string>
+    <string name="address_unlabeled">(ラベルなし)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">PINが違います!</string>
   <!--generic error messages-->

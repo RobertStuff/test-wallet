@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">Gizliliğinizi korumak için bir ödeme aldığında adresiniz değişecektir.</string>
   <string name="wallet_balance_fragment_insecure_device">Donanımınız eski ve güvensiz. Lütfen sadece küçük işlemler için kullanın.</string>
   <string name="wallet_balance_fragment_too_much">Bu meblağ cebinizde taşımak için oldukça fazladır. Birazını daha güvenli bir yere aktarınız.</string>
-  <string name="wallet_balance_fragment_replaying">Tekrar sırasında bakiye kullanılamaz</string>
-  <string name="exchange_rates_activity_title">Döviz kurları</string>
+    <string name="exchange_rates_activity_title">Döviz kurları</string>
   <string name="exchange_rates_fragment_empty_text">Döviz kurları yüklenemedi.</string>
   <string name="exchange_rates_fragment_empty_search">Değişim kuru bulunamadı.</string>
   <string name="exchange_rates_fragment_default">(varsayılan)</string>
@@ -55,15 +54,12 @@
   <string name="wallet_version_dialog_msg_deprecated">Eğer bir güncelleme görmüyorsanız, bu muhtemelen sizin Android sürümünüzün artık desteklenmediği anlamına gelir.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">İndir</string>
-  <string name="wallet_old_sdk_dialog_title">Android sürümü eski</string>
-  <string name="wallet_old_sdk_dialog_message">Gelecek Woodcoin Wallet sürümünün cihazınızı desteklememesi mümkündür. Bazı durumlarda bu cihazla woodcoin harcamak zor olabilir.\n\nWoodcoinlerinizi güvenli bir yere aktarmanız tavsiye edilir.</string>
-  <string name="alert_dialogs_fragment_settings_failed_title">Ayarları açarken bir sorun oluştu</string>
+    <string name="alert_dialogs_fragment_settings_failed_title">Ayarları açarken bir sorun oluştu</string>
   <string name="send_coins_activity_title">Woodcoin gönder</string>
   <string name="send_coins_fragment_request_payment_request_progress">%s unsurundan imza alınıyor…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Ödeme talebi getirilemedi</string>
   <string name="send_coins_fragment_request_payment_request_failed_message">Alacaklı (%1$s) uyumsuz bir ödeme protokolü kullanıyor (neden: %2$s).</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Yanlış imza!</string>
-  <string name="send_coins_fragment_payee_verified_by">şunun tarafından denetlenmiştir: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">şunun tarafından denetlenmiştir: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">bilinmiyor</string>
   <string name="send_coins_fragment_receiving_address_label">Şuna öde</string>
   <string name="send_coins_fragment_receiving_address_hint">adını veya adresini giriniz</string>
@@ -150,8 +146,7 @@
   <string name="address_book_context_remove_title">Adresi kaldır</string>
   <string name="address_book_context_copy_to_clipboard_title">Panoya kopyala</string>
   <string name="address_book_options_paste_from_clipboard_title">Panodan yapıştır</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Pano boş</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Panodaki veriler tanınamadı</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Panodaki veriler tanınamadı</string>
   <string name="address_book_options_paste_from_clipboard_own_address">Panodaki adres sizinkidir.</string>
   <string name="address_book_options_scan_title">Adresi tara</string>
   <string name="address_book_options_scan_invalid">Taranan veriler tanınamadı</string>
@@ -171,8 +166,7 @@
   <string name="transaction_row_message_received_direct">Bu ödeme doğrudan alındı. Asla harcanamayacak olması riski vardır.</string>
   <string name="transaction_row_message_received_unconfirmed_delayed">Bu ödemenin teyidi muhtemelen Woodcoin şebekesindeki aşırı yükten dolayı gecikmiştir.</string>
   <string name="transaction_row_message_received_unconfirmed_unlocked">Bu ödeme muhtemelen birkaç dakika içinde harcanabilir hâle gelecektir.</string>
-  <string name="transaction_row_message_received_unconfirmed_chain_forking">Woodcoin ağındaki bakım nedeniyle, Bu işlem tamamen doğrulanmış olana kadar güvenli değildir.</string>
-  <string name="transaction_row_message_received_in_conflict">Bu ödemede yüksek gönderici tarafından geri alınma riski vardır! Vaktiniz varsa teyit bekleyin.</string>
+    <string name="transaction_row_message_received_in_conflict">Bu ödemede yüksek gönderici tarafından geri alınma riski vardır! Vaktiniz varsa teyit bekleyin.</string>
   <string name="transaction_row_message_received_dead">Bu ödeme gönderici tarafından iptal edilmiştir.</string>
   <string name="transaction_row_message_received_dust">Bu düşük meblağ muhtemelen hiçbir koşulda ekonomik olarak harcanamaz.</string>
   <string name="transaction_row_message_received_pay_to_many">Bu ödeme sizinkiyle beraber birçok cüzdana ödeme yapmaktadır ve bu uygulamanın zamanla yavaşlamasına yol açar. Mümkünse sadece size ödeme yapan ödeme almaya çalışın.</string>
@@ -206,8 +200,7 @@
   <string name="export_keys_dialog_title">Cüzdanı yedekle</string>
   <string name="backup_wallet_dialog_message">Yedeklemeniz seçtiğiniz parola ile şifrelenecek ve harici depolama alanına yazılacaktır.</string>
   <string name="backup_wallet_dialog_warning_encrypted">Cüzdanınız bir harcama PIN\'i ile korunmaktadır. Yedekleme parolasına ilâve olarak PIN\'i hatırlayacağınızdan emin olunuz.</string>
-  <string name="export_keys_dialog_button_export">Yedekle</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Cüzdanınız <tt>%s</tt> konumunda yedeklendi.</p><p><b>Yedeklemenizin bulunduğu tek yer cihazınız ise hem cihazı hem de yedeklemeyi aynı zamanda kaybetme riskini almış olursunuz!</b></p><p>Her durumda yedekleme parolanızı hatırlayacağınızdan emin olunuz.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Cüzdanınız <tt>%s</tt> konumunda yedeklendi.</p><p><b>Yedeklemenizin bulunduğu tek yer cihazınız ise hem cihazı hem de yedeklemeyi aynı zamanda kaybetme riskini almış olursunuz!</b></p><p>Her durumda yedekleme parolanızı hatırlayacağınızdan emin olunuz.</p>]]></string>
   <string name="export_keys_dialog_failure">Cüzdanınız yedeklenemedi:\n%s</string>
   <string name="import_export_keys_dialog_password">parola</string>
   <string name="backup_wallet_dialog_password_again">tekrar</string>
@@ -240,8 +233,7 @@
   <string name="input_parser_invalid_transaction">Geçersiz muamele:\n%s</string>
   <string name="preferences_activity_title">Ayarlar</string>
   <string name="preferences_category_diagnostics">Teşhisler</string>
-  <string name="preferences_category_labs">Laboratuvarlar</string>
-  <string name="preferences_precision_title">İsimlendirme ve hassasiyet</string>
+    <string name="preferences_precision_title">İsimlendirme ve hassasiyet</string>
   <string name="preferences_precision_summary">Meblağların gösterileceği ünite. Hesaplalamaları etkilemez.</string>
   <string name="preferences_precision_labels_8">LOG, 8 ondalık</string>
   <string name="preferences_precision_labels_6">LOG, 6 ondalık</string>
@@ -301,9 +293,7 @@
   <string name="about_credits_scrypt_title">Scrypt, Will Glozer ve Colin Percival tarafından sağlanmıştır</string>
   <string name="about_market_app_title">Google Play sayfası</string>
   <string name="about_market_app_summary">Uygulamayı değerlendir veya not ver</string>
-  <string name="about_faq_title">SSS</string>
-  <string name="about_faq_summary">Uygulama hakkında sıkça sorulan sorular</string>
-  <string name="notification_coins_received_msg">%s alındı</string>
+    <string name="notification_coins_received_msg">%s alındı</string>
   <string name="notification_peers_connected_msg">%d eş bağlı</string>
   <string name="notification_inactivity_title">Bu cihazda hâlâ Woodcoinleriniz bulunmaktadır!</string>
   <string name="notification_inactivity_message">Eğer Woodcoin Cüzdanı uygulamasını Woodcoinlerinizi göndermeden kaldırırsanız %s tutarındaki bakiyeniz kaybolacaktır.</string>
@@ -336,8 +326,7 @@
   <string name="action_show_qr">QR kodu göster</string>
   <string name="action_browse">Tara</string>
   <!--generic strings-->
-  <string name="time_today">bugün</string>
-  <string name="address_unlabeled">(etiketsiz)</string>
+    <string name="address_unlabeled">(etiketsiz)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">Yanlış PIN!</string>
   <!--generic error messages-->

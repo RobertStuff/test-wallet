@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">Om je privacy te beschermen zal het adres wijzigen zodra een betaling ontvangen is.</string>
   <string name="wallet_balance_fragment_insecure_device">Je apparaat is oud en onveilig. Gebruik aub alleen voor kleine hoeveelheden.</string>
   <string name="wallet_balance_fragment_too_much">Dit is relatief veel om op zak te hebben. Verplaats iets naar een veiligere plek.</string>
-  <string name="wallet_balance_fragment_replaying">Balans is onbeschikbaar tijdens herladen.</string>
-  <string name="exchange_rates_activity_title">Wisselkoersen</string>
+    <string name="exchange_rates_activity_title">Wisselkoersen</string>
   <string name="exchange_rates_fragment_empty_text">Kon geen wisselkoersen laden.</string>
   <string name="exchange_rates_fragment_empty_search">Wisselkoers niet gevonden.</string>
   <string name="exchange_rates_fragment_default">(standaard)</string>
@@ -55,15 +54,12 @@
   <string name="wallet_version_dialog_msg_deprecated">Wanneer je geen update ziet wordt jouw Android-versie waarschijnlijk niet meer ondersteund.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Download</string>
-  <string name="wallet_old_sdk_dialog_title">Android-versie is verouderd</string>
-  <string name="wallet_old_sdk_dialog_message">De kans bestaat dat één van de volgende versies van Woodcoin Wallet uw apparaat niet langer ondersteunen zal. In sommige gevallen kan het lastig worden nog met woodcoins te kunnen betalen vanaf dit apparaat.\n\nTenzij u weet wat u doet wordt u aanbevolen om coins elders onder te brengen.</string>
-  <string name="alert_dialogs_fragment_settings_failed_title">Probleem met het openen van de instellingen</string>
+    <string name="alert_dialogs_fragment_settings_failed_title">Probleem met het openen van de instellingen</string>
   <string name="send_coins_activity_title">Verzend BTC</string>
   <string name="send_coins_fragment_request_payment_request_progress">Handtekening van %s ophalen…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Ophalen betalingsverzoek is gefaald</string>
   <string name="send_coins_fragment_request_payment_request_failed_message">De betaler (%1$s) gebruikt een incompatibel betalingsprotocol (reden: %2$s).</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Verkeerde handtekening!</string>
-  <string name="send_coins_fragment_payee_verified_by">geverifieerd door: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">geverifieerd door: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">onbekend</string>
   <string name="send_coins_fragment_receiving_address_label">Betaal aan</string>
   <string name="send_coins_fragment_receiving_address_hint">typ adres of naam</string>
@@ -150,8 +146,7 @@
   <string name="address_book_context_remove_title">Verwijder adres</string>
   <string name="address_book_context_copy_to_clipboard_title">Kopieër naar klembord</string>
   <string name="address_book_options_paste_from_clipboard_title">Plak vanuit het klembord</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Klembord is leeg</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Data van klembord is niet herkenbaar</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Data van klembord is niet herkenbaar</string>
   <string name="address_book_options_paste_from_clipboard_own_address">Het adres op het klembord is van jezelf.</string>
   <string name="address_book_options_scan_title">Scan adres</string>
   <string name="address_book_options_scan_invalid">Doorzochte data is onherkenbaar</string>
@@ -171,8 +166,7 @@
   <string name="transaction_row_message_received_direct">Deze betaling is direct ontvangen. Het risico bestaat dat het nooit uitgegeven kan worden.</string>
   <string name="transaction_row_message_received_unconfirmed_delayed">De bevestiging van deze transactie is vertraagd, waarschijnlijk door een overbelasting van het Woodcoin netwerk.</string>
   <string name="transaction_row_message_received_unconfirmed_unlocked">Deze betaling wordt besteedbaar in een paar minuten.</string>
-  <string name="transaction_row_message_received_unconfirmed_chain_forking">Vanwege onderhoud op het Woodcoin netwerk kan deze transactie pas vertrouwd worden totdat het is bevestigd.</string>
-  <string name="transaction_row_message_received_in_conflict">Deze transactie heeft het risico om teruggedraaid te worden door de verzender! Wacht indien mogelijk op bevestiging.</string>
+    <string name="transaction_row_message_received_in_conflict">Deze transactie heeft het risico om teruggedraaid te worden door de verzender! Wacht indien mogelijk op bevestiging.</string>
   <string name="transaction_row_message_received_dead">Deze betaling is omgekeerd door de verzender.</string>
   <string name="transaction_row_message_received_dust">Dit kleine beetje kan waarschijnlijk nooit economisch worden besteed.</string>
   <string name="transaction_row_message_received_pay_to_many">Deze betaling wordt naar veel wallets - naast die van U zelf - tegelijkertijd gedaan, waardoor uw app af en toe traag kan worden. Indien mogelijk, ontvang dan bij voorkeur alleen transacties die uitsluitend aan u zelf gericht zijn.</string>
@@ -206,8 +200,7 @@
   <string name="export_keys_dialog_title">Backup portemonnee</string>
   <string name="backup_wallet_dialog_message">Uw back-up zal worden versleuteld met het gekozen wachtwoord en worden opgeslagen naar externe opslag.</string>
   <string name="backup_wallet_dialog_warning_encrypted">Uw wallet is beveiligd met een pincode om te kunnen betalen. Onthoud deze pincode net als uw back-up wachtwoord! </string>
-  <string name="export_keys_dialog_button_export">Backup</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Er is een backup van je portemonnee gemaakt naar <tt>%s</tt></p><p><b>Als je backup alleen op het zelfde apparaat bestaat loop je de kans beide tegelijkertijd kwijt te raken!</b></p><p>Zorg in ieder geval dat je een backup maakt van je wachtwoord.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Er is een backup van je portemonnee gemaakt naar <tt>%s</tt></p><p><b>Als je backup alleen op het zelfde apparaat bestaat loop je de kans beide tegelijkertijd kwijt te raken!</b></p><p>Zorg in ieder geval dat je een backup maakt van je wachtwoord.</p>]]></string>
   <string name="export_keys_dialog_failure">Uw portemonnee kan niet gebackupt worden:\n%s</string>
   <string name="import_export_keys_dialog_password">wachtwoord</string>
   <string name="backup_wallet_dialog_password_again">opnieuw</string>
@@ -240,8 +233,7 @@
   <string name="input_parser_invalid_transaction">Ongeldige transactie:\n%s</string>
   <string name="preferences_activity_title">Instellingen</string>
   <string name="preferences_category_diagnostics">Diagnostiek</string>
-  <string name="preferences_category_labs">Labs</string>
-  <string name="preferences_precision_title">Waarde en precisie</string>
+    <string name="preferences_precision_title">Waarde en precisie</string>
   <string name="preferences_precision_summary">Grootheid om waarden in te tonen. Dit heeft geen invloed op berekeningen.</string>
   <string name="preferences_precision_labels_8">LOG, 8 decimale getallen</string>
   <string name="preferences_precision_labels_6">LOG, 6 decimale getallen</string>
@@ -301,9 +293,7 @@
   <string name="about_credits_scrypt_title">Scrypt, geïmplementeerd door Will Glozer en Colin Percival</string>
   <string name="about_market_app_title">Google Play Pagina</string>
   <string name="about_market_app_summary">Beoordeel app</string>
-  <string name="about_faq_title">FAQ</string>
-  <string name="about_faq_summary">Vaakgestelde vragen over de app</string>
-  <string name="notification_coins_received_msg">Ontvangen %s</string>
+    <string name="notification_coins_received_msg">Ontvangen %s</string>
   <string name="notification_peers_connected_msg">%d actieve verbindingen</string>
   <string name="notification_inactivity_title">Je hebt nog steeds Woodcoins op dit apparaat!</string>
   <string name="notification_inactivity_message">Onthou dat je saldo van %s verloren zal zijn als je de app verwijdert zonder de woodcoins eerst te verzenden.</string>
@@ -336,8 +326,7 @@
   <string name="action_show_qr">Toon QR-code</string>
   <string name="action_browse">Bladeren</string>
   <!--generic strings-->
-  <string name="time_today">vandaag</string>
-  <string name="address_unlabeled">(niet-gemerkt)</string>
+    <string name="address_unlabeled">(niet-gemerkt)</string>
   <string name="private_key_password">Pincode</string>
   <string name="private_key_bad_password">foutieve pincode!</string>
   <!--generic error messages-->

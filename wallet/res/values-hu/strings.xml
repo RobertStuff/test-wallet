@@ -14,8 +14,7 @@
   <string name="wallet_address_fragment_clipboard_msg">Woodcoin cím a vágólapra másolva</string>
   <string name="wallet_address_dialog_fragment_hint">A magánéleted megvédéséhez a címed megváltozik, amint beérkezik egy fizetés.</string>
   <string name="wallet_balance_fragment_too_much">Ez az összeg igen magas ahhoz, hogy a zsebedben hordd. Kérlek helyezd át egy részét biztonságosabb helyre.</string>
-  <string name="wallet_balance_fragment_replaying">A frissítés során az egyenleg nem elérhető.</string>
-  <string name="exchange_rates_activity_title">Árfolyamok</string>
+    <string name="exchange_rates_activity_title">Árfolyamok</string>
   <string name="exchange_rates_fragment_empty_text">Az árfolyamok betöltése sikertelen</string>
   <string name="exchange_rates_fragment_empty_search">Árfolyam nem található.</string>
   <string name="exchange_rates_fragment_default">(alapértelmezett)</string>
@@ -50,13 +49,10 @@
   <string name="wallet_version_dialog_msg_deprecated">Ha nem látsz egy frissítést, az valószínűleg azt jelenti, hogy az Androidod verziója többé nem támogatott.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Letöltés</string>
-  <string name="wallet_old_sdk_dialog_title">Ez az Android verzió elavult</string>
-  <string name="wallet_old_sdk_dialog_message">Van esély arra, hogy a Woodcoin Wallet következő kiadásaiból egy már nem fogja többé támogatni a készüléked. Egyes esetekben bonyolult lehet érméket küldeni ezen a készüléken.\n\nHacsak nem vagy tisztában vele, hogy mit csinálsz, akkor minél előbb ajánlott az érméid átmozgatása.</string>
-  <string name="send_coins_activity_title">Woodcoin küldése</string>
+    <string name="send_coins_activity_title">Woodcoin küldése</string>
   <string name="send_coins_fragment_request_payment_request_progress">Aláírás begyűjtése tőle: %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Aláírás begyűjtése sikertelen</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Helytelen aláírás!</string>
-  <string name="send_coins_fragment_payee_verified_by">ellenőrizve általa: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">ellenőrizve általa: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">ismeretlen</string>
   <string name="send_coins_fragment_receiving_address_label">Fizetés</string>
   <string name="send_coins_fragment_receiving_address_hint">írd be a címet vagy nevet</string>
@@ -136,8 +132,7 @@
   <string name="address_book_context_remove_title">Cím eltávolítása</string>
   <string name="address_book_context_copy_to_clipboard_title">Másolás</string>
   <string name="address_book_options_paste_from_clipboard_title">Beillesztés</string>
-  <string name="address_book_options_paste_from_clipboard_empty">A vágólap üres</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Az adat a vágólapról nem felismerhető</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Az adat a vágólapról nem felismerhető</string>
   <string name="address_book_options_paste_from_clipboard_own_address">A vágólapon lévő cím a tied.</string>
   <string name="address_book_options_scan_title">Cím beolvasása</string>
   <string name="address_book_options_scan_invalid">A beolvasott adat felismerhetetlen</string>
@@ -185,8 +180,7 @@
   <string name="export_keys_dialog_title">Tárca biztonsági mentése</string>
   <string name="backup_wallet_dialog_message">A biztonsági mentésed titkosítva lesz a választott jelszóval és külső tárolóra lesz írva.</string>
   <string name="backup_wallet_dialog_warning_encrypted">A tárcádat költekezési PIN védi. Bizonyosodj meg róla, hogy emlékszel a PIN-re is a biztonsági mentés jelszava mellett!</string>
-  <string name="export_keys_dialog_button_export">Biztonsági mentés</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>A tárcád biztonsági mentése elkészült ide: <tt>%s</tt></p><p><b>Ha a készüléked az egyetlen hely, ahol a biztonsági mentésed létezik, akkor azt veszélyezted, hogy mindkettőt elveszted egyszerre!</b></p><p>Mindenesetre bizonyosodj meg róla, hogy emlékszel a biztonsági mentés jelszavára.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>A tárcád biztonsági mentése elkészült ide: <tt>%s</tt></p><p><b>Ha a készüléked az egyetlen hely, ahol a biztonsági mentésed létezik, akkor azt veszélyezted, hogy mindkettőt elveszted egyszerre!</b></p><p>Mindenesetre bizonyosodj meg róla, hogy emlékszel a biztonsági mentés jelszavára.</p>]]></string>
   <string name="export_keys_dialog_failure">A tárcádról nem lehetett biztonsági mentést készíteni:\n%s</string>
   <string name="import_export_keys_dialog_password">jelszó</string>
   <string name="backup_wallet_dialog_password_again">újra</string>
@@ -218,8 +212,7 @@
   <string name="input_parser_invalid_transaction">Érvénytelen tranzakció:\n%s</string>
   <string name="preferences_activity_title">Beállítások</string>
   <string name="preferences_category_diagnostics">Diagnosztika</string>
-  <string name="preferences_category_labs">Labor</string>
-  <string name="preferences_precision_title">Pontosítás és egyszerűsítés</string>
+    <string name="preferences_precision_title">Pontosítás és egyszerűsítés</string>
   <string name="preferences_precision_summary">Egység, amelyben mutatja az összeget. Ez nem érinti a számításokat.</string>
   <string name="preferences_precision_labels_8">LOG, 8 tizedeshely</string>
   <string name="preferences_precision_labels_6">LOG, 6 tizedeshely</string>
@@ -304,8 +297,7 @@
   <string name="action_show_qr">QR-kód megtekintése</string>
   <string name="action_browse">Böngészés</string>
   <!--generic strings-->
-  <string name="time_today">ma</string>
-  <string name="address_unlabeled">(címke nélkül)</string>
+    <string name="address_unlabeled">(címke nélkül)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">rossz PIN!</string>
   <!--generic error messages-->

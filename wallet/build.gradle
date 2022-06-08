@@ -35,7 +35,7 @@ dependencies {
 }
 
 ext {
-    archivesBaseName = 'bitcoin-wallet'
+    archivesBaseName = 'woodcoin-wallet'
 }
 
 android {
@@ -47,16 +47,17 @@ android {
             keyPassword '123456'
         }
     }
-    compileSdkVersion 'android-30'
-    buildToolsVersion '30.0.3'
+    compileSdkVersion 'android-32'
+    buildToolsVersion '32.0.0'
 
     lintOptions {
         abortOnError false
         disable 'MissingTranslation'
     }
 
+
     defaultConfig {
-        applicationId 'de.schildbach.wallet_woodcoin'
+        applicationId 'de.woodcoin.wallet'
         generatedDensities = ['hdpi', 'xhdpi']
         vectorDrawables.useSupportLibrary = true
 
@@ -64,13 +65,15 @@ android {
             preDexLibraries false
         }
 
-        ndk {
-            abiFilters 'armeabi-v7a', 'x86'
-        }
+//        ndk {
+//            abiFilters 'armeabi-v7a', 'x86', 'arm64-v8a', 'x86_64'
+//        }
 
         externalNativeBuild {
             cmake {
                 cFlags '-DHAVE_CONFIG_H'
+                cppFlags ""
+                arguments "-DANDROID_STL=c++_shared"
             }
         }
     }

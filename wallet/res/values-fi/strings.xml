@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">Suojellaksesi yksityisyyttäsi, osoitteesi vaihtuu aina kerran kun se vastaanottaa maksun.</string>
   <string name="wallet_balance_fragment_insecure_device">Laitteesi on vanha ja turvaton. Käytäthän vain pienten määrien kanssa.</string>
   <string name="wallet_balance_fragment_too_much">Tämä määrä on melko suuri kannettavaksi taskussasi. Siirrä se johonkin turvallisempaan paikkaan.</string>
-  <string name="wallet_balance_fragment_replaying">Saldo ei ole saatavilla uusinnan aikana.</string>
-  <string name="exchange_rates_activity_title">Vaihtokurssit:</string>
+    <string name="exchange_rates_activity_title">Vaihtokurssit:</string>
   <string name="exchange_rates_fragment_empty_text">Kurssien arvoja ei saatu ladattua.</string>
   <string name="exchange_rates_fragment_empty_search">Rahanvaihtokurssia ei löytynyt.</string>
   <string name="exchange_rates_fragment_default">(oletus)</string>
@@ -53,13 +52,10 @@
   <string name="wallet_version_dialog_msg_deprecated">Jos et näe päivitystä, se ehkä tarkoittaa että laitteesi Androidin versio ei ole enää tuettu.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Lataa</string>
-  <string name="wallet_old_sdk_dialog_title">Android-järjestelmä ei ole ajan tasalla</string>
-  <string name="wallet_old_sdk_dialog_message">On mahdollisuus että Woodcoin Walletin seuraava versio ei enää tue laitettasi. Joissakin tapauksissa kolikoiden käyttäö voi hankaloitua tässä laitteessa.\n\nMikäli et tiedä mitä teet, on suositeltavaa siirtää kolikkosi muualle pian.</string>
-  <string name="send_coins_activity_title">Lähetä Woodcoineja</string>
+    <string name="send_coins_activity_title">Lähetä Woodcoineja</string>
   <string name="send_coins_fragment_request_payment_request_progress">Noudetaan allekirjoitus osoitteesta %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Allekirjoituksen nouto epäonnistui</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Väärä allekirjoitus!</string>
-  <string name="send_coins_fragment_payee_verified_by">vahvistanut: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">vahvistanut: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">tuntematon</string>
   <string name="send_coins_fragment_receiving_address_label">Vastaanottaja</string>
   <string name="send_coins_fragment_receiving_address_hint">kirjoita osoite tai nimi</string>
@@ -144,8 +140,7 @@
   <string name="address_book_context_remove_title">Poista osoite</string>
   <string name="address_book_context_copy_to_clipboard_title">Kopioi leikepöydälle</string>
   <string name="address_book_options_paste_from_clipboard_title">Liitä leikepöydältä</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Leikepöytä on tyhjä</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Tieto leikepöydältä on tuntematonta</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Tieto leikepöydältä on tuntematonta</string>
   <string name="address_book_options_paste_from_clipboard_own_address">Osoite leikepöydällä on oma osoitteesi.</string>
   <string name="address_book_options_scan_title">Skannaa osoite</string>
   <string name="address_book_options_scan_invalid">Skannattua tietoa ei tunnisteta</string>
@@ -165,8 +160,7 @@
   <string name="transaction_row_message_received_direct">Tämä maksu vastaanotettiin suoraan. On vaara, että sitä ei voida koskaan käyttää.</string>
   <string name="transaction_row_message_received_unconfirmed_delayed">Tämän rahansiirron vahvistamista on viivästetty, todennäköisimmin Woodcoin-verkon ylikuormituksesta johtuen.</string>
   <string name="transaction_row_message_received_unconfirmed_unlocked">Tämän maksun pitäisi muuttua käytettäväksi muutaman minuutin kuluttua.</string>
-  <string name="transaction_row_message_received_unconfirmed_chain_forking">Woodcoin-verkon huollon vuoksi tähän rahansiirtoon ei tule luottaa, ennenkuin se on täysin vahvistettu.</string>
-  <string name="transaction_row_message_received_in_conflict">Tässä rahansiirrossa on suurempi riski että lähettäjä voi perua sen! Mikäli mahdollista, odota vahvistusta.</string>
+    <string name="transaction_row_message_received_in_conflict">Tässä rahansiirrossa on suurempi riski että lähettäjä voi perua sen! Mikäli mahdollista, odota vahvistusta.</string>
   <string name="transaction_row_message_received_dead">Lähettäjä on kumonnut tämän maksun.</string>
   <string name="transaction_row_message_received_dust">Näin pientä määrää ei voida ehkä koskaan käyttää taloudelliselta näkökannalta.</string>
   <string name="transaction_row_message_received_pay_to_many">Tämä maksu maksaa moniin lompakoihin omasi lisäksi, joka hidastaa ohjelmaa ajan myötä. Jos pystyt, yritä vastaanottaa maksuja jotka maksavat vain sinulle.</string>
@@ -200,8 +194,7 @@
   <string name="export_keys_dialog_title">Varmuuskopioi lompakko</string>
   <string name="backup_wallet_dialog_message">Varmuuskopiosi salataan valitulla salasanalla ja kirjoitetaan erilliselle tallennusvälineelle.</string>
   <string name="backup_wallet_dialog_warning_encrypted">Lompakkosi käyttö on suojattu PIN-koodilla. Varmista, että muistat PIN-koodisi varmuuskopion salasanan ohella!</string>
-  <string name="export_keys_dialog_button_export">Varmuuskopioi</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Lompakkosi on varmuuskopioitu <tt>%s</tt></p><p><b>Jos ainoa paikka jossa varmuuskopiosi sijaitsee on laitteesi, sinulla on vaara menettää molemmat samaan aikaan!</b></p><p>Joka tapauksessa, varmista, että muistat varmuuskopiosi salasanan.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Lompakkosi on varmuuskopioitu <tt>%s</tt></p><p><b>Jos ainoa paikka jossa varmuuskopiosi sijaitsee on laitteesi, sinulla on vaara menettää molemmat samaan aikaan!</b></p><p>Joka tapauksessa, varmista, että muistat varmuuskopiosi salasanan.</p>]]></string>
   <string name="export_keys_dialog_failure">Lompakkoasi ei voitu varmuuskopioida:\n%s</string>
   <string name="import_export_keys_dialog_password">salasana</string>
   <string name="backup_wallet_dialog_password_again">uudelleen</string>
@@ -234,8 +227,7 @@
   <string name="input_parser_invalid_transaction">Kelvoton rahansiirto:\n%s</string>
   <string name="preferences_activity_title">Asetukset</string>
   <string name="preferences_category_diagnostics">Diagnostiikka</string>
-  <string name="preferences_category_labs">Laboratoriot</string>
-  <string name="preferences_precision_title">Nimellisarvo ja tarkkuus</string>
+    <string name="preferences_precision_title">Nimellisarvo ja tarkkuus</string>
   <string name="preferences_precision_summary">Yksiköt, joissa määrät näytetään. Tämä ei vaikuta laskentoihin.</string>
   <string name="preferences_precision_labels_8">LOG, 8 desimaalia</string>
   <string name="preferences_precision_labels_6">LOG, 6 desimaalia</string>
@@ -295,9 +287,7 @@
   <string name="about_credits_scrypt_title">Scrypt, Will Glozerin ja Colin Percivalin toteutus</string>
   <string name="about_market_app_title">Google Play-sivusto</string>
   <string name="about_market_app_summary">Arvostele tai arvioi sovellus</string>
-  <string name="about_faq_title">UKK</string>
-  <string name="about_faq_summary">Usein kysyttyjä kysymyksiä sovelluksesta</string>
-  <string name="notification_coins_received_msg">Vastaanotettiin %s</string>
+    <string name="notification_coins_received_msg">Vastaanotettiin %s</string>
   <string name="notification_peers_connected_msg">%d vertaiseen yhdistetty</string>
   <string name="notification_inactivity_title">Sinulla on vielä Woodcoineja tässä laitteessa!</string>
   <string name="notification_inactivity_message">Muistathan että saldosi %s katoaa mikäli poistat Woodcoin Wallet-sovelluksen ilman, että lähetät sen ensin pois.</string>
@@ -327,8 +317,7 @@
   <string name="action_show_qr">Näytä QR-koodi</string>
   <string name="action_browse">Selaa</string>
   <!--generic strings-->
-  <string name="time_today">tänään</string>
-  <string name="address_unlabeled">(nimeämätön)</string>
+    <string name="address_unlabeled">(nimeämätön)</string>
   <string name="private_key_password">PIN-koodi</string>
   <string name="private_key_bad_password">väärä PIN-koodi!</string>
   <!--generic error messages-->

@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">為了保障你的隱私，一旦收到付款後，收款位址就會改變。</string>
   <string name="wallet_balance_fragment_insecure_device">你的設備太老舊了，並且不安全。請放一點點錢來使用就好。</string>
   <string name="wallet_balance_fragment_too_much">在口袋裡放這麼多錢好像不是很好。建議拿一些出來到比較安全的地方。</string>
-  <string name="wallet_balance_fragment_replaying">在重播時無法顯示餘額</string>
-  <string name="exchange_rates_activity_title">匯率</string>
+    <string name="exchange_rates_activity_title">匯率</string>
   <string name="exchange_rates_fragment_empty_text">無法讀取匯率資料。</string>
   <string name="exchange_rates_fragment_empty_search">無法找到匯率資料。</string>
   <string name="exchange_rates_fragment_default">(預設值)</string>
@@ -53,13 +52,10 @@
   <string name="wallet_version_dialog_msg_deprecated">如果看不到任何程式更新，有可能你的 Android 版本已經不再支援了。</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">下載</string>
-  <string name="wallet_old_sdk_dialog_title">Android 版本太舊</string>
-  <string name="wallet_old_sdk_dialog_message">接下來某個版本的 Woodcoin Wallet 可能就開始不再支援你的設備了。在這個設備上付款可能會變得很困難。\n\n建議你馬上把錢轉到其他地方去，除非你還知道其他處理方式。</string>
-  <string name="send_coins_activity_title">Woodcoin 付款</string>
+    <string name="send_coins_activity_title">Woodcoin 付款</string>
   <string name="send_coins_fragment_request_payment_request_progress">正在從 %s 讀取簽章...</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">讀取簽章失敗了</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">簽章不對！</string>
-  <string name="send_coins_fragment_payee_verified_by">由 %s 驗證</string>
+    <string name="send_coins_fragment_payee_verified_by">由 %s 驗證</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">不明</string>
   <string name="send_coins_fragment_receiving_address_label">付給</string>
   <string name="send_coins_fragment_receiving_address_hint">輸入位址或是名稱</string>
@@ -144,8 +140,7 @@
   <string name="address_book_context_remove_title">移除位址</string>
   <string name="address_book_context_copy_to_clipboard_title">複製到剪貼簿</string>
   <string name="address_book_options_paste_from_clipboard_title">從剪貼簿貼上</string>
-  <string name="address_book_options_paste_from_clipboard_empty">剪貼簿是空的。</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">剪貼簿資料無法辨識</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">剪貼簿資料無法辨識</string>
   <string name="address_book_options_paste_from_clipboard_own_address">剪貼簿中的位址是你自己的。</string>
   <string name="address_book_options_scan_title">掃描位址</string>
   <string name="address_book_options_scan_invalid">掃描資料無法辨識</string>
@@ -165,8 +160,7 @@
   <string name="transaction_row_message_received_direct">這筆付款被直接接收了，這類付款可能存在無法花用的風險。</string>
   <string name="transaction_row_message_received_unconfirmed_delayed">這筆付款確認的時間將會被延遲，可能是因為 Woodcoin 網路超過負荷量了。</string>
   <string name="transaction_row_message_received_unconfirmed_unlocked">這筆付款應該在幾分鐘之後就可以花用。</string>
-  <string name="transaction_row_message_received_unconfirmed_chain_forking">由於 Woodcoin 網路正在維護狀態，這筆交易到完全確認之前都不該被信賴。</string>
-  <string name="transaction_row_message_received_in_conflict">這筆款項被付款人撤銷的風險比較高！如果可以的話，最好是等待它確認完畢。</string>
+    <string name="transaction_row_message_received_in_conflict">這筆款項被付款人撤銷的風險比較高！如果可以的話，最好是等待它確認完畢。</string>
   <string name="transaction_row_message_received_dead">這筆付款被付款人撤銷了。</string>
   <string name="transaction_row_message_received_dust">這麼小的金額可能花起來不划算。</string>
   <string name="transaction_row_message_received_pay_to_many">這筆付款因為同時付給這個錢包和其他錢包，會讓這個應用程式越跑越慢。如果可以的話，請付款人只付給你就好。</string>
@@ -200,8 +194,7 @@
   <string name="export_keys_dialog_title">備份錢包</string>
   <string name="backup_wallet_dialog_message">錢包的備份將會用指定的密碼加密，並且寫到外部儲存設備去。</string>
   <string name="backup_wallet_dialog_warning_encrypted">錢包現在有轉出 PIN 碼的保護。請確定你能記住 PIN 碼和備份密碼！</string>
-  <string name="export_keys_dialog_button_export">備份</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>你的錢包已經備份到 <tt>%s</tt> 了</p><p><b>如果備份留在設備裡面，設備丟掉時備份也會一起不見！</b></p><p>無論如何，請記得你的備份密碼。</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>你的錢包已經備份到 <tt>%s</tt> 了</p><p><b>如果備份留在設備裡面，設備丟掉時備份也會一起不見！</b></p><p>無論如何，請記得你的備份密碼。</p>]]></string>
   <string name="export_keys_dialog_failure">沒辦法備份錢包:\n%s</string>
   <string name="import_export_keys_dialog_password">密碼</string>
   <string name="backup_wallet_dialog_password_again">再打一次</string>
@@ -234,8 +227,7 @@
   <string name="input_parser_invalid_transaction">無效的交易:\n%s</string>
   <string name="preferences_activity_title">設定</string>
   <string name="preferences_category_diagnostics">診斷</string>
-  <string name="preferences_category_labs">實驗室功能</string>
-  <string name="preferences_precision_title">顯示單位與位數</string>
+    <string name="preferences_precision_title">顯示單位與位數</string>
   <string name="preferences_precision_summary">改變顯示單位，但不影響計算。</string>
   <string name="preferences_precision_labels_8">LOG，小數 8 位</string>
   <string name="preferences_precision_labels_6">LOG，小數 6 位</string>
@@ -295,9 +287,7 @@
   <string name="about_credits_scrypt_title">Scrypt 演算法, Will Glozer 與 Colin Percival 的實作</string>
   <string name="about_market_app_title">Google Play 商店頁面</string>
   <string name="about_market_app_summary">給這個應用程式評論或評分</string>
-  <string name="about_faq_title">常見問答</string>
-  <string name="about_faq_summary">關於這個應用程式的常見問題</string>
-  <string name="notification_coins_received_msg">收到 %s</string>
+    <string name="notification_coins_received_msg">收到 %s</string>
   <string name="notification_peers_connected_msg">%d 個節點連線</string>
   <string name="notification_inactivity_title">這個設備上還有 Woodcoin 喔！</string>
   <string name="notification_inactivity_message">請記住：如果你沒有把錢先送走，就移除掉 Woodcoin Wallet 應用程式的話，餘額 %s 就會不見了。</string>
@@ -330,8 +320,7 @@
   <string name="action_show_qr">顯示 QR 二維條碼</string>
   <string name="action_browse">瀏覽</string>
   <!--generic strings-->
-  <string name="time_today">今天</string>
-  <string name="address_unlabeled">(無標籤)</string>
+    <string name="address_unlabeled">(無標籤)</string>
   <string name="private_key_password">PIN 碼</string>
   <string name="private_key_bad_password">PIN 碼不對！</string>
   <!--generic error messages-->
