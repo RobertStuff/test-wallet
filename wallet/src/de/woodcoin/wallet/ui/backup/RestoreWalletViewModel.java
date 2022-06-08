@@ -18,9 +18,12 @@
 package de.woodcoin.wallet.ui.backup;
 
 import de.woodcoin.wallet.WalletApplication;
+import de.woodcoin.wallet.data.SingleLiveEvent;
 import de.woodcoin.wallet.data.WalletBalanceLiveData;
 
 import android.app.Application;
+import android.net.Uri;
+
 import androidx.lifecycle.AndroidViewModel;
 
 /**
@@ -29,6 +32,7 @@ import androidx.lifecycle.AndroidViewModel;
 public class RestoreWalletViewModel extends AndroidViewModel {
     private final WalletApplication application;
     public final WalletBalanceLiveData balance;
+    public final MutableLiveData<Uri> backupUri = new MutableLiveData<>();
 
     public RestoreWalletViewModel(final Application application) {
         super(application);

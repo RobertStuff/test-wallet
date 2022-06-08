@@ -51,17 +51,15 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.DialogInterface.OnClickListener;
 import android.content.DialogInterface.OnShowListener;
-import android.content.ContentResolver;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.content.Intent;
-import android.content.ActivityNotFoundException;
-import android.os.Environment;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -70,29 +68,22 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.os.Build;
+
+import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-
-
 /**
  * @author Andreas Schildbach
  */
 public class RestoreWalletDialogFragment extends DialogFragment {
     private static final String FRAGMENT_TAG = RestoreWalletDialogFragment.class.getName();
-    private static final String KEY_BACKUP_URI = "backup_uri";
     private static final int REQUEST_CODE_OPEN_DOCUMENT = 0;
+    private static final String KEY_BACKUP_URI = "backup_uri";
 
-    private ContentResolver contentResolver;
-//    private final Context ctxs;
-//
-//    public RestoreWalletDialogFragment(Context ctxs) {
-//        this.ctxs = ctxs;
-//    }
 
     public static void show(final FragmentManager fm) {
         final DialogFragment newFragment = new RestoreWalletDialogFragment();
@@ -121,8 +112,6 @@ public class RestoreWalletDialogFragment extends DialogFragment {
         this.activity = (AbstractWalletActivity) context;
         this.application = activity.getWalletApplication();
         this.config = application.getConfiguration();
-        this.contentResolver = application.getContentResolver();
-        //this.fragmentManager = getParentFragmentManager();
     }
 
     @Override
@@ -262,92 +251,10 @@ public class RestoreWalletDialogFragment extends DialogFragment {
         updateView();
     }
 
-
-    private void updateView(final Bundle savedInstanceState) {
+    private void updateView() {
         final String path;
-        final String backupPath;
-        final String storagePath;
-        final File backupPath_file;
-        final File storagePath_file;
-
-
-
-
-        super.onCreate(savedInstanceState);
-        log.info("opening dialog {}", getClass().getName());
-
-        viewModel = new ViewModelProvider(this).get(RestoreWalletViewModel.class);
-        viewModel.showSuccessDialog.observe(this, new Event.Observer<Boolean>() {
-            @Override
-            protected void onEvent(final Boolean showEncryptedMessage) {
-                SuccessDialogFragment.showDialog(fragmentManager, showEncryptedMessage);
-            }
-        });
-        viewModel.showFailureDialog.observe(this, new Event.Observer<String>() {
-            @Override
-            protected void onEvent(final String message) {
-                FailureDialogFragment.showDialog(fragmentManager, message, viewModel.backupUri.getValue());
-            }
-        });
-        viewModel.backupUri.observe(this, uri -> {
-            final String backupProvider = WalletUtils.uriToProvider(uri);
-            //log.info("picked '{}'{}", uri, backupProvider != null ? " (" + backupProvider + ")" : "");
-            final Cursor cursor = contentResolver.query(uri, null, null, null, null, null);
-            if (cursor != null) {
-                try {
-                    if (cursor.moveToFirst())
-                        viewModel.displayName.setValue(cursor.getString(cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME)));
-                } finally {
-                    cursor.close();
-                }
-            }
-        });
-        viewModel.displayName.observe(this, name -> messageView.setText(name));
-
-        final Bundle args = getArguments();
-        if (args != null) {
-            viewModel.backupUri.setValue((Uri) args.getParcelable(KEY_BACKUP_URI));
-        } else {
-            final Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-            intent.addCategory(Intent.CATEGORY_OPENABLE);
-            intent.setType("*/*");
-            try {
-                startActivityForResult(intent, REQUEST_CODE_OPEN_DOCUMENT);
-            } catch (final ActivityNotFoundException x) {
-                log.warn("Cannot open document selector: {}", intent);
-                new Toast(activity).longToast(R.string.toast_start_storage_provider_selector_failed);
-            }
-        }
-
-
-
-
-
-        /**
-          OLD CODE
-        **/
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-          // backupPath = Constants.Files.EXTERNAL_WALLET_BACKUP_DIR_R.getAbsolutePath();
-          // storagePath = Constants.Files.EXTERNAL_STORAGE_DIR_R.getAbsolutePath();
-            System.out.println("IF statement was called");
-          backupPath_file = getActivity().getExternalFilesDir("/Download");
-          storagePath_file = getActivity().getExternalFilesDir(null);
-          backupPath = backupPath_file.getAbsolutePath();
-          storagePath = storagePath_file.getAbsolutePath();
-            System.out.println("backupPath: " + backupPath);
-            System.out.println("storagePath: " + storagePath);
-        } else {
-            System.out.println("ELSE statement was called");
-            backupPath_file = Constants.Files.EXTERNAL_WALLET_BACKUP_DIR;
-          backupPath = Constants.Files.EXTERNAL_WALLET_BACKUP_DIR.getAbsolutePath();
-          storagePath = Constants.Files.EXTERNAL_STORAGE_DIR.getAbsolutePath();
-            System.out.println("backupPath: " + backupPath);
-            System.out.println("storagePath: " + storagePath);
-        }
-//         final String backupPath = Constants.Files.EXTERNAL_WALLET_BACKUP_DIR.getAbsolutePath();
-//         final String storagePath = Constants.Files.EXTERNAL_STORAGE_DIR.getAbsolutePath();
-
-
+        final String backupPath = Constants.Files.EXTERNAL_WALLET_BACKUP_DIR.getAbsolutePath();
+        final String storagePath = Constants.Files.EXTERNAL_STORAGE_DIR.getAbsolutePath();
         if (backupPath.startsWith(storagePath))
             path = backupPath.substring(storagePath.length());
         else
@@ -357,17 +264,9 @@ public class RestoreWalletDialogFragment extends DialogFragment {
 
         // external storage
         log.info("looking for backup files in '{}'", Constants.Files.EXTERNAL_WALLET_BACKUP_DIR);
-        log.info(backupPath_file.getClass().getSimpleName());
-        log.info("backupPath is '{}'", backupPath);
         final File[] externalFiles = Constants.Files.EXTERNAL_WALLET_BACKUP_DIR.listFiles();
-        //final File[] externalFiles = backupPath_file.listFiles();
-        System.out.println("External file: " + externalFiles);
-        log.info(externalFiles.getClass().getSimpleName());
-
         if (externalFiles != null) {
-            System.out.println("External file is not null ");
             for (final File file : externalFiles) {
-                System.out.println("EXTERNAL FILES FILE: " + file);
                 final boolean looksLikeBackup = Crypto.OPENSSL_FILE_FILTER.accept(file);
                 log.info("  {}{}", file.getName(), looksLikeBackup ? " -- looks like backup file" : "");
                 if (looksLikeBackup)
@@ -392,6 +291,16 @@ public class RestoreWalletDialogFragment extends DialogFragment {
             }
         });
 
+        final Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        try {
+            startActivityForResult(intent, REQUEST_CODE_OPEN_DOCUMENT);
+        } catch (final ActivityNotFoundException x) {
+            log.info("Cannot open document selector: {}", intent);
+            //new Toast(activity).longToast(R.string.toast_start_storage_provider_selector_failed);
+        }
+
         messageView.setText(getString(
                 !files.isEmpty() ? R.string.import_keys_dialog_message : R.string.restore_wallet_dialog_message_empty,
                 path));
@@ -405,11 +314,30 @@ public class RestoreWalletDialogFragment extends DialogFragment {
 
         showView.setVisibility(!files.isEmpty() ? View.VISIBLE : View.GONE);
         showView.setOnCheckedChangeListener(new ShowPasswordCheckListener(passwordView));
-
-        /**
-          END OLD CODE
-        **/
     }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == REQUEST_CODE_OPEN_DOCUMENT) {
+            if (resultCode == Activity.RESULT_OK) {
+                if (data != null) {
+                    viewModel.backupUri.setValue(data.getData());
+                } else {
+                    log.info("didn't get uri");
+                    dismiss();
+                    maybeFinishActivity();
+                }
+            } else if (resultCode == Activity.RESULT_CANCELED) {
+                log.info("cancelled restoring wallet");
+                dismiss();
+                maybeFinishActivity();
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+
 
     private void restoreWalletFromEncrypted(final File file, final String password) {
         try {
@@ -507,7 +435,7 @@ public class RestoreWalletDialogFragment extends DialogFragment {
             final String exceptionMessage = getArguments().getString(KEY_EXCEPTION_MESSAGE);
             final DialogBuilder dialog = DialogBuilder.warn(getContext(),
                     R.string.import_export_keys_dialog_failure_title);
-            dialog.setMessage(getString(R.string.import_keys_dialog_failure, exceptionMessage));
+            //dialog.setMessage(getString(R.string.import_keys_dialog_failure, exceptionMessage));
             dialog.setPositiveButton(R.string.button_dismiss, null);
             dialog.setNegativeButton(R.string.button_retry, new DialogInterface.OnClickListener() {
                 @Override
@@ -542,5 +470,10 @@ public class RestoreWalletDialogFragment extends DialogFragment {
             });
             return dialog.create();
         }
+    }
+
+    private void maybeFinishActivity() {
+        if (activity instanceof RestoreWalletFromExternalActivity)
+            activity.finish();
     }
 }
