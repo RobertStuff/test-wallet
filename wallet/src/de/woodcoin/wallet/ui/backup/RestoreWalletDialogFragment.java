@@ -68,8 +68,8 @@ import static com.google.common.base.Preconditions.checkNotNull;
  */
 public class RestoreWalletDialogFragment extends DialogFragment {
     private static final String FRAGMENT_TAG = RestoreWalletDialogFragment.class.getName();
-    private static final String KEY_BACKUP_URI = "backup_uri";
     private static final int REQUEST_CODE_OPEN_DOCUMENT = 0;
+    private static final String KEY_BACKUP_URI = "backup_uri";
 
     private AbstractWalletActivity activity;
     private WalletApplication application;
