@@ -17,7 +17,6 @@
 
 package de.woodcoin.wallet.ui.backup;
 
-<<<<<<< HEAD:wallet/src/de/woodcoin/wallet/ui/backup/RestoreWalletViewModel.java
 import de.woodcoin.wallet.WalletApplication;
 import de.woodcoin.wallet.data.SingleLiveEvent;
 import de.woodcoin.wallet.data.WalletBalanceLiveData;
@@ -26,17 +25,6 @@ import android.app.Application;
 import android.net.Uri;
 
 import androidx.lifecycle.AndroidViewModel;
-=======
-import android.app.Application;
-import android.net.Uri;
-import androidx.lifecycle.AndroidViewModel;
-import androidx.lifecycle.MutableLiveData;
-import de.schildbach.wallet.WalletApplication;
-import de.schildbach.wallet.data.WalletBalanceLiveData;
-import de.schildbach.wallet.ui.Event;
-
-
->>>>>>> restore wallet fixes for android version 11:wallet/src/de/schildbach/wallet/ui/backup/RestoreWalletViewModel.java
 
 /**
  * @author Andreas Schildbach
@@ -44,13 +32,7 @@ import de.schildbach.wallet.ui.Event;
 public class RestoreWalletViewModel extends AndroidViewModel {
     private final WalletApplication application;
     public final WalletBalanceLiveData balance;
-    /**
-        Update for the new RestoreWalletDialogFragment
-    **/
     public final MutableLiveData<Uri> backupUri = new MutableLiveData<>();
-    public final MutableLiveData<String> displayName = new MutableLiveData<>();
-    public final MutableLiveData<Event<Boolean>> showSuccessDialog = new MutableLiveData<>();
-    public final MutableLiveData<Event<String>> showFailureDialog = new MutableLiveData<>();
 
     public RestoreWalletViewModel(final Application application) {
         super(application);
