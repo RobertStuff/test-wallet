@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/jong/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/cmake/release/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/jong/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/cmake/release/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "scrypt-Release-x86": {
+      "artifactName": "scrypt",
+      "buildCommandComponents": [
+        "/home/jong/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/cmake/release/x86",
+        "scrypt"
+      ],
+      "abi": "x86",
+      "output": "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/build/intermediates/cmake/release/obj/x86/libscrypt.so",
+      "runtimeFiles": []
+    }
+  }
+}

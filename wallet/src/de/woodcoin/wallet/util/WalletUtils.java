@@ -54,6 +54,7 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.SpannedString;
 import android.text.style.TypefaceSpan;
+import android.net.Uri;
 
 /**
  * @author Andreas Schildbach
@@ -254,5 +255,20 @@ public class WalletUtils {
 
     public static boolean isPayToManyTransaction(final Transaction transaction) {
         return transaction.getOutputs().size() > 20;
+    }
+
+    public static @Nullable String uriToProvider(final Uri uri) {
+        if (uri == null || !uri.getScheme().equals("content"))
+            return null;
+        final String host = uri.getHost();
+        if ("com.google.android.apps.docs.storage".equals(host) || "com.google.android.apps.docs.storage.legacy".equals(host))
+            return "Google Drive";
+        if ("org.nextcloud.documents".equals(host))
+            return "Nextcloud";
+        if ("com.box.android.documents".equals(host))
+            return "Box";
+        if ("com.android.providers.downloads.documents".equals(host))
+            return "internal storage";
+        return null;
     }
 }

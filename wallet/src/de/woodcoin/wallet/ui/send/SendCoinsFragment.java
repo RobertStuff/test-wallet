@@ -120,7 +120,7 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -361,7 +361,7 @@ public final class SendCoinsFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
-        viewModel = ViewModelProviders.of(this).get(SendCoinsViewModel.class);
+        viewModel = new ViewModelProvider(this).get(SendCoinsViewModel.class);
         viewModel.wallet.observe(this, new Observer<Wallet>() {
             @Override
             public void onChanged(final Wallet wallet) {

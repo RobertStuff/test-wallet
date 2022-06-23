@@ -1,0 +1,7 @@
+Executable : /home/jong/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/3o1p526c/armeabi-v7a
+scrypt
+jvmArgs : 
+
