@@ -112,7 +112,7 @@ public final class WalletActivity extends AbstractWalletActivity {
         viewModel.showRestoreWalletDialog.observe(this, new Event.Observer<Void>() {
             @Override
             public void onEvent(final Void v) {
-                RestoreWalletDialogFragment.showPick(getSupportFragmentManager());
+                RestoreWalletDialogFragment.show(getSupportFragmentManager());
             }
         });
         viewModel.showEncryptKeysDialog.observe(this, new Event.Observer<Void>() {
