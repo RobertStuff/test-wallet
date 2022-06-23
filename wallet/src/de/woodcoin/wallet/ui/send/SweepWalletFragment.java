@@ -93,7 +93,7 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -145,7 +145,7 @@ public class SweepWalletFragment extends Fragment {
         if (!Constants.ENABLE_SWEEP_WALLET)
             throw new IllegalStateException("ENABLE_SWEEP_WALLET is disabled");
 
-        viewModel = ViewModelProviders.of(this).get(SweepWalletViewModel.class);
+        viewModel = new ViewModelProvider(this).get(SweepWalletViewModel.class);
         viewModel.getDynamicFees().observe(this, new Observer<Map<FeeCategory, Coin>>() {
             @Override
             public void onChanged(final Map<FeeCategory, Coin> dynamicFees) {

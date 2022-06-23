@@ -42,7 +42,7 @@ import android.widget.ImageView;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -55,6 +55,7 @@ public final class WalletAddressFragment extends Fragment {
     private ImageView currentAddressQrView;
     private CardView currentAddressQrCardView;
 
+    private WalletActivityViewModel activityViewModel;
     private WalletAddressViewModel viewModel;
 
     private static final Logger log = LoggerFactory.getLogger(WalletAddressFragment.class);
@@ -69,7 +70,10 @@ public final class WalletAddressFragment extends Fragment {
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        viewModel = ViewModelProviders.of(this).get(WalletAddressViewModel.class);
+
+        activityViewModel = new ViewModelProvider(activity).get(WalletActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(WalletAddressViewModel.class);
+
         viewModel.qrCode.observe(this, new Observer<Bitmap>() {
             @Override
             public void onChanged(final Bitmap qrCode) {
@@ -90,7 +94,7 @@ public final class WalletAddressFragment extends Fragment {
                 final NfcAdapter nfcAdapter = WalletAddressFragment.this.nfcAdapter;
                 if (nfcAdapter != null)
                     nfcAdapter.setNdefPushMessage(createNdefMessage(bitcoinUri.toString()), activity);
-                ViewModelProviders.of(activity).get(WalletActivityViewModel.class).addressLoadingFinished();
+                activityViewModel.addressLoadingFinished();
             }
         });
         viewModel.showWalletAddressDialog.observe(this, new Event.Observer<Void>() {

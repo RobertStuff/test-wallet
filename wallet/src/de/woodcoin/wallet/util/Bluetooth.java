@@ -17,21 +17,42 @@
 
 package de.woodcoin.wallet.util;
 
+import com.google.common.base.Splitter;
+import com.google.common.base.Strings;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.util.UUID;
+import java.util.Locale;
 
 import javax.annotation.Nullable;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
+import android.content.pm.PackageManager;
+import android.os.Build;
+
+import de.woodcoin.wallet.ui.AbstractWalletActivity;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import android.content.Context;
 
 /**
  * @author Andreas Schildbach
  */
 public class Bluetooth {
+    private AbstractWalletActivity activity;
+    private static Context context;
+
+    public Bluetooth(final Context context) {
+        this.context = context;
+    }
+
     /** Used for local fetching of BIP70 payment requests. */
     public static final UUID PAYMENT_REQUESTS_UUID = UUID.fromString("3357A7BB-762D-464A-8D9A-DCA592D57D59");
     /** Used for talking BIP70 payment messages and payment acks locally. */
@@ -47,9 +68,25 @@ public class Bluetooth {
 
     private static final Logger log = LoggerFactory.getLogger(Bluetooth.class);
 
-    public static @Nullable String getAddress(final BluetoothAdapter adapter) {
+    public static @Nullable
+    String getAddress(final BluetoothAdapter adapter) {
+
+        // if (ContextCompat.checkSelfPermission(context, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_DENIED) {
+        //     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+        //         ActivityCompat.requestPermissions((AbstractWalletActivity) context, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, 2);
+        //         return null;
+        //     }
+        // }
+
         if (adapter == null)
             return null;
+
+        // if (ActivityCompat.checkSelfPermission(context, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+        //     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+        //          ActivityCompat.requestPermissions((AbstractWalletActivity) context, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, 2);
+        //          return null;
+        //      }
+        // }
 
         final String address = adapter.getAddress();
         if (!MARSHMELLOW_FAKE_MAC.equals(address))
@@ -71,17 +108,34 @@ public class Bluetooth {
         }
     }
 
-    public static String compressMac(final String mac) {
-        return mac.replaceAll(":", "");
+    public static String compressMac(final String decompressedMac) throws IllegalArgumentException {
+        final StringBuilder compressedMac = new StringBuilder();
+        for (final CharSequence segment : Splitter.on(':').split(decompressedMac)) {
+            if (segment.length() > 2)
+                throw new IllegalArgumentException("Oversized segment in: " + decompressedMac);
+            for (int i = 0; i < segment.length(); i++) {
+                final char c = segment.charAt(i);
+                if ((c < '0' || c > '9') && (c < 'a' || c > 'f') && (c < 'A' || c > 'F'))
+                    throw new IllegalArgumentException("Illegal character '" + c + "' in: " + decompressedMac);
+            }
+            compressedMac.append(Strings.padStart(segment.toString(), 2, '0').toUpperCase(Locale.US));
+        }
+        return compressedMac.toString();
     }
 
-    public static String decompressMac(final String compressedMac) {
-        final StringBuilder mac = new StringBuilder();
-        for (int i = 0; i < compressedMac.length(); i += 2)
-            mac.append(compressedMac.substring(i, i + 2)).append(':');
-        mac.setLength(mac.length() - 1);
-
-        return mac.toString();
+    public static String decompressMac(final String compressedMac) throws IllegalArgumentException {
+        if (compressedMac.length() % 2 != 0)
+            throw new IllegalArgumentException("Impossible length: " + compressedMac);
+        final StringBuilder decompressedMac = new StringBuilder();
+        for (int i = 0; i < compressedMac.length(); i++) {
+            final char c = compressedMac.charAt(i);
+            if ((c < '0' || c > '9') && (c < 'a' || c > 'f') && (c < 'A' || c > 'F'))
+                throw new IllegalArgumentException("Illegal character '" + c + "' in: " + compressedMac);
+            if (i % 2 == 0 && decompressedMac.length() > 0)
+                decompressedMac.append(':');
+            decompressedMac.append(Character.toUpperCase(c));
+        }
+        return decompressedMac.toString();
     }
 
     public static boolean isBluetoothUrl(final String url) {

@@ -50,7 +50,9 @@ import de.woodcoin.wallet.util.Bluetooth;
 import de.woodcoin.wallet.util.CrashReporter;
 import de.woodcoin.wallet.util.Toast;
 import de.woodcoin.wallet.util.WalletUtils;
+import de.woodcoin.wallet.ui.RequestCoinsFragment;
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Application;
 import android.app.NotificationChannel;
@@ -76,6 +78,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
  */
 public class WalletApplication extends Application {
     private ActivityManager activityManager;
+    Activity activity;
 
     private File walletFile;
     private WalletFiles walletFiles;
@@ -88,6 +91,8 @@ public class WalletApplication extends Application {
     private static final String BIP39_WORDLIST_FILENAME = "bip39-wordlist.txt";
 
     private static final Logger log = LoggerFactory.getLogger(WalletApplication.class);
+
+    private static final int REQUEST_CODE_ENABLE_BLUETOOTH = 0;
 
     @Override
     public void onCreate() {
@@ -125,9 +130,23 @@ public class WalletApplication extends Application {
 
         final Configuration config = getConfiguration();
         config.updateLastVersionCode(packageInfo.versionCode);
-        final BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (bluetoothAdapter != null)
-            config.updateLastBluetoothAddress(Bluetooth.getAddress(bluetoothAdapter));
+
+        /** 
+            Check android 
+            Add bluetooth_connect permission before proceeding with the getAddress function
+
+        **/
+        // final BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        // if (bluetoothAdapter != null) {
+        //     if (bluetoothAdapter.isEnabled()) {
+        //         config.updateLastBluetoothAddress(Bluetooth.getAddress(bluetoothAdapter));
+        //     } else {
+        //         // ask for permission to enable bluetooth
+        //         // Activity.startActivityForResult(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE),
+        //         //         REQUEST_CODE_ENABLE_BLUETOOTH);
+        //         RequestCoinsFragment.reqBluetoothPermission();
+        //     }
+        // }
 
         cleanupFiles();
 

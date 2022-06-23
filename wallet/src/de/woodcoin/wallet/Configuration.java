@@ -68,6 +68,7 @@ public class Configuration {
     public static final String PREFS_KEY_REMIND_BACKUP = "remind_backup";
     private static final String PREFS_KEY_LAST_BACKUP = "last_backup";
     private static final String PREFS_KEY_LAST_BLUETOOTH_ADDRESS = "last_bluetooth_address";
+    private static final String PREFS_KEY_LAST_RESTORE = "last_restore";
 
     private static final int PREFS_DEFAULT_BTC_SHIFT = 3;
     private static final int PREFS_DEFAULT_BTC_PRECISION = 2;
@@ -179,6 +180,14 @@ public class Configuration {
 
     public boolean getDisclaimerEnabled() {
         return prefs.getBoolean(PREFS_KEY_DISCLAIMER, true);
+    }
+
+    public long getLastRestoreTime() {
+        return prefs.getLong(PREFS_KEY_LAST_RESTORE, 0);
+    }
+
+    public void updateLastRestoreTime() {
+        prefs.edit().putLong(PREFS_KEY_LAST_RESTORE, System.currentTimeMillis()).apply();
     }
 
     public String getExchangeCurrencyCode() {

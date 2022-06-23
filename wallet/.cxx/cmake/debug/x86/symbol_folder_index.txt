@@ -1,0 +1,1 @@
+/media/projects/Funk/Woodcoin_android/test-wallet/wallet/build/intermediates/cmake/debug/obj/x86

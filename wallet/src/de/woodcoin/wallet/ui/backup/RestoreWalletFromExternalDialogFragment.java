@@ -59,7 +59,7 @@ import android.widget.EditText;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -106,7 +106,7 @@ public class RestoreWalletFromExternalDialogFragment extends DialogFragment {
 
         this.backupUri = (Uri) getArguments().getParcelable(KEY_BACKUP_URI);
 
-        viewModel = ViewModelProviders.of(this).get(RestoreWalletViewModel.class);
+        viewModel = new ViewModelProvider(this).get(RestoreWalletViewModel.class);
     }
 
     @Override

@@ -65,7 +65,7 @@ import android.widget.TextView;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -133,7 +133,7 @@ public class RaiseFeeDialogFragment extends DialogFragment {
         super.onCreate(savedInstanceState);
         log.info("opening dialog {}", getClass().getName());
 
-        viewModel = ViewModelProviders.of(this).get(RaiseFeeViewModel.class);
+        viewModel = new ViewModelProvider(this).get(RaiseFeeViewModel.class);
         viewModel.getDynamicFees().observe(this, new Observer<Map<FeeCategory, Coin>>() {
             @Override
             public void onChanged(final Map<FeeCategory, Coin> dynamicFees) {

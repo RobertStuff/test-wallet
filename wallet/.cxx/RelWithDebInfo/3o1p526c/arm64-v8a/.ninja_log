@@ -1,0 +1,5 @@
+# ninja log v5
+0	16	1655880962	CMakeFiles/scrypt.dir/scrypt_jni.c.o	4dc00725ef3ed4fb
+0	52	1655880962	CMakeFiles/scrypt.dir/crypto_scrypt-nosse.c.o	82cde41846d3eac3
+0	98	1655880962	CMakeFiles/scrypt.dir/sha256.c.o	9a1692ec47331a6c
+98	105	1655880962	/media/projects/Funk/Woodcoin_android/test-wallet/wallet/build/intermediates/cxx/RelWithDebInfo/3o1p526c/obj/arm64-v8a/libscrypt.so	a9028d0a8e256022

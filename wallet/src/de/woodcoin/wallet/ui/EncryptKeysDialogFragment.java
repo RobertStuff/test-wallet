@@ -52,7 +52,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -283,7 +283,7 @@ public class EncryptKeysDialogFragment extends DialogFragment {
                         if (state == State.DONE) {
                             WalletUtils.autoBackupWallet(activity, wallet);
                             // trigger load manually because of missing callbacks for encryption state
-                            ViewModelProviders.of(activity).get(WalletActivityViewModel.class).walletEncrypted.load();
+                            new ViewModelProvider(activity).get(WalletActivityViewModel.class).walletEncrypted.load();
                             delayedDismiss();
                         }
                     }

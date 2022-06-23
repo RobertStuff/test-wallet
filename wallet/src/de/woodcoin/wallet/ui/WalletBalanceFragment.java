@@ -44,7 +44,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -62,6 +62,7 @@ public final class WalletBalanceFragment extends Fragment {
 
     private boolean showLocalBalance;
 
+    private WalletActivityViewModel activityViewModel;
     private WalletBalanceViewModel viewModel;
 
     private static final long BLOCKCHAIN_UPTODATE_THRESHOLD_MS = DateUtils.HOUR_IN_MILLIS;
@@ -81,7 +82,9 @@ public final class WalletBalanceFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
-        viewModel = ViewModelProviders.of(this).get(WalletBalanceViewModel.class);
+        activityViewModel = new ViewModelProvider(activity).get(WalletActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(WalletBalanceViewModel.class);
+
         viewModel.getBlockchainState().observe(this, new Observer<BlockchainState>() {
             @Override
             public void onChanged(final BlockchainState blockchainState) {
@@ -93,7 +96,7 @@ public final class WalletBalanceFragment extends Fragment {
             public void onChanged(final Coin balance) {
                 activity.invalidateOptionsMenu();
                 updateView();
-                ViewModelProviders.of(activity).get(WalletActivityViewModel.class).balanceLoadingFinished();
+                activityViewModel.balanceLoadingFinished();
             }
         });
         if (Constants.ENABLE_EXCHANGE_RATES) {

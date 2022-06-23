@@ -22,7 +22,7 @@ import de.woodcoin.wallet.R;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -35,7 +35,7 @@ public final class RequestCoinsActivity extends AbstractWalletActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.request_coins_content);
 
-        viewModel = ViewModelProviders.of(this).get(RequestCoinsActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(RequestCoinsActivityViewModel.class);
         viewModel.showHelpDialog.observe(this, new Event.Observer<Integer>() {
             @Override
             public void onEvent(final Integer messageResId) {

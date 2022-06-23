@@ -30,6 +30,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import androidx.annotation.StringRes;
 
 /**
  * @author Andreas Schildbach
@@ -39,10 +40,26 @@ public class DialogBuilder extends AlertDialog.Builder {
     private final ImageView iconView;
     private final TextView titleView;
 
+    public static DialogBuilder dialog(final Context context, @StringRes final int titleResId, final CharSequence message) {
+        final DialogBuilder builder = new DialogBuilder(context);
+        if (titleResId != 0)
+            builder.setTitle(titleResId);
+        builder.setMessage(message);
+        return builder;
+    }
+
     public static DialogBuilder warn(final Context context, final int titleResId) {
         final DialogBuilder builder = new DialogBuilder(context);
         builder.setIcon(R.drawable.ic_warning_grey600_24dp);
         builder.setTitle(titleResId);
+        return builder;
+    }
+
+    public static DialogBuilder custom(final Context context, @StringRes final int titleResId, final View view) {
+        final DialogBuilder builder = new DialogBuilder(context);
+        if (titleResId != 0)
+            builder.setTitle(titleResId);
+        builder.setView(view);
         return builder;
     }
 

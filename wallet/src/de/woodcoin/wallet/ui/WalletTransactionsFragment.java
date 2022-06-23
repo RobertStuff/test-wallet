@@ -64,7 +64,7 @@ import android.widget.TextView;
 import android.widget.ViewAnimator;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
@@ -84,6 +84,7 @@ public class WalletTransactionsFragment extends Fragment implements Transactions
     private MenuItem filterMenuItem;
 
     private WalletTransactionsViewModel viewModel;
+    private WalletActivityViewModel activityViewModel;
 
     private static final Uri KEY_ROTATION_URI = Uri.parse("https://bitcoin.org/en/alert/2013-08-11-android");
     private static final int SHOW_QR_THRESHOLD_BYTES = 2500;
@@ -105,7 +106,8 @@ public class WalletTransactionsFragment extends Fragment implements Transactions
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
-        viewModel = ViewModelProviders.of(this).get(WalletTransactionsViewModel.class);
+        activityViewModel = new ViewModelProvider(activity).get(WalletActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(WalletTransactionsViewModel.class);
         viewModel.direction.observe(this, new Observer<WalletTransactionsViewModel.Direction>() {
             @Override
             public void onChanged(final WalletTransactionsViewModel.Direction direction) {
@@ -146,7 +148,7 @@ public class WalletTransactionsFragment extends Fragment implements Transactions
             @Override
             public void onChanged(final List<TransactionsAdapter.ListItem> listItems) {
                 adapter.submitList(listItems);
-                ViewModelProviders.of(activity).get(WalletActivityViewModel.class).transactionsLoadingFinished();
+                activityViewModel.transactionsLoadingFinished();
             }
         });
         viewModel.showBitmapDialog.observe(this, new Event.Observer<Bitmap>() {
@@ -361,7 +363,7 @@ public class WalletTransactionsFragment extends Fragment implements Transactions
     public void onWarningClick(final View view) {
         switch (warning()) {
         case BACKUP:
-            final WalletActivityViewModel viewModel = ViewModelProviders.of(getActivity())
+            final WalletActivityViewModel viewModel = new ViewModelProvider(getActivity())
                     .get(WalletActivityViewModel.class);
             viewModel.showBackupWalletDialog.setValue(Event.simple());
             break;
