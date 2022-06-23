@@ -55,7 +55,6 @@ public class DialogBuilder extends AlertDialog.Builder {
         return builder;
     }
 
-
     public static DialogBuilder custom(final Context context, @StringRes final int titleResId, final View view) {
         final DialogBuilder builder = new DialogBuilder(context);
         if (titleResId != 0)

@@ -1,0 +1,2 @@
+ninja: Entering directory `/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/3o1p526c/x86'
+ninja: no work to do.

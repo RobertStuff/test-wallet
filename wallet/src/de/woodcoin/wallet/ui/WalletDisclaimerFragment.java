@@ -35,7 +35,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -48,7 +48,7 @@ public final class WalletDisclaimerFragment extends Fragment {
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        viewModel = ViewModelProviders.of(this).get(WalletDisclaimerViewModel.class);
+        viewModel = new ViewModelProvider(this).get(WalletDisclaimerViewModel.class);
         viewModel.getBlockchainState().observe(this, new Observer<BlockchainState>() {
             @Override
             public void onChanged(final BlockchainState blockchainState) {
@@ -70,7 +70,7 @@ public final class WalletDisclaimerFragment extends Fragment {
         messageView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(final View v) {
-                final WalletActivityViewModel viewModel = ViewModelProviders.of(getActivity())
+                final WalletActivityViewModel viewModel = new ViewModelProvider(getActivity())
                         .get(WalletActivityViewModel.class);
                 viewModel.showHelpDialog.setValue(new Event<>(R.string.help_safety));
             }

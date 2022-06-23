@@ -62,7 +62,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 /**
  * @author Andreas Schildbach
@@ -83,7 +83,7 @@ public final class WalletActivity extends AbstractWalletActivity {
         application = getWalletApplication();
         final Configuration config = application.getConfiguration();
 
-        viewModel = ViewModelProviders.of(this).get(WalletActivityViewModel.class);
+        viewModel = new ViewModelProvider(this).get(WalletActivityViewModel.class);
 
         setContentView(R.layout.wallet_content);
         contentView = findViewById(android.R.id.content);

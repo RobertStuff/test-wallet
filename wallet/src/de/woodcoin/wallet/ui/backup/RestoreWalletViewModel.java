@@ -52,7 +52,6 @@ public class RestoreWalletViewModel extends AndroidViewModel {
     public final MutableLiveData<Event<Boolean>> showSuccessDialog = new MutableLiveData<>();
     public final MutableLiveData<Event<String>> showFailureDialog = new MutableLiveData<>();
 
-
     public RestoreWalletViewModel(final Application application) {
         super(application);
         this.application = (WalletApplication) application;

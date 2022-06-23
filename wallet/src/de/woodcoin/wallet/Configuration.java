@@ -190,6 +190,14 @@ public class Configuration {
         return prefs.getBoolean(PREFS_KEY_DISCLAIMER, true);
     }
 
+    public long getLastRestoreTime() {
+        return prefs.getLong(PREFS_KEY_LAST_RESTORE, 0);
+    }
+
+    public void updateLastRestoreTime() {
+        prefs.edit().putLong(PREFS_KEY_LAST_RESTORE, System.currentTimeMillis()).apply();
+    }
+
     public String getExchangeCurrencyCode() {
         return prefs.getString(PREFS_KEY_EXCHANGE_CURRENCY, null);
     }

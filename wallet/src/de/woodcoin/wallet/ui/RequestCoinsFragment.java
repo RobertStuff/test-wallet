@@ -47,11 +47,13 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.Manifest;
 import android.net.Uri;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.os.Bundle;
+import android.os.Build;
 import android.text.SpannableStringBuilder;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -69,7 +71,9 @@ import androidx.cardview.widget.CardView;
 import androidx.core.app.ShareCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 /**
  * @author Andreas Schildbach
@@ -113,7 +117,7 @@ public final class RequestCoinsFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
-        viewModel = ViewModelProviders.of(this).get(RequestCoinsViewModel.class);
+        viewModel = new ViewModelProvider(this).get(RequestCoinsViewModel.class);
         viewModel.freshReceiveAddress.observe(this, new Observer<Address>() {
             @Override
             public void onChanged(final Address address) {
@@ -198,6 +202,16 @@ public final class RequestCoinsFragment extends Fragment {
         amountCalculatorLink = new CurrencyCalculatorLink(btcAmountView, localAmountView);
 
         final BluetoothAdapter bluetoothAdapter = this.bluetoothAdapter;
+        
+        /**
+            Check for bluetooth_connect permission
+        */
+        if (ActivityCompat.checkSelfPermission(activity, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                    ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, 2);
+                }
+        }
+        
         acceptBluetoothPaymentView = (CheckBox) view.findViewById(R.id.request_coins_accept_bluetooth_payment);
         acceptBluetoothPaymentView.setVisibility(
                 bluetoothAdapter != null && Bluetooth.getAddress(bluetoothAdapter) != null ? View.VISIBLE : View.GONE);
@@ -212,6 +226,12 @@ public final class RequestCoinsFragment extends Fragment {
                         // ask for permission to enable bluetooth
                         startActivityForResult(new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE),
                                 REQUEST_CODE_ENABLE_BLUETOOTH);
+
+                        if (ActivityCompat.checkSelfPermission(activity, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                                 ActivityCompat.requestPermissions(activity, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, 2);
+                             }
+                        }
                     }
                 } else {
                     stopBluetoothListening();
