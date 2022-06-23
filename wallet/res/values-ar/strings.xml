@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">لحماية خصوصيتك, عنوانك سيتغير في حال استقبالك لدفعة.</string>
   <string name="wallet_balance_fragment_insecure_device">جهازك قديم وغير امن. نرجوا منك استعماله لحفظ كمية مال قليلة.</string>
   <string name="wallet_balance_fragment_too_much">هذه كمية مال عالية قليلة لحفظها في جيبك. نرجوا نقلها لمكان اكثر اماناً.</string>
-  <string name="wallet_balance_fragment_replaying">الرصيد غير متاح في حالة إعادة التشغيل.</string>
-  <string name="exchange_rates_activity_title">اسعار الصرف</string>
+    <string name="exchange_rates_activity_title">اسعار الصرف</string>
   <string name="exchange_rates_fragment_empty_text">لا يمكن تحميل اسعار الصرف.</string>
   <string name="exchange_rates_fragment_empty_search">لا يمكن إيجاد اسعار الصرف.</string>
   <string name="exchange_rates_fragment_default">(افتراضي)</string>
@@ -53,13 +52,11 @@
   <string name="wallet_version_dialog_msg_deprecated">إن لم تتلقى أي إشعار بالتحديث فمِن المحتمل أنّ نسخة نظام الأندرويد الخاصة بك لم تعد مدعومة قط.</string>
   <string name="wallet_version_dialog_button_market">متجر جوجل بلاي Google Play.</string>
   <string name="wallet_version_dialog_button_binary">تنزيل</string>
-  <string name="wallet_old_sdk_dialog_title">إصدار نظام الأندرويد الخاص بك قديم أو غير محدث</string>
-  <string name="alert_dialogs_fragment_settings_failed_title">هناك مشكلة عند فتح الإعدادات</string>
+    <string name="alert_dialogs_fragment_settings_failed_title">هناك مشكلة عند فتح الإعدادات</string>
   <string name="send_coins_activity_title">أرسل بيتكوين</string>
   <string name="send_coins_fragment_request_payment_request_progress">جلب التوقيع من %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">فشل جلب التوقيع</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">التوقيع غير صحيح!</string>
-  <string name="send_coins_fragment_payee_verified_by">تمت التدقيق من قبل: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">تمت التدقيق من قبل: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">مجهول</string>
   <string name="send_coins_fragment_receiving_address_label">إدفع إلى</string>
   <string name="send_coins_fragment_receiving_address_hint">أدخِل عنوانا أو إسما</string>
@@ -127,8 +124,7 @@
   <string name="address_book_context_remove_title">حذف العنوان</string>
   <string name="address_book_context_copy_to_clipboard_title">نسخ إلى الحافظة</string>
   <string name="address_book_options_paste_from_clipboard_title">لصق من الحافظة</string>
-  <string name="address_book_options_paste_from_clipboard_empty">الحافظة خالية</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">بيانات الحافظة لا يمكن التعرف عليها</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">بيانات الحافظة لا يمكن التعرف عليها</string>
   <string name="address_book_options_paste_from_clipboard_own_address">العنوان على الحافظة ملكك.</string>
   <string name="address_book_options_scan_title">مسح عنوان</string>
   <string name="address_book_options_scan_invalid">البيانات الممسوحة بصريا لا يمكن التعرف عليها</string>
@@ -164,8 +160,7 @@
   <string name="import_keys_dialog_failure">تعذرت عملية استرجاع المحفظة :\n\n%s\n\nهل كلمة السر خاطئة ؟</string>
   <string name="export_keys_dialog_title">النسخ الإحتياطي للمحفظة</string>
   <string name="backup_wallet_dialog_message">سيتم تشفير مفاتيحك الخاصة مع كلمة المرور الخاصة  بك  وتسجيلها في وحدة تخزين خارجية.</string>
-  <string name="export_keys_dialog_button_export">حفظ احتياطي</string>
-  <string name="export_keys_dialog_success">تم الحفظ الاحتياطي للمفاتيح الخاصة بك إلى\n\n%s\n\nيرجى الاحتفاظ بها بشكل آمن، والحفاظ على كلمة المرور الخاصة بك بشكل آمن!</string>
+    <string name="export_keys_dialog_success">تم الحفظ الاحتياطي للمفاتيح الخاصة بك إلى\n\n%s\n\nيرجى الاحتفاظ بها بشكل آمن، والحفاظ على كلمة المرور الخاصة بك بشكل آمن!</string>
   <string name="export_keys_dialog_failure">تعذر الحفظ الاحتياطي للمفاتيح الخاصة بك:\n%s</string>
   <string name="import_export_keys_dialog_password">كلمة المرور</string>
   <string name="backup_wallet_dialog_password_again">مجددا</string>
@@ -193,8 +188,7 @@
   <string name="input_parser_invalid_transaction">معاملة غير صالحة:\n%s</string>
   <string name="preferences_activity_title">الإعدادات</string>
   <string name="preferences_category_diagnostics">التشخيصات</string>
-  <string name="preferences_category_labs">المختبرات</string>
-  <string name="preferences_precision_title">وحدات القياس والدقة</string>
+    <string name="preferences_precision_title">وحدات القياس والدقة</string>
   <string name="preferences_precision_summary">الوحدة المستخدمة لإظهار المبالغ. هذا لا يؤثر على العمليات الحسابية.</string>
   <string name="preferences_own_name_title">إسمك</string>
   <string name="preferences_connectivity_notification_title">مؤشر حالة الإتصال</string>
@@ -241,9 +235,7 @@
   <string name="about_credits_zxing_title">ZXing</string>
   <string name="about_market_app_title">صفحة متجر غوغل للتطبيقات</string>
   <string name="about_market_app_summary">إعداد تقرير أو تقييم للتطبيق</string>
-  <string name="about_faq_title">الأسئلة الشائعة</string>
-  <string name="about_faq_summary">الأسئلة الشائعة عن التطبيق</string>
-  <string name="notification_coins_received_msg">تم إستلام %s</string>
+    <string name="notification_coins_received_msg">تم إستلام %s</string>
   <string name="notification_peers_connected_msg">الأقران المتصلة peers %d </string>
   <string name="notification_inactivity_title">لا يزال عندك بعضا من البيتكوين على هذا الجهاز !</string>
   <string name="notification_inactivity_message_donate">إن كنت لا تكترث بنقودك فيمكنك التبرع بها إلى مشروع محفظة البتكوين.</string>
@@ -275,8 +267,7 @@
   <string name="action_show_qr">عرض رمز الاستجابة السريعة QR-code</string>
   <string name="action_browse">تصفح</string>
   <!--generic strings-->
-  <string name="time_today">اليوم</string>
-  <string name="address_unlabeled">(غير مسمى)</string>
+    <string name="address_unlabeled">(غير مسمى)</string>
   <string name="private_key_password">رمز الأمان PIN</string>
   <string name="private_key_bad_password">رمز الأمان PIN خاطئ !</string>
   <!--generic error messages-->

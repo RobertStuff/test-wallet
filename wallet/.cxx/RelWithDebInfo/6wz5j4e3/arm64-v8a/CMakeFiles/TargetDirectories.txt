@@ -1,0 +1,3 @@
+/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/6wz5j4e3/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/6wz5j4e3/arm64-v8a/CMakeFiles/edit_cache.dir
+/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/6wz5j4e3/arm64-v8a/CMakeFiles/scrypt.dir

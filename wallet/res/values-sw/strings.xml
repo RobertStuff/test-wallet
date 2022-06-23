@@ -13,8 +13,7 @@
   <string name="blockchain_state_progress_problem_network">Hakuna signal wa mtandao</string>
   <string name="wallet_address_fragment_clipboard_msg">Mtaani kunakiliwa na clipboard</string>
   <string name="wallet_balance_fragment_too_much">Ume Sonko na pochi yako! Tafadhali hoja pesa mahala pa usalama.</string>
-  <string name="wallet_balance_fragment_replaying">Mizani ni haipatikani kwa sasa</string>
-  <string name="exchange_rates_activity_title">Viwango vya soko</string>
+    <string name="exchange_rates_activity_title">Viwango vya soko</string>
   <string name="exchange_rates_fragment_empty_text">Haikuweza kupata viwango vya soko</string>
   <string name="exchange_rates_fragment_empty_search">Hakuweza kupata viwango vya soko</string>
   <string name="exchange_rates_fragment_default">(kawaida)</string>
@@ -47,13 +46,10 @@
   <string name="wallet_version_dialog_msg_deprecated">Kama huwezi kupata toleo jipya, Android yako ni mzee, sana!</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Shusha</string>
-  <string name="wallet_old_sdk_dialog_title">Android yako ni mzee, sana!</string>
-  <string name="wallet_old_sdk_dialog_message">Matoleo ya pili ya pochi hii si msaada Android yako yoyote zaidi. Katika baadhi ya matukio, matumizi ya pesa itakuwa vigumu. Kama wewe ni uhakika, tafadhali kuchukua pesa yako hivi karibuni.</string>
-  <string name="send_coins_activity_title">Kutuma Woodcoin</string>
+    <string name="send_coins_activity_title">Kutuma Woodcoin</string>
   <string name="send_coins_fragment_request_payment_request_progress">Kupata sahihi ya %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Kupata sahihi alishindwa.</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Sahihi mbaya!</string>
-  <string name="send_coins_fragment_payee_verified_by">Kucheki na: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">Kucheki na: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">haijulikani</string>
   <string name="send_coins_fragment_receiving_address_label">Lipa</string>
   <string name="send_coins_fragment_receiving_address_hint">Kutoa anwani au jina</string>
@@ -122,8 +118,7 @@
   <string name="address_book_context_remove_title">Kuondoa anwani</string>
   <string name="address_book_context_copy_to_clipboard_title">Nakala ya clipbard</string>
   <string name="address_book_options_paste_from_clipboard_title">Kuweka kutoka clipboard</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Cliboard ni tupu</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Habari kutoka clipboard ni haitambuliwi</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Habari kutoka clipboard ni haitambuliwi</string>
   <string name="address_book_options_scan_title">Bamba anwani</string>
   <string name="address_book_options_scan_invalid">Habari kutoka kubamba ni haitambuliwi</string>
   <string name="address_book_row_message_compromised_key">Anwani hii inweza kuwa uhaba. Tafadhali usitumie anwani hii tena.</string>
@@ -162,8 +157,7 @@
   <string name="import_keys_dialog_failure">Pochi hakuweza kurejeshwa:\n\n%s\n\nSiri mbaya?</string>
   <string name="export_keys_dialog_title">Fanya backup za pochi yako</string>
   <string name="backup_wallet_dialog_message">Backup yako itakuwa imeandikwa na siri, na kuhamishwa kwa disc nje.</string>
-  <string name="export_keys_dialog_button_export">Fanya backup</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Umeweka backup ya pochi yako za <tt>%s</tt></p><p><b>Kama una backup yako katika simu yako, una hatari ya kupoleza pesa yako.</b></p><p>Kuhakikisha kwamba unakumbuka siri ya backup.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Umeweka backup ya pochi yako za <tt>%s</tt></p><p><b>Kama una backup yako katika simu yako, una hatari ya kupoleza pesa yako.</b></p><p>Kuhakikisha kwamba unakumbuka siri ya backup.</p>]]></string>
   <string name="export_keys_dialog_failure">Backup zza pochi yako alishindwa:\n%s</string>
   <string name="import_export_keys_dialog_password">siri</string>
   <string name="import_export_keys_dialog_show">Soma siri</string>
@@ -192,8 +186,7 @@
   <string name="input_parser_invalid_transaction">Shughuli haramu:\n%s</string>
   <string name="preferences_activity_title">Mazingira</string>
   <string name="preferences_category_diagnostics">Utafiti</string>
-  <string name="preferences_category_labs">Maabara</string>
-  <string name="preferences_precision_title">Dhebebu na usahihi</string>
+    <string name="preferences_precision_title">Dhebebu na usahihi</string>
   <string name="preferences_precision_summary">Vipimo kitengo. Hii haina kuathiri hesabu.</string>
   <string name="preferences_connectivity_notification_title">Uhusiano wa mtandao</string>
   <string name="preferences_connectivity_notification_summary">Kusema idadi ya wenzao kushikamana katika mtandao.</string>
@@ -256,7 +249,6 @@
   <string name="button_settings">Mazingira</string>
   <string name="action_show_qr">Soma QR code</string>
   <string name="action_browse">Vinjari</string>
-  <string name="time_today">leo</string>
-  <string name="private_key_password">PIN</string>
+    <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">PIN mbaya</string>
 </resources>

@@ -16,7 +16,6 @@
     <string name="wallet_address_dialog_fragment_hint">Um deine Privatsphäre zu schützen, ändert sich deine Adresse sobald sie eine Zahlung empfängt.</string>
     <string name="wallet_balance_fragment_insecure_device">Dein Gerät ist alt und unsicher. Bitte nutze es nur für kleine Beträge.</string>
     <string name="wallet_balance_fragment_too_much">Dieser Wert ist recht hoch, um in der Tasche getragen zu werden. Bitte verschiebe etwas an einen sichereren Ort.</string>
-    <string name="wallet_balance_fragment_replaying">Guthaben ist während des Replays nicht verfügbar.</string>
     <string name="exchange_rates_activity_title">Wechselkurse</string>
     <string name="exchange_rates_fragment_empty_text">Kann Wechselkurse nicht laden.</string>
     <string name="exchange_rates_fragment_empty_search">Kann Wechselkurs nicht finden.</string>
@@ -59,14 +58,11 @@
     <string name="wallet_version_dialog_msg_deprecated">Wenn du kein Update siehst, heißt das vermutlich daß deine Android-Version nicht mehr unterstützt wird.</string>
     <string name="wallet_version_dialog_button_market">Google Play</string>
     <string name="wallet_version_dialog_button_binary">Herunterladen</string>
-    <string name="wallet_old_sdk_dialog_title">Android ist veraltet</string>
-    <string name="wallet_old_sdk_dialog_message">Es ist möglich, daß eine der nächsten Versionen von Woodcoin Wallet dein Gerät nicht mehr unterstützt. In manchen Fällen kann es schwierig werden, Zahlungen zu tätigen.\n\nEs wird empfohlen, die enthaltenen Woodcoins bald zu verschieben, außer du weisst was du tust.</string>
     <string name="alert_dialogs_fragment_settings_failed_title">Problem beim Öffnen der Einstellungen</string>
     <string name="send_coins_activity_title">Woodcoins senden</string>
     <string name="send_coins_fragment_request_payment_request_progress">Rufe Signatur von %s ab…</string>
     <string name="send_coins_fragment_request_payment_request_failed_title">Abrufen der Zahlungsanforderung fehlgeschlagen</string>
     <string name="send_coins_fragment_request_payment_request_failed_message">Der Zahlungsempfänger (%1$s) nutzt ein inkompatibles Zahlungsprotokoll (Grund: %2$s).</string>
-    <string name="send_coins_fragment_request_payment_request_wrong_signature">Falsche Signatur!</string>
     <string name="send_coins_fragment_payee_verified_by">verifiziert durch: %s</string>
     <string name="send_coins_fragment_payee_verified_by_unknown">unbekannt</string>
     <string name="send_coins_fragment_receiving_address_label">Empfänger</string>
@@ -154,7 +150,6 @@
     <string name="address_book_context_remove_title">Adresse entfernen</string>
     <string name="address_book_context_copy_to_clipboard_title">Ins Clipboard kopieren</string>
     <string name="address_book_options_paste_from_clipboard_title">Aus dem Clipboard einfügen</string>
-    <string name="address_book_options_paste_from_clipboard_empty">Clipboard ist leer</string>
     <string name="address_book_options_paste_from_clipboard_invalid">Die Daten auf dem Clipboard sind nicht entzifferbar</string>
     <string name="address_book_options_paste_from_clipboard_own_address">Die Adresse auf dem Clipboard ist eine deiner eigenen.</string>
     <string name="address_book_options_scan_title">Adresse scannen</string>
@@ -175,7 +170,6 @@
     <string name="transaction_row_message_received_direct">Diese Zahlung wurde direkt empfangen. Es besteht das Risiko, daß sie niemals verfügbar wird.</string>
     <string name="transaction_row_message_received_unconfirmed_delayed">Die Bestätigung dieser Zahlung ist verspätet, wahrscheinlich aufgrund einer Überlastung des Woodcoin-Netzes.</string>
     <string name="transaction_row_message_received_unconfirmed_unlocked">Diese Zahlung sollte in ein paar Minuten verfügbar werden.</string>
-    <string name="transaction_row_message_received_unconfirmed_chain_forking">Wegen Wartungsarbeiten am Woodcoin-Netzwerk sollte dieser Zahlung nicht vertraut werden bis sie voll bestätigt ist.</string>
     <string name="transaction_row_message_received_in_conflict">Diese Zahlung hat ein erhöhtes Risiko daß sie vom Sender rückgängig gemacht wird! Warte wenn möglich auf Bestätigung.</string>
     <string name="transaction_row_message_received_dead">Diese Zahlung wurde vom Sender rückgängig gemacht.</string>
     <string name="transaction_row_message_received_dust">Dieser kleine Betrag kann vermutlich nie wirtschaftlich ausgegeben werden.</string>
@@ -210,7 +204,6 @@
     <string name="export_keys_dialog_title">Wallet sichern</string>
     <string name="backup_wallet_dialog_message">Dein Backup wird mit dem gewählten Passwort verschlüsselt und auf den externen Speicher gesichert.</string>
     <string name="backup_wallet_dialog_warning_encrypted">Deine Wallet ist mit einer Ausgabe-PIN geschützt. Stelle sicher, daß du die PIN nicht vergisst (neben dem Backup-Passwort)!</string>
-    <string name="export_keys_dialog_button_export">Exportieren</string>
     <string name="export_keys_dialog_success"><![CDATA[<p>Deine Wallet wurde nach <tt>%s</tt> gesichert.</p><p><b>Wenn der einzige Ort, an dem dein Backup existiert, dein Gerät bleibt, läufst du in Gefahr beide zusammen zu verlieren!</b></p><p>Verwahre in jedem Fall auch dein Backup-Passwort sicher.</p>]]></string>
     <string name="export_keys_dialog_failure">Deine Wallet konnte nicht gesichert werden:\n%s</string>
     <string name="import_export_keys_dialog_password">Passwort</string>
@@ -244,7 +237,6 @@
     <string name="input_parser_invalid_transaction">Ungültige Transaktion:\n%s</string>
     <string name="preferences_activity_title">Einstellungen</string>
     <string name="preferences_category_diagnostics">Diagnose</string>
-    <string name="preferences_category_labs">Labor</string>
     <string name="preferences_precision_title">Stückelung und Genauigkeit</string>
     <string name="preferences_precision_summary">Maßeinheit für die Anzeige von Werten. Dies beeinflußt keine Berechnungen.</string>
     <string name="preferences_precision_labels_8">LOG, 8 Dezimalen</string>
@@ -305,8 +297,6 @@
     <string name="about_credits_scrypt_title">Scrypt, implementiert von Will Glozer und Colin Percival</string>
     <string name="about_market_app_title">Eintrag bei Google Play</string>
     <string name="about_market_app_summary">Rezensionen und Bewertungen</string>
-    <string name="about_faq_title">FAQ</string>
-    <string name="about_faq_summary">Häufig gestellte Fragen über die App</string>
     <string name="notification_coins_received_msg">%s empfangen</string>
     <string name="notification_peers_connected_msg">%d Peers verbunden</string>
     <string name="notification_inactivity_title">Du hast noch Woodcoins auf diesem Gerät!</string>
@@ -342,7 +332,6 @@
     <string name="action_browse">Im Browser öffnen</string>
 
     <!-- generic strings -->
-    <string name="time_today">heute</string>
     <string name="address_unlabeled">(unbenannt)</string>
     <string name="private_key_password">PIN</string>
     <string name="private_key_bad_password">falsche PIN!</string>

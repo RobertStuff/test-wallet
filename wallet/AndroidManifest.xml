@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="de.schildbach.wallet"
+    package="de.woodcoin.wallet"
     android:installLocation="internalOnly"
-    android:versionCode="375"
-    android:versionName="6.35" >
+    android:versionCode="376"
+    android:versionName="6.36" >
 
     <uses-sdk
-        android:minSdkVersion="23"
-        android:targetSdkVersion="29"
-        tools:ignore="OldTargetApi" />
+        android:targetSdkVersion="31"
+        tools:ignore="OldTargetApi"
+        tools:overrideLibrary="androidx.fragment, androidx.recyclerview, androidx.cardview, androidx.viewpager, androidx.localbroadcastmanager, androidx.room, androidx.sqlite.db.framework, androidx.loader, androidx.activity, androidx.customview, androidx.core, androidx.versionedparcelable, androidx.lifecycle.viewmodel.savedstate, androidx.savedstate, androidx.lifecycle.service, androidx.lifecycle.runtime, androidx.tracing, androidx.lifecycle.livedata, androidx.lifecycle.livedata.core, androidx.arch.core
+        , com.github.tony19.logback.android, androidx.annotation.experimental, androidx.lifecycle.extensions, androidx.lifecycle.process" />
 
     <!-- normal permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.BLUETOOTH" />
+    
+    <!--Before Android 12 (but still needed location, even if not requested)-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <!--From Android 12-->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
     <uses-permission android:name="android.permission.NFC" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -49,6 +61,9 @@
     <uses-feature
         android:name="android.hardware.bluetooth"
         android:required="false" />
+    <uses-feature 
+        android:name="android.hardware.bluetooth_le" 
+        android:required="false"/>
 
     <supports-screens
         android:anyDensity="true"
@@ -58,13 +73,14 @@
         android:xlargeScreens="true" />
 
     <application
-        android:name="de.schildbach.wallet.WalletApplication"
+        android:name="de.woodcoin.wallet.WalletApplication"
         android:allowBackup="false"
         android:icon="@drawable/ic_app_color"
         android:label="@string/app_name"
-        android:networkSecurityConfig="@xml/network_security_config" >
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true" >
         <activity
-            android:name="de.schildbach.wallet.ui.WalletActivity"
+            android:name="de.woodcoin.wallet.ui.WalletActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:exported="true"
             android:label="@string/app_name_short"
@@ -72,8 +88,10 @@
             android:theme="@style/My.Theme.WithSplash" />
 
         <activity-alias
-            android:name="de.schildbach.wallet.WalletActivity"
-            android:targetActivity="de.schildbach.wallet.ui.WalletActivity" >
+            android:name="de.woodcoin.wallet.WalletActivity"
+            android:targetActivity="de.woodcoin.wallet.ui.WalletActivity"
+            android:exported="true"
+            >
             <intent-filter android:label="@string/app_name_short" >
                 <action android:name="android.intent.action.MAIN" />
 
@@ -93,11 +111,13 @@
         </activity-alias>
 
         <activity
-            android:name="de.schildbach.wallet.ui.send.SendCoinsActivity"
+            android:name="de.woodcoin.wallet.ui.send.SendCoinsActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:label="@string/send_coins_activity_title"
             android:theme="@style/My.Theme.ChildActivity"
-            android:windowSoftInputMode="adjustResize" >
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"
+            >
             <intent-filter android:label="@string/send_coins_activity_title" >
                 <action android:name="android.intent.action.VIEW" />
 
@@ -129,39 +149,46 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="de.schildbach.wallet.ui.SendCoinsQrActivity"
+            android:name="de.woodcoin.wallet.ui.SendCoinsQrActivity"
             android:configChanges="keyboard|keyboardHidden"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true" >
         </activity>
         <activity
-            android:name="de.schildbach.wallet.ui.RequestCoinsActivity"
+            android:name="de.woodcoin.wallet.ui.RequestCoinsActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:label="@string/request_coins_activity_title"
             android:theme="@style/My.Theme.ChildActivity"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true" />
         <activity
-            android:name="de.schildbach.wallet.ui.AddressBookActivity"
+            android:name="de.woodcoin.wallet.ui.AddressBookActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:label="@string/address_book_activity_title"
-            android:theme="@style/My.Theme.ChildActivity" />
+            android:theme="@style/My.Theme.ChildActivity"
+            android:exported="true" />
         <activity
-            android:name="de.schildbach.wallet.ui.ExchangeRatesActivity"
+            android:name="de.woodcoin.wallet.ui.ExchangeRatesActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:label="@string/exchange_rates_activity_title"
-            android:theme="@style/My.Theme.ChildActivity" />
+            android:theme="@style/My.Theme.ChildActivity"
+            android:exported="true" />
         <activity
-            android:name="de.schildbach.wallet.ui.monitor.NetworkMonitorActivity"
+            android:name="de.woodcoin.wallet.ui.monitor.NetworkMonitorActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:label="@string/network_monitor_activity_title"
-            android:theme="@style/My.Theme.ChildActivity" />
+            android:theme="@style/My.Theme.ChildActivity"
+            android:exported="true" />
         <activity
-            android:name="de.schildbach.wallet.ui.preference.PreferenceActivity"
+            android:name="de.woodcoin.wallet.ui.preference.PreferenceActivity"
             android:label="@string/preferences_activity_title"
-            android:theme="@style/My.Theme.ChildActivity" />
+            android:theme="@style/My.Theme.ChildActivity"
+            android:exported="true" />
         <activity
-            android:name="de.schildbach.wallet.ui.backup.RestoreWalletFromExternalActivity"
+            android:name="de.woodcoin.wallet.ui.backup.RestoreWalletFromExternalActivity"
             android:configChanges="orientation|keyboard|keyboardHidden"
-            android:theme="@style/My.Theme.Dialog" >
+            android:theme="@style/My.Theme.Dialog"
+            android:exported="true">
             <intent-filter android:label="@string/import_keys_intent_filter_action" >
                 <action android:name="android.intent.action.VIEW" />
 
@@ -171,25 +198,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="de.schildbach.wallet.ui.scan.ScanActivity"
+            android:name="de.woodcoin.wallet.ui.scan.ScanActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:stateNotNeeded="true"
             android:theme="@style/My.Theme.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="true" />
         <activity
-            android:name="de.schildbach.wallet.ui.send.SweepWalletActivity"
+            android:name="de.woodcoin.wallet.ui.send.SweepWalletActivity"
             android:configChanges="keyboard|keyboardHidden"
             android:label="@string/sweep_wallet_activity_title"
             android:theme="@style/My.Theme.ChildActivity"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true" />
 
         <provider
-            android:name="de.schildbach.wallet.data.ExchangeRatesProvider"
-            android:authorities="de.schildbach.wallet_test.exchange_rates"
+            android:name="de.woodcoin.wallet.data.ExchangeRatesProvider"
+            android:authorities="de.woodcoin.wallet.exchange_rates"
             android:exported="false" />
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="de.schildbach.wallet_test.file_attachment"
+            android:authorities="de.woodcoin.wallet.file_attachment"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -198,8 +227,9 @@
         </provider>
 
         <receiver
-            android:name="de.schildbach.wallet.WalletBalanceWidgetProvider"
-            android:label="@string/appwidget_wallet_balance_title" >
+            android:name="de.woodcoin.wallet.WalletBalanceWidgetProvider"
+            android:label="@string/appwidget_wallet_balance_title"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -210,13 +240,14 @@
         </receiver>
 
         <service
-            android:name="de.schildbach.wallet.service.BlockchainService"
+            android:name="de.woodcoin.wallet.service.BlockchainService"
             android:exported="false" />
         <service
-            android:name="de.schildbach.wallet.offline.AcceptBluetoothService"
+            android:name="de.woodcoin.wallet.offline.AcceptBluetoothService"
             android:exported="false" />
 
-        <receiver android:name="de.schildbach.wallet.service.BootstrapReceiver" >
+        <receiver android:name="de.woodcoin.wallet.service.BootstrapReceiver"
+          android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
@@ -226,10 +257,10 @@
         </receiver>
 
         <service
-            android:name="de.schildbach.wallet.service.UpgradeWalletService"
+            android:name="de.woodcoin.wallet.service.UpgradeWalletService"
             android:exported="false" />
         <service
-            android:name="de.schildbach.wallet.service.InactivityNotificationService"
+            android:name="de.woodcoin.wallet.service.InactivityNotificationService"
             android:exported="false" />
 
         <meta-data

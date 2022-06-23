@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">Per protegir la teva privacitat, la teva adreça canviarà quan rebi un pagament.</string>
   <string name="wallet_balance_fragment_insecure_device">El dispositiu és vell i insegur. Només es apropiat per a utilitzar pocs fons.</string>
   <string name="wallet_balance_fragment_too_much">Aquesta quantitat de diners és molt elevada per portar-la a la butxaca, mou una part a un lloc segur.</string>
-  <string name="wallet_balance_fragment_replaying">El saldo no està disponible durant la repetició.</string>
-  <string name="exchange_rates_activity_title">Preus de canvi</string>
+    <string name="exchange_rates_activity_title">Preus de canvi</string>
   <string name="exchange_rates_fragment_empty_text">No es poden carregar el preus de canvi.</string>
   <string name="exchange_rates_fragment_empty_search">No es pot trobar el preu de canvi.</string>
   <string name="exchange_rates_fragment_default">(per defecte)</string>
@@ -55,15 +54,12 @@
   <string name="wallet_version_dialog_msg_deprecated">Si no veus cap actualització, segurament voldrà dir que la teva versió Android ha deixat de ser suportada.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Descarrega</string>
-  <string name="wallet_old_sdk_dialog_title">La versió Android està des-actualitzada.</string>
-  <string name="wallet_old_sdk_dialog_message">El risc és que algun dels següents llançaments de la Cartera Woodcoin no siguin compatibles amb el teu dispositiu. En alguns casos, et pot ser difícil gastar les monedes en aquest dispositiu.\n\nA no ser que sàpigues el que estàs fent, es recomana treure aviat les teves monedes.</string>
-  <string name="alert_dialogs_fragment_settings_failed_title">S\'ha produit un error en obrir configuració</string>
+    <string name="alert_dialogs_fragment_settings_failed_title">S\'ha produit un error en obrir configuració</string>
   <string name="send_coins_activity_title">Envia woodcoins</string>
   <string name="send_coins_fragment_request_payment_request_progress">Important signatura des de %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">S\'ha produit un error en obtenir la sol·licitud de pagament</string>
   <string name="send_coins_fragment_request_payment_request_failed_message">El beneficiari (%1$s) està utilitzant un protocol de pagament no incompatible (motiu: %2$s).</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Signatura errònia!</string>
-  <string name="send_coins_fragment_payee_verified_by">verificat per: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">verificat per: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">desconegut</string>
   <string name="send_coins_fragment_receiving_address_label">Pagar a</string>
   <string name="send_coins_fragment_receiving_address_hint">escriu l\'adreça o nom</string>
@@ -150,8 +146,7 @@
   <string name="address_book_context_remove_title">Esborra l\'adreça</string>
   <string name="address_book_context_copy_to_clipboard_title">Copia al porta-retalls</string>
   <string name="address_book_options_paste_from_clipboard_title">Enganxa des del porta-retalls</string>
-  <string name="address_book_options_paste_from_clipboard_empty">El porta-retalls està buit</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">No es reconeixen les dades del porta-retalls.</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">No es reconeixen les dades del porta-retalls.</string>
   <string name="address_book_options_paste_from_clipboard_own_address">La direcció del porta-retalls és la teva.</string>
   <string name="address_book_options_scan_title">Escaneja l\'adreça</string>
   <string name="address_book_options_scan_invalid">No es reconeixen les dades escanejades</string>
@@ -171,8 +166,7 @@
   <string name="transaction_row_message_received_direct">Aquest pagament s\'ha rebut directament. Hi ha risc de que mai es pugui gastar.</string>
   <string name="transaction_row_message_received_unconfirmed_delayed">La confirmació d\'aquest pagament està retardada, probablement a causa d\'una sobrecàrrega de la xarxa Woodcoin.</string>
   <string name="transaction_row_message_received_unconfirmed_unlocked">Aquest pagament deuria estar disponible en pocs minuts.</string>
-  <string name="transaction_row_message_received_unconfirmed_chain_forking">A causa del manteniment de la xarxa de Woodcoin, no s\'hauria de confiar en aquesta transacció fins que sigui totalment confirmada.</string>
-  <string name="transaction_row_message_received_in_conflict">Aquest pagament té un major risc de ser revertit pel remitent! Si pots, espera la confirmació.</string>
+    <string name="transaction_row_message_received_in_conflict">Aquest pagament té un major risc de ser revertit pel remitent! Si pots, espera la confirmació.</string>
   <string name="transaction_row_message_received_dead">Aquest pagament ha sigut revertit per qui l\'ha enviat.</string>
   <string name="transaction_row_message_received_dust">Aquesta petita quantitat probablement mai podrà ser econòmicament gastada.</string>
   <string name="transaction_row_message_received_pay_to_many">Aquest pagament es realitza a molts moneders a part del teu el qual fa que l\'aplicació vagi cada vegada més lenta. Si pots, intenta rebre pagaments només dirigits a tu.</string>
@@ -206,8 +200,7 @@
   <string name="export_keys_dialog_title">Còpia de seguretat de la cartera</string>
   <string name="backup_wallet_dialog_message">La teva còpia de seguretat s\'encriptarà amb la paraula clau triada i s\'escriurà a un emmagatzematge extern.</string>
   <string name="backup_wallet_dialog_warning_encrypted">El teu moneder és protegit per un PIN de despesa. Estigues segur de recordar aquest PIN a més del password per la còpia de seguretat!</string>
-  <string name="export_keys_dialog_button_export">Còpia de seguretat.</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>S\'ha guardat una copia de seguretat en <tt>%s</tt><p><b>Si l\'unic lloc on conserver la còpia és al dispositiu, corres el risc de perdre ambdues al mateix temps!</b></p><p>En qualsevol cas, recorda la contrasenya.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>S\'ha guardat una copia de seguretat en <tt>%s</tt><p><b>Si l\'unic lloc on conserver la còpia és al dispositiu, corres el risc de perdre ambdues al mateix temps!</b></p><p>En qualsevol cas, recorda la contrasenya.</p>]]></string>
   <string name="export_keys_dialog_failure">La cartera no pot ser bloquejada:\n%s</string>
   <string name="import_export_keys_dialog_password">paraula de pas</string>
   <string name="backup_wallet_dialog_password_again">una altra vegada</string>
@@ -240,8 +233,7 @@
   <string name="input_parser_invalid_transaction">Transacció no vàlida:\n%s</string>
   <string name="preferences_activity_title">Ajustaments</string>
   <string name="preferences_category_diagnostics">Diagnosi</string>
-  <string name="preferences_category_labs">Laboratoris</string>
-  <string name="preferences_precision_title">Denominació i exactitud</string>
+    <string name="preferences_precision_title">Denominació i exactitud</string>
   <string name="preferences_precision_summary">Unitat en que es mostren els imports. No afecta al còmput.</string>
   <string name="preferences_precision_labels_8">LOG, 8 xifres decimals</string>
   <string name="preferences_precision_labels_6">LOG, 6 xifres decimals</string>
@@ -301,9 +293,7 @@
   <string name="about_credits_scrypt_title">Scrypt, implementat per Will Glozer i Colin Percival</string>
   <string name="about_market_app_title">Pàgina de Google Play</string>
   <string name="about_market_app_summary">Analitza o puntua l\'aplicació</string>
-  <string name="about_faq_title">Preguntes freqüents</string>
-  <string name="about_faq_summary">Preguntes freqüents sobre l\'aplicació</string>
-  <string name="notification_coins_received_msg">Rebuts%s</string>
+    <string name="notification_coins_received_msg">Rebuts%s</string>
   <string name="notification_peers_connected_msg">%d parells connectats</string>
   <string name="notification_inactivity_title">Encara tens Woodcoins en aquest dispositiu!</string>
   <string name="notification_inactivity_message">Recorda que el teu balanç de %s es perdrà si es desinstal·la l\'aplicació Woodcoin Wallet sense enviar-los primer.</string>
@@ -336,8 +326,7 @@
   <string name="action_show_qr">Mostra codi QR</string>
   <string name="action_browse">Navega</string>
   <!--generic strings-->
-  <string name="time_today">avui</string>
-  <string name="address_unlabeled">(no etiquetat)</string>
+    <string name="address_unlabeled">(no etiquetat)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">PIN incorrecte!</string>
   <!--generic error messages-->

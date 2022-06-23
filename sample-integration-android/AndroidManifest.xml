@@ -18,7 +18,7 @@
 
     <application android:label="Woodcoin in-app payment sample" >
         <activity
-            android:name="de.schildbach.wallet.integration.sample.SampleActivity"
+            android:name="de.schildbach.wallet.integration.sample.com.schildbach.wallet.integration.sample.SampleActivity"
             android:theme="@android:style/Theme.Light" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

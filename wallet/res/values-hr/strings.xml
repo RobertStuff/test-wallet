@@ -29,8 +29,7 @@
   <string name="wallet_version_dialog_msg">U ovoj verziji su uklonjene greške. Za detalje posjetite Google Play</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Preuzmi</string>
-  <string name="wallet_old_sdk_dialog_title">Android verzija je zastarjela</string>
-  <string name="send_coins_activity_title">Pošalji Woodcoin-ove</string>
+    <string name="send_coins_activity_title">Pošalji Woodcoin-ove</string>
   <string name="send_coins_fragment_receiving_address_label">Plati</string>
   <string name="send_coins_fragment_receiving_address_hint">upiši adresu ili ime</string>
   <string name="send_coins_fragment_amount_label">Iznos za uplatiti</string>
@@ -78,7 +77,6 @@
   <string name="button_request_coins">Zatraži coin</string>
   <string name="button_send_coins">Pošalji coin</string>
   <string name="action_show_qr">Prikaži QR kod</string>
-  <string name="time_today">danas</string>
-  <string name="address_unlabeled">(ne obilježen)</string>
+    <string name="address_unlabeled">(ne obilježen)</string>
   <!--generic error messages-->
 </resources>

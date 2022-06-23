@@ -13,8 +13,7 @@
 	<string name="blockchain_state_progress_problem_storage">Sinkronigado: Stokante problemo</string>
 	<string name="blockchain_state_progress_problem_network">Sinkronigado: Reta problemo</string>
 	<string name="wallet_address_fragment_clipboard_msg">Bitmonadreso kopiita al tondujo</string>
-	<string name="wallet_balance_fragment_replaying">Saldo nedisponeblas dum ripeto.</string>
-	<string name="exchange_rates_activity_title">Kurzoj</string>
+    <string name="exchange_rates_activity_title">Kurzoj</string>
 	<string name="exchange_rates_fragment_empty_text">Ne eblis ŝargi kurzojn.</string>
 	<string name="exchange_rates_fragment_default">(defaŭlta)</string>
 	<string name="exchange_rates_fragment_rate">proporcio</string>
@@ -41,9 +40,7 @@
 	<string name="wallet_version_dialog_msg">Tiu versio korektas gravajn cimojn. Por detaloj, vidu la ŝanĝan loglibron ĉe Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Elŝuti</string>
-	<string name="wallet_old_sdk_dialog_title">Androida versio eksdatas</string>
-	<string name="wallet_old_sdk_dialog_message">Estas verŝajne, ke unu de la sekvantaj versioj de BitmonMonujo ne subtenos vian aparaton. En iuj kazoj, ĝi povas esti malfacile elspezi monoj sur tiu aparato. \n\nSe vi ne scias kion vi faras, ĝi estas rekomendita movi viajn monojn frue.</string>
-	<string name="send_coins_activity_title">Sendi Bitmonojn</string>
+    <string name="send_coins_activity_title">Sendi Bitmonojn</string>
 	<string name="send_coins_fragment_receiving_address_label">Pagu al</string>
 	<string name="send_coins_fragment_receiving_address_hint">tajpu adreson aŭ nomon</string>
 	<string name="send_coins_fragment_receiving_address_error">Malvalida Bitmonadreso!</string>
@@ -73,8 +70,7 @@
 	<string name="address_book_context_remove_title">Forigi adreson</string>
 	<string name="address_book_context_copy_to_clipboard_title">Kopi al tondujo</string>
 	<string name="address_book_options_paste_from_clipboard_title">Alglui el tondujo</string>
-	<string name="address_book_options_paste_from_clipboard_empty">Tondujo malplenas</string>
-	<string name="address_book_options_scan_title">Skani adreson</string>
+    <string name="address_book_options_scan_title">Skani adreson</string>
 	<string name="address_book_row_message_compromised_key">Ĉi tiu adreso povus esti kompromitita. Vi devus ne uzi plu por ricevi monon.</string>
 	<string name="edit_address_book_entry_dialog_title_add">Aldoni adreson</string>
 	<string name="edit_address_book_entry_dialog_title_edit">Redakti adreson</string>
@@ -103,8 +99,7 @@
 	<string name="import_keys_dialog_failure">Privataj ŝlosiloj ne povis esti restaŭritaj\n\n%s\n\nMalbona pasvorto?</string>
 	<string name="export_keys_dialog_title">Savkopi privatajn ŝlosilojn</string>
 	<string name="backup_wallet_dialog_message">Viaj privataj ŝlosiloj estos ĉifritaj kun l\'elektita pasvorto kaj skribitaj al ekstera storo.</string>
-	<string name="export_keys_dialog_button_export">Savkopi</string>
-	<string name="export_keys_dialog_success">Viaj privataj ŝlosiloj estas savkopiitaj ĝis\n\n%s\n\nKonservu ilin sekurajn, kaj konservu vian pasvorton sekuran!</string>
+    <string name="export_keys_dialog_success">Viaj privataj ŝlosiloj estas savkopiitaj ĝis\n\n%s\n\nKonservu ilin sekurajn, kaj konservu vian pasvorton sekuran!</string>
 	<string name="export_keys_dialog_failure">Viaj privataj ŝlosiloj ne povis esti savkopiitaj:\n%s</string>
 	<string name="import_export_keys_dialog_password">pasvorto</string>
 	<string name="import_export_keys_dialog_show">Montru pasvorton</string>
@@ -118,8 +113,7 @@
 	<string name="input_parser_invalid_transaction">Malvalida transakcio:\n%s</string>
 	<string name="preferences_activity_title">Agoroj</string>
 	<string name="preferences_category_diagnostics">Diagnozo</string>
-	<string name="preferences_category_labs">Labs</string>
-	<string name="preferences_precision_title">Nomado kaj precizeco</string>
+    <string name="preferences_precision_title">Nomado kaj precizeco</string>
 	<string name="preferences_precision_summary">Unueco por montri kvantojn. Ĉi tio ne afektas komputadojn.</string>
 	<string name="preferences_connectivity_notification_title">Indikilo pri Konekteco</string>
 	<string name="preferences_connectivity_notification_summary">Montru aktualan nombron da konektitaj kolegoj en la sciiga areo.</string>
@@ -172,7 +166,6 @@
 	<string name="button_settings">Agordoj</string>
 	<string name="action_show_qr">Montru QRan kodon</string>
 	<string name="action_browse">Esplori</string>
-	<string name="time_today">hodiaŭ</string>
-	<string name="address_unlabeled">(sen nomo)</string>
+    <string name="address_unlabeled">(sen nomo)</string>
 
 </resources>

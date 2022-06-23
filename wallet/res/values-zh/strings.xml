@@ -14,8 +14,7 @@
   <string name="wallet_address_fragment_clipboard_msg">比特币地址已复制到了剪贴板</string>
   <string name="wallet_address_dialog_fragment_hint">为了保护你的隐私，当发生接收交易后，你的地址将会更换。</string>
   <string name="wallet_balance_fragment_too_much">该金额太庞大了，在您的口袋中随身携带存在安全风险。请将一部分资金转移到一个安全的地方。</string>
-  <string name="wallet_balance_fragment_replaying">重放 (replay) 过程中无法显示余额。</string>
-  <string name="exchange_rates_activity_title">汇率</string>
+    <string name="exchange_rates_activity_title">汇率</string>
   <string name="exchange_rates_fragment_empty_text">无法加载汇率。</string>
   <string name="exchange_rates_fragment_empty_search">汇率未找到。</string>
   <string name="exchange_rates_fragment_default">(默认)</string>
@@ -50,13 +49,10 @@
   <string name="wallet_version_dialog_msg_deprecated">如果你没有看到更新，这可能意味您的 Android 版本已经不被支持了。</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">下载</string>
-  <string name="wallet_old_sdk_dialog_title">您的 Android 版本已过时</string>
-  <string name="wallet_old_sdk_dialog_message">下一个版本的比特币钱包程序很有可能不再支持您当前的设备。这将导致在某些情况下您无法在该设备上支付比特币。\n除非您知道自己在做什么，否则强烈建议您尽快转移您存储在该设备上的比特币。</string>
-  <string name="send_coins_activity_title">发送比特币</string>
+    <string name="send_coins_activity_title">发送比特币</string>
   <string name="send_coins_fragment_request_payment_request_progress">正在从 %s 读取签名…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">获取签名失败</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">签名错误！</string>
-  <string name="send_coins_fragment_payee_verified_by">已由 %s 验证</string>
+    <string name="send_coins_fragment_payee_verified_by">已由 %s 验证</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">未知</string>
   <string name="send_coins_fragment_receiving_address_label">支付给</string>
   <string name="send_coins_fragment_receiving_address_hint">输入地址或名称</string>
@@ -138,8 +134,7 @@
   <string name="address_book_context_remove_title">移除地址</string>
   <string name="address_book_context_copy_to_clipboard_title">复制到剪贴板</string>
   <string name="address_book_options_paste_from_clipboard_title">从剪贴板中粘贴</string>
-  <string name="address_book_options_paste_from_clipboard_empty">剪贴板为空</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">无法识别剪贴板中的数据</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">无法识别剪贴板中的数据</string>
   <string name="address_book_options_paste_from_clipboard_own_address">剪贴板中的地址是你自己</string>
   <string name="address_book_options_scan_title">掃描地址</string>
   <string name="address_book_options_scan_invalid">无法识别扫描的数据</string>
@@ -191,8 +186,7 @@
   <string name="export_keys_dialog_title">备份钱包</string>
   <string name="backup_wallet_dialog_message">您的备份将会使用选定的密码进行加密，然后放置在外部存储设备上。</string>
   <string name="backup_wallet_dialog_warning_encrypted">您的钱包受支付PIN码保护。除了备份密码以外，请确保您记住该PIN码！</string>
-  <string name="export_keys_dialog_button_export">备份</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>您的钱包已经被备份到 <tt>%s</tt></p><p><b>如果只把您的备份存放在是您的设备上，您将承担着两者同时丢失的风险！</b></p><p>在任何情况下，请一定要记住您的备份密码。</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>您的钱包已经被备份到 <tt>%s</tt></p><p><b>如果只把您的备份存放在是您的设备上，您将承担着两者同时丢失的风险！</b></p><p>在任何情况下，请一定要记住您的备份密码。</p>]]></string>
   <string name="export_keys_dialog_failure">无法备份钱包：\n%s</string>
   <string name="import_export_keys_dialog_password">密码</string>
   <string name="backup_wallet_dialog_password_again">确认密码</string>
@@ -225,8 +219,7 @@
   <string name="input_parser_invalid_transaction">无效的交易：\n%s</string>
   <string name="preferences_activity_title">设置</string>
   <string name="preferences_category_diagnostics">诊断</string>
-  <string name="preferences_category_labs">实验</string>
-  <string name="preferences_precision_title">面值和精度</string>
+    <string name="preferences_precision_title">面值和精度</string>
   <string name="preferences_precision_summary">金额的显示单位，不会影响计算。</string>
   <string name="preferences_precision_labels_8">LOG, 8 位小数</string>
   <string name="preferences_precision_labels_6">LOG, 6 位小数</string>
@@ -314,8 +307,7 @@
   <string name="action_show_qr">显示二维码</string>
   <string name="action_browse">浏览</string>
   <!--generic strings-->
-  <string name="time_today">今天</string>
-  <string name="address_unlabeled">(无标签)</string>
+    <string name="address_unlabeled">(无标签)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">错误的 PIN！</string>
   <!--generic error messages-->

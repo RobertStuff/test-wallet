@@ -15,8 +15,7 @@
   <string name="wallet_address_dialog_fragment_hint">For å beskytte ditt privatliv, vil en ny adresse bli generert når denne mottar en betaling.</string>
   <string name="wallet_balance_fragment_insecure_device">Din enheten er gammel og usikker. Vennligst bare bruk for små beløp.</string>
   <string name="wallet_balance_fragment_too_much">Dette beløpet er ganske høyt for å bære rundt i lommen din. Vennligst flytt noe til et tryggere sted.</string>
-  <string name="wallet_balance_fragment_replaying">Saldo er ikke tilgjengelig under gjennomgangen.</string>
-  <string name="exchange_rates_activity_title">Valutakurser</string>
+    <string name="exchange_rates_activity_title">Valutakurser</string>
   <string name="exchange_rates_fragment_empty_text">Kunne ikke laste valutakurser.</string>
   <string name="exchange_rates_fragment_empty_search">Kunne ikke finne valutakurser.</string>
   <string name="exchange_rates_fragment_default">(standard)</string>
@@ -55,14 +54,11 @@
   <string name="wallet_version_dialog_msg_deprecated">Hvis du ikke ser en oppdatering, betyr dette sannsynligvis at din versjon av Android ikke støttes lenger.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Last ned</string>
-  <string name="wallet_old_sdk_dialog_title">Android-versjon er utdatert</string>
-  <string name="wallet_old_sdk_dialog_message">Der er risiko for at en av de neste utgivelsene av Woodcoin Wallet ikke vil støtte din enhet lenger. I noen tilfeller kan det være vanskelig å bruke mynter på denne enheten.\n\nMed mindre du vet hva du gjør, anbefales det å straks flytte dine mynter vekk.</string>
-  <string name="alert_dialogs_fragment_settings_failed_title">Problem med å åpne innstillinger</string>
+    <string name="alert_dialogs_fragment_settings_failed_title">Problem med å åpne innstillinger</string>
   <string name="send_coins_activity_title">Send woodcoins</string>
   <string name="send_coins_fragment_request_payment_request_progress">Henter signatur fra %s…</string>
   <string name="send_coins_fragment_request_payment_request_failed_title">Henting av signatur mislyktes</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Feil signatur!</string>
-  <string name="send_coins_fragment_payee_verified_by">verifisert av: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">verifisert av: %s</string>
   <string name="send_coins_fragment_payee_verified_by_unknown">ukjent</string>
   <string name="send_coins_fragment_receiving_address_label">Betal til</string>
   <string name="send_coins_fragment_receiving_address_hint">skriv adresse eller navn</string>
@@ -147,8 +143,7 @@
   <string name="address_book_context_remove_title">Fjern adresse</string>
   <string name="address_book_context_copy_to_clipboard_title">Kopier til utklippstavlen</string>
   <string name="address_book_options_paste_from_clipboard_title">Lim inn fra utklippstavlen</string>
-  <string name="address_book_options_paste_from_clipboard_empty">Utklippstavlen er tom</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Data fra utklippstavlen kan ikke gjenkjennes</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Data fra utklippstavlen kan ikke gjenkjennes</string>
   <string name="address_book_options_paste_from_clipboard_own_address">Adressen på utklippstavlen er din egen.</string>
   <string name="address_book_options_scan_title">Skann adresse</string>
   <string name="address_book_options_scan_invalid">Skannet data kan ikke gjenkjennes</string>
@@ -168,8 +163,7 @@
   <string name="transaction_row_message_received_direct">Denne betalingen er mottatt direkte. Det er en risiko for at den aldri blir brukbar.</string>
   <string name="transaction_row_message_received_unconfirmed_delayed">Bekreftelsen av denne betalingen er forsinket, sannsynligvis på grunn av en overbelastning av Woodcoin-nettverket.</string>
   <string name="transaction_row_message_received_unconfirmed_unlocked">Denne betalingen bør bli brukbar om få minutter.</string>
-  <string name="transaction_row_message_received_unconfirmed_chain_forking">På grunn av vedlikehold på Woodcoin-nettverket, bør denne transaksjonen ikke tas for gitt før den er helt bekreftet.</string>
-  <string name="transaction_row_message_received_in_conflict">Denne betalingen har økt risiko for å bli reversert av avsender! Hvis du kan, vent på bekreftelse.</string>
+    <string name="transaction_row_message_received_in_conflict">Denne betalingen har økt risiko for å bli reversert av avsender! Hvis du kan, vent på bekreftelse.</string>
   <string name="transaction_row_message_received_dead">Denne betalingen er blitt reversert av avsenderen.</string>
   <string name="transaction_row_message_received_dust">Dette lille beløpet kan økonomisk sett sannsynligvis aldri brukes.</string>
   <string name="transaction_row_message_received_pay_to_many">Denne betalingen går til mange flere enn deg, og dette gjør at appen går tregere over tid. Hvis du kan, prøv å motta betalinger som kun går til deg.</string>
@@ -203,8 +197,7 @@
   <string name="export_keys_dialog_title">Ta sikkerhetskopi av lommeboken</string>
   <string name="backup_wallet_dialog_message">Din sikkerhetskopi blir kryptert med det valgte passordet og skrevet til eksternt lager.</string>
   <string name="backup_wallet_dialog_warning_encrypted">Lommeboken din er beskyttet av en PIN for betaling. Sørg for at du husker PIN-koden i tillegg til passordet for sikkerhetskopien!</string>
-  <string name="export_keys_dialog_button_export">Sikkerhetskopier</string>
-  <string name="export_keys_dialog_success"><![CDATA[<p>Din lommebok er blitt sikkerhetskopieret til <tt>%s</tt></p><p><b>Hvis din sikkerhetskopi kun finnes på din enhet, løper du risikoen å miste begge deler på samme tid!</b></p><p>Uansett hva, så vær sikker på at du kan huske ditt passord til sikkerhetskopien.</p>]]></string>
+    <string name="export_keys_dialog_success"><![CDATA[<p>Din lommebok er blitt sikkerhetskopieret til <tt>%s</tt></p><p><b>Hvis din sikkerhetskopi kun finnes på din enhet, løper du risikoen å miste begge deler på samme tid!</b></p><p>Uansett hva, så vær sikker på at du kan huske ditt passord til sikkerhetskopien.</p>]]></string>
   <string name="export_keys_dialog_failure">Din lommebok kunne ikke sikkerhetskopieres:\n%s</string>
   <string name="import_export_keys_dialog_password">passord</string>
   <string name="backup_wallet_dialog_password_again">igjen</string>
@@ -237,8 +230,7 @@
   <string name="input_parser_invalid_transaction">Ugyldig transaksjon:\n%s</string>
   <string name="preferences_activity_title">Innstillinger</string>
   <string name="preferences_category_diagnostics">Diagnostikk</string>
-  <string name="preferences_category_labs">Laboratoriet</string>
-  <string name="preferences_precision_title">Benevnelse og presisjon</string>
+    <string name="preferences_precision_title">Benevnelse og presisjon</string>
   <string name="preferences_precision_summary">Enhet som beløp vises i. Dette påvirker ikke beregninger.</string>
   <string name="preferences_precision_labels_8">LOG, 8 desimaler</string>
   <string name="preferences_precision_labels_6">LOG, 6 desimaler</string>
@@ -298,9 +290,7 @@
   <string name="about_credits_scrypt_title">Scrypt, implementert av Will Glozer og Colin Percival</string>
   <string name="about_market_app_title">Google Play-siden</string>
   <string name="about_market_app_summary">Anmeld eller bedøm appen</string>
-  <string name="about_faq_title">FAQ</string>
-  <string name="about_faq_summary">Ofte stilte spørsmål om appen</string>
-  <string name="notification_coins_received_msg">Mottok %s</string>
+    <string name="notification_coins_received_msg">Mottok %s</string>
   <string name="notification_peers_connected_msg">%d peers tilkoblet</string>
   <string name="notification_inactivity_title">Du har fortsatt woodcoins på denne enheten!</string>
   <string name="notification_inactivity_message">Husk at din saldo på %s vil gå tapt hvis du avinstallerer appen Woodcoin Wallet uten å først sende pengene videre.</string>
@@ -333,8 +323,7 @@
   <string name="action_show_qr">Vis QR-kode</string>
   <string name="action_browse">Se gjennom</string>
   <!--generic strings-->
-  <string name="time_today">i dag</string>
-  <string name="address_unlabeled">(ingen merkelapp)</string>
+    <string name="address_unlabeled">(ingen merkelapp)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">feil PIN!</string>
   <!--generic error messages-->

@@ -13,8 +13,7 @@
   <string name="wallet_address_fragment_clipboard_msg">H Woodcoin διεύθυνση αντιγράφηκε στο πρόχειρο</string>
   <string name="wallet_address_dialog_fragment_hint">Για λόγους προστασίας της ανωνυμίας σας, η διεύθυνσή σας θα αλλάζει με κάθε πληρωμή που θα λαμβάνετε.</string>
   <string name="wallet_balance_fragment_too_much">Το ποσό αυτό είναι αρκετά μεγάλο για να το έχετε σε ένα σημείο. Μετακινήστε μερικά νομίσματα σε άλλο πορτοφόλι για τη δική σας ασφάλεια.</string>
-  <string name="wallet_balance_fragment_replaying">Το υπόλοιπο δεν είναι διαθέσιμο κατά τη διάρκεια της επανάληψης.</string>
-  <string name="exchange_rates_activity_title">Ισοτιμίες</string>
+    <string name="exchange_rates_activity_title">Ισοτιμίες</string>
   <string name="exchange_rates_fragment_empty_text">Δεν ήταν δυνατή η φόρτωση των ισοτιμιών.</string>
   <string name="exchange_rates_fragment_empty_search">Δε βρέθηκε η ισοτιμία.</string>
   <string name="exchange_rates_fragment_default">(προεπιλογή)</string>
@@ -39,10 +38,8 @@
   <string name="wallet_version_dialog_msg">Αυτή η έκδοση διορθώνει σημαντικά προβλήματα. Για λεπτομέρειες, δείτε το σύνολο των αλλαγών στο Google Play.</string>
   <string name="wallet_version_dialog_button_market">Google Play</string>
   <string name="wallet_version_dialog_button_binary">Λήψη</string>
-  <string name="wallet_old_sdk_dialog_title">Η έκδοση για Android είναι παρωχημένη</string>
-  <string name="send_coins_activity_title">Αποστολή Woodcoins</string>
-  <string name="send_coins_fragment_request_payment_request_wrong_signature">Λανθασμένη υπογραφή!</string>
-  <string name="send_coins_fragment_payee_verified_by_unknown">άγνωστο</string>
+    <string name="send_coins_activity_title">Αποστολή Woodcoins</string>
+    <string name="send_coins_fragment_payee_verified_by_unknown">άγνωστο</string>
   <string name="send_coins_fragment_receiving_address_label">Πληρωμή σε</string>
   <string name="send_coins_fragment_receiving_address_hint">πληκτρολογήστε τη διεύθυνση ή το όνομα</string>
   <string name="send_coins_fragment_pending">(%s αναμονή για επιβεβαίωση)</string>
@@ -98,8 +95,7 @@
   <string name="address_book_context_remove_title">Αφαιρέστε τη διεύθυνση</string>
   <string name="address_book_context_copy_to_clipboard_title">Αντιγραφή στο πρόχειρο</string>
   <string name="address_book_options_paste_from_clipboard_title">Επικόλληση από το πρόχειρο</string>
-  <string name="address_book_options_paste_from_clipboard_empty">το πρόχειρο είναι κενό</string>
-  <string name="address_book_options_paste_from_clipboard_invalid">Τα δεδομένα από το πρόχειρο είναι μη αναγνωρίσιμα</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Τα δεδομένα από το πρόχειρο είναι μη αναγνωρίσιμα</string>
   <string name="address_book_options_scan_title">Αναζήτηση διεύθυνσης</string>
   <string name="address_book_options_scan_invalid">Τα σαρωμένα δεδομένα είναι μη αναγνωρίσημα</string>
   <string name="edit_address_book_entry_dialog_title_add_receive">Προσθήκη ετικέτας στη διεύθυνση σας</string>
@@ -133,8 +129,7 @@
   <string name="export_keys_dialog_title">Αντίγραφο ασφαλείας πορτοφολιού</string>
   <string name="backup_wallet_dialog_message">Το αντίγραφο ασφαλείας σας θα κρυπτογραφηθεί με τον επιλεγμένο κωδικό και θα αποθηκευτεί στον εξωτερικό χώρο αποθήκευσης.</string>
   <string name="backup_wallet_dialog_warning_encrypted">Το πορτοφόλι σας προστατεύεται από PIN δαπανών. Βεβαιωθείτε ότι θυμάστε το PIN εκτός από τον εφεδρικό κωδικό πρόσβασης!</string>
-  <string name="export_keys_dialog_button_export">Αντίγραφο ασφαλείας</string>
-  <string name="export_keys_dialog_failure">Το πορτοφόλι σου δε θα μπορούσε να δημιουργήσει αντίγραφο ασφαλείας:\n%s</string>
+    <string name="export_keys_dialog_failure">Το πορτοφόλι σου δε θα μπορούσε να δημιουργήσει αντίγραφο ασφαλείας:\n%s</string>
   <string name="import_export_keys_dialog_password">κωδικός</string>
   <string name="backup_wallet_dialog_password_again">ξανά</string>
   <string name="backup_wallet_dialog_password_mismatch">αναντιστοιχία!</string>
@@ -162,8 +157,7 @@
   <string name="input_parser_invalid_transaction">Μη έγκυρη συναλλαγή:\n%s</string>
   <string name="preferences_activity_title">Ρυθμίσεις</string>
   <string name="preferences_category_diagnostics">Διαγνωστικά</string>
-  <string name="preferences_category_labs">Εργαστήρια</string>
-  <string name="preferences_precision_title">Ονομασία και ακρίβεια</string>
+    <string name="preferences_precision_title">Ονομασία και ακρίβεια</string>
   <string name="preferences_precision_summary">Μονάδα απεικόνισης ποσών. Δεν επηρεάζει τους υπολογισμούς.</string>
   <string name="preferences_connectivity_notification_title">Ένδειξη συνδεσιμότητας</string>
   <string name="preferences_connectivity_notification_summary">Δείτε τον τρέχοντα αριθμό των συνδεδεμένων peers στην περιοχή ειδοποιήσεων.</string>
@@ -223,8 +217,7 @@
   <string name="button_settings">Ρυθμίσεις</string>
   <string name="action_show_qr">Εμφάνιση QR κώδικα</string>
   <string name="action_browse">Πλοήγηση</string>
-  <string name="time_today">σήμερα</string>
-  <string name="address_unlabeled">(χωρίς ετικέτα)</string>
+    <string name="address_unlabeled">(χωρίς ετικέτα)</string>
   <string name="private_key_password">PIN</string>
   <string name="private_key_bad_password">λάθος PIN</string>
   <!--generic error messages-->

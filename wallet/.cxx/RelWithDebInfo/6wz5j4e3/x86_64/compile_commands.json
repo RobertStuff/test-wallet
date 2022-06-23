@@ -1,0 +1,19 @@
+[
+{
+  "directory": "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/6wz5j4e3/x86_64",
+  "command": "/home/jong/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/jong/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dscrypt_EXPORTS -I/media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DHAVE_CONFIG_H -O2 -g -DNDEBUG -fPIC   -o CMakeFiles/scrypt.dir/scrypt_jni.c.o   -c /media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/scrypt_jni.c",
+  "file": "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/scrypt_jni.c"
+},
+
+{
+  "directory": "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/6wz5j4e3/x86_64",
+  "command": "/home/jong/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/jong/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dscrypt_EXPORTS -I/media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DHAVE_CONFIG_H -O2 -g -DNDEBUG -fPIC   -o CMakeFiles/scrypt.dir/crypto_scrypt-nosse.c.o   -c /media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/crypto_scrypt-nosse.c",
+  "file": "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/crypto_scrypt-nosse.c"
+},
+
+{
+  "directory": "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/RelWithDebInfo/6wz5j4e3/x86_64",
+  "command": "/home/jong/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/jong/Android/Sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dscrypt_EXPORTS -I/media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/.  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DHAVE_CONFIG_H -O2 -g -DNDEBUG -fPIC   -o CMakeFiles/scrypt.dir/sha256.c.o   -c /media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/sha256.c",
+  "file": "/media/projects/Funk/Woodcoin_android/test-wallet/wallet/cpp/sha256.c"
+}
+]

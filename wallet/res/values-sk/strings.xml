@@ -13,8 +13,7 @@
 	<string name="blockchain_state_progress_problem_storage">Synchronizácia: Problém s dátovým úložiskom</string>
 	<string name="blockchain_state_progress_problem_network">Synchronizácia: Problém so sieťou</string>
 	<string name="wallet_address_fragment_clipboard_msg">Adresa skopírovaná do schránky</string>
-	<string name="wallet_balance_fragment_replaying">Zostatok je nedostupný počas synchronizácie.</string>
-	<string name="exchange_rates_activity_title">Výmenné kurzy</string>
+    <string name="exchange_rates_activity_title">Výmenné kurzy</string>
 	<string name="exchange_rates_fragment_empty_text">Nepodarilo sa načítať výmenné kurzy</string>
 	<string name="exchange_rates_fragment_default">(predvolené)</string>
 	<string name="exchange_rates_fragment_rate">kurz</string>
@@ -41,13 +40,10 @@
 	<string name="wallet_version_dialog_msg">Táto verzia opravuje kritické chyby. Pre viac informácií navštívte Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Stiahnuť</string>
-	<string name="wallet_old_sdk_dialog_title">Verzia vášho Androidu je zastaralá</string>
-	<string name="wallet_old_sdk_dialog_message">Je možné, že v novších verziách Woodcoin Wallet už nebude podporované vaše zariadenie. V určitých prípadoch môže byť obtiažne minúť Woodcoiny z tohto zariadenia.\n\nJe odporúčané presunúť Woodcoiny z tohto zariadenia.</string>
-	<string name="send_coins_activity_title">Poslať Woodcoiny</string>
+    <string name="send_coins_activity_title">Poslať Woodcoiny</string>
 	<string name="send_coins_fragment_request_payment_request_progress">Získavanie podpisu z %s...</string>
 	<string name="send_coins_fragment_request_payment_request_failed_title">Získavanie podpisu zlyhalo</string>
-	<string name="send_coins_fragment_request_payment_request_wrong_signature">Nesprávny podpis!</string>
-	<string name="send_coins_fragment_payee_verified_by">verifikované: %s</string>
+    <string name="send_coins_fragment_payee_verified_by">verifikované: %s</string>
 	<string name="send_coins_fragment_payee_verified_by_unknown">neznáme</string>
 	<string name="send_coins_fragment_receiving_address_label">Zaplatiť</string>
 	<string name="send_coins_fragment_receiving_address_hint">zadajte adresu alebo názov</string>
@@ -87,8 +83,7 @@
 	<string name="address_book_context_remove_title">Odstrániť adresu</string>
 	<string name="address_book_context_copy_to_clipboard_title">Skopírovať do schránky</string>
 	<string name="address_book_options_paste_from_clipboard_title">Prilepiť zo schránky</string>
-	<string name="address_book_options_paste_from_clipboard_empty">Schránka je prázdna</string>
-	<string name="address_book_options_paste_from_clipboard_invalid">Dáta zo schránky nebolo možné rozpoznať</string>
+    <string name="address_book_options_paste_from_clipboard_invalid">Dáta zo schránky nebolo možné rozpoznať</string>
 	<string name="address_book_options_scan_title">Skenovať adresu</string>
 	<string name="address_book_options_scan_invalid">Skenované dáta nebolo možné rozpoznať</string>
 	<string name="address_book_row_message_compromised_key">Táto adresa môže byť ohrozená. Nemali by ste ju už používať na prijímanie Woodcoinov.</string>
@@ -120,8 +115,7 @@
 	<string name="import_keys_dialog_failure">Privátne kľúče sa nepodarilo obnoviť:\n\n%s\n\nNesprávne heslo?</string>
 	<string name="export_keys_dialog_title">Zálohovať privátne kľúče</string>
 	<string name="backup_wallet_dialog_message">Privátne kľúče budú zašifrované zvoleným heslom a uložené na externú pamäť.</string>
-	<string name="export_keys_dialog_button_export">Zálohovať</string>
-	<string name="export_keys_dialog_success">Privátne kľúče boli zálohované do \n\n%s\n\nDržte ich v bezpečí, a taktiež držte v bezpečí vaše heslo!</string>
+    <string name="export_keys_dialog_success">Privátne kľúče boli zálohované do \n\n%s\n\nDržte ich v bezpečí, a taktiež držte v bezpečí vaše heslo!</string>
 	<string name="export_keys_dialog_failure">Vaše privátne kľúče sa nepodarilo zálohovať:\n%s</string>
 	<string name="import_export_keys_dialog_password">heslo</string>
 	<string name="import_export_keys_dialog_show">Zobraziť heslo</string>
@@ -137,8 +131,7 @@
 	<string name="input_parser_invalid_transaction">Neplatná transakcia:\n%s</string>
 	<string name="preferences_activity_title">Nastavenia</string>
 	<string name="preferences_category_diagnostics">Diagnostika</string>
-	<string name="preferences_category_labs">Labs</string>
-	<string name="preferences_precision_title">Jednotka a presnosť</string>
+    <string name="preferences_precision_title">Jednotka a presnosť</string>
 	<string name="preferences_precision_summary">Jednotka pre zobrazenie sumy. Neovplyvňuje výpočty.</string>
 	<string name="preferences_connectivity_notification_title">Indikátor pripojenia</string>
 	<string name="preferences_connectivity_notification_summary">Zobraziť počet pripojených uzlov v oznamovacej oblasti.</string>
@@ -192,8 +185,7 @@
 	<string name="button_settings">Nastavenia</string>
 	<string name="action_show_qr">Ukáž QR kód</string>
 	<string name="action_browse">Otvoriť v prehliadači</string>
-	<string name="time_today">dnes</string>
-	<string name="address_unlabeled">(neoznačené)</string>
+    <string name="address_unlabeled">(neoznačené)</string>
 	<!-- generic error messages -->
 	<string name="error_io">I/O chyba: %s</string>
 	<string name="error_http">HTTP chyba %1$s:\n%2$s</string>

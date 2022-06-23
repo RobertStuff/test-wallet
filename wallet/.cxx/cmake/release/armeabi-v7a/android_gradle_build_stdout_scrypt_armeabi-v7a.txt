@@ -1,0 +1,5 @@
+ninja: Entering directory `/media/projects/Funk/Woodcoin_android/test-wallet/wallet/.cxx/cmake/release/armeabi-v7a'
+[1/4] Building C object CMakeFiles/scrypt.dir/scrypt_jni.c.o
+[2/4] Building C object CMakeFiles/scrypt.dir/crypto_scrypt-nosse.c.o
+[3/4] Building C object CMakeFiles/scrypt.dir/sha256.c.o
+[4/4] Linking C shared library /media/projects/Funk/Woodcoin_android/test-wallet/wallet/build/intermediates/cmake/release/obj/armeabi-v7a/libscrypt.so

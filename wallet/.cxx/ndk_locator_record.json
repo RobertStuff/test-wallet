@@ -1,0 +1,53 @@
+{
+  "ndkFolder": "/home/robertstuff/Android/Sdk/ndk/23.1.7779620",
+  "messages": [
+    {
+      "level": "INFO",
+      "message": "android.ndkVersion from module build.gradle is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "ndk.dir in local.properties is /home/robertstuff/Android/Sdk/ndk/23.1.7779620"
+    },
+    {
+      "level": "INFO",
+      "message": "ANDROID_NDK_HOME environment variable is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "sdkFolder is /home/robertstuff/Android/Sdk"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/robertstuff/Android/Sdk/ndk/23.1.7779620 by ndk.dir"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/robertstuff/Android/Sdk/ndk-bundle in SDK ndk-bundle folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/robertstuff/Android/Sdk/ndk/23.0.7599858 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/robertstuff/Android/Sdk/ndk/24.0.8215888 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/robertstuff/Android/Sdk/ndk/23.1.7779620 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/robertstuff/Android/Sdk/ndk/21.1.6352462 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /home/robertstuff/Android/Sdk/ndk/22.1.7171670 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Found requested ndk.dir (/home/robertstuff/Android/Sdk/ndk/23.1.7779620) which has version 23.1.7779620"
+    }
+  ]
+}

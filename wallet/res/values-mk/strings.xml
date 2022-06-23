@@ -13,8 +13,7 @@
 	<string name="blockchain_state_progress_problem_storage">Се синхронизира: Проблем со простор за складирање</string>
 	<string name="blockchain_state_progress_problem_network">Се синхронизира: Проблем со мрежата</string>
 	<string name="wallet_address_fragment_clipboard_msg">Биткоин адресата е копирана во склад</string>
-	<string name="wallet_balance_fragment_replaying">Салдото е недостапно за време на повторена акција.</string>
-	<string name="exchange_rates_activity_title">Девизен курс</string>
+    <string name="exchange_rates_activity_title">Девизен курс</string>
 	<string name="exchange_rates_fragment_empty_text">Не може да го вчитам курсот на валутите</string>
 	<string name="exchange_rates_fragment_default">(главно)</string>
 	<string name="exchange_rates_fragment_rate">курс</string>
@@ -41,9 +40,7 @@
 	<string name="wallet_version_dialog_msg">Оваа верзија поправа важни софтверски грешки. За детали, види го дневникот со грешки на Google Play.</string>
 	<string name="wallet_version_dialog_button_market">Google Play</string>
 	<string name="wallet_version_dialog_button_binary">Преземи</string>
-	<string name="wallet_old_sdk_dialog_title">Андроид верзијата не е ажурирана</string>
-	<string name="wallet_old_sdk_dialog_message">Постојат големи шанси дека во некоја од следните верзии на Биткоин Паричник твојот уред нема да биде поддржан повеќе. Во некои случаи, може да биде тешко да трошиш биткоини од овој уред.\n\nОсвен ако знаеш што правиш, препорачуваме да ги преместиш твоите биткоини наскоро.</string>
-	<string name="send_coins_activity_title">Испрати Биткоини</string>
+    <string name="send_coins_activity_title">Испрати Биткоини</string>
 	<string name="send_coins_fragment_receiving_address_label">Плати на</string>
 	<string name="send_coins_fragment_receiving_address_hint">впиши адреса или име</string>
 	<string name="send_coins_fragment_receiving_address_error">Невалидна Биткоин адреса!</string>
@@ -73,8 +70,7 @@
 	<string name="address_book_context_remove_title">Отстрани адреса</string>
 	<string name="address_book_context_copy_to_clipboard_title">Копирај во склад</string>
 	<string name="address_book_options_paste_from_clipboard_title">Внеси од склад</string>
-	<string name="address_book_options_paste_from_clipboard_empty">Складот е празен</string>
-	<string name="address_book_options_scan_title">Скенирај адреса</string>
+    <string name="address_book_options_scan_title">Скенирај адреса</string>
 	<string name="address_book_row_message_compromised_key">Оваа адреса можеби е компромитирана. Не треба да ја користиш за примање биткоини повеќе.</string>
 	<string name="edit_address_book_entry_dialog_title_add">Додади адреса</string>
 	<string name="edit_address_book_entry_dialog_title_edit">Уреди адреса</string>
@@ -103,8 +99,7 @@
 	<string name="import_keys_dialog_failure">Приватните клучеви не може да се повратат:\n\n%s\n\nГрешна лозинка?</string>
 	<string name="export_keys_dialog_title">Направи резервна копија од приватните клучеви</string>
 	<string name="backup_wallet_dialog_message">Твоите приватни клучеви ќе бидат шифрирани со одбраната лозинка и зачувани во надворешен склад.</string>
-	<string name="export_keys_dialog_button_export">Направи резервна копија</string>
-	<string name="export_keys_dialog_success">Твоите приватни клучеви имаат резервна копија во\n\n%s\n\nЧувај ги на безбедно место и чувај ја твојата лозинка тајна!</string>
+    <string name="export_keys_dialog_success">Твоите приватни клучеви имаат резервна копија во\n\n%s\n\nЧувај ги на безбедно место и чувај ја твојата лозинка тајна!</string>
 	<string name="export_keys_dialog_failure">Не може да се креира резервна копија од твоите приватни клучеви:\n%s</string>
 	<string name="import_export_keys_dialog_password">лозинка</string>
 	<string name="import_export_keys_dialog_show">Прикажи лозинка</string>
@@ -118,8 +113,7 @@
 	<string name="input_parser_invalid_transaction">Невалидна трансакција:\n%s</string>
 	<string name="preferences_activity_title">Поставувања</string>
 	<string name="preferences_category_diagnostics">Дијагностицирање</string>
-	<string name="preferences_category_labs">Лабораторија</string>
-	<string name="preferences_precision_title">Деноминација и прецизност</string>
+    <string name="preferences_precision_title">Деноминација и прецизност</string>
 	<string name="preferences_precision_summary">Мерка за прикажување на салдото. Ова не влијае на пресметките.</string>
 	<string name="preferences_connectivity_notification_title">Индикадор за поврзливост</string>
 	<string name="preferences_connectivity_notification_summary">Прикажи моментален број на поврзани точки во полето за известувања.</string>
@@ -172,7 +166,6 @@
 	<string name="button_settings">Поставувања</string>
 	<string name="action_show_qr">Прикажи QR код</string>
 	<string name="action_browse">Прегледај</string>
-	<string name="time_today">денес</string>
-	<string name="address_unlabeled">(без ознака)</string>
+    <string name="address_unlabeled">(без ознака)</string>
 
 </resources>

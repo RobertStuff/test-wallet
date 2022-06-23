@@ -2,6 +2,8 @@
 <resources>
 
     <string name="toast_wallet_reset">Your wallet was reset!\nIt will take some time to recover.</string>
+    <string name="toast_start_external_document_failed">There is no web browser installed to open the external document.</string>
+    <string name="toast_start_storage_provider_selector_failed">No suitable cloud storage provider is installed.\nYou need something like \"Nextcloud\" or \"Google Drive\".</string>
     <string name="wallet_disclaimer_fragment_remind_safety">Use at your own risk. Read the &lt;u&gt;safety notes&lt;/u&gt;.</string>
     <string name="wallet_disclaimer_fragment_remind_backup">You need to &lt;u&gt;back up your wallet&lt;/u&gt;!</string>
     <string name="blockchain_state_progress_hours">%1$s, %2$d hours behind</string>
@@ -16,7 +18,6 @@
     <string name="wallet_address_dialog_fragment_hint">To protect your privacy, your address will change once it receives a payment.</string>
     <string name="wallet_balance_fragment_insecure_device">Your device is old and insecure. Please only use for small amounts.</string>
     <string name="wallet_balance_fragment_too_much">This amount is quite high for carrying in your pocket. Please move some to a safer place.</string>
-    <string name="wallet_balance_fragment_replaying">Balance is unavailable during replay.</string>
     <string name="exchange_rates_activity_title">Exchange rates</string>
     <string name="exchange_rates_fragment_empty_text">Could not load exchange rates.</string>
     <string name="exchange_rates_fragment_empty_search">Could not find exchange rate.</string>
@@ -57,14 +58,11 @@
     <string name="wallet_version_dialog_msg_deprecated">If you don\'t see an update, this probably means your version of Android isn\'t supported any more.</string>
     <string name="wallet_version_dialog_button_market">Google Play</string>
     <string name="wallet_version_dialog_button_binary">Download</string>
-    <string name="wallet_old_sdk_dialog_title">Android version is out of date</string>
-    <string name="wallet_old_sdk_dialog_message">Chances are that one of the next releases of Woodcoin Wallet will not support your device any more. In some cases, it can get difficult to spend coins on this device.\n\nUnless you know what you are doing, it is recommended to move out your coins soon.</string>
     <string name="alert_dialogs_fragment_settings_failed_title">Problem with opening of settings</string>
     <string name="send_coins_activity_title">Send Woodcoins</string>
     <string name="send_coins_fragment_request_payment_request_progress">Fetching signature from %s…</string>
     <string name="send_coins_fragment_request_payment_request_failed_title">Fetching payment request failed</string>
     <string name="send_coins_fragment_request_payment_request_failed_message">The payee (%1$s) is using an incompatible payment protocol (reason: %2$s).</string>
-    <string name="send_coins_fragment_request_payment_request_wrong_signature">Wrong signature!</string>
     <string name="send_coins_fragment_payee_verified_by">verified by: %s</string>
     <string name="send_coins_fragment_payee_verified_by_unknown">unknown</string>
     <string name="send_coins_fragment_receiving_address_label">Pay to</string>
@@ -152,7 +150,6 @@
     <string name="address_book_context_remove_title">Remove address</string>
     <string name="address_book_context_copy_to_clipboard_title">Copy to clipboard</string>
     <string name="address_book_options_paste_from_clipboard_title">Paste from clipboard</string>
-    <string name="address_book_options_paste_from_clipboard_empty">Clipboard is empty</string>
     <string name="address_book_options_paste_from_clipboard_invalid">Data from clipboard is unrecognizable</string>
     <string name="address_book_options_paste_from_clipboard_own_address">The address on the clipboard is your own.</string>
     <string name="address_book_options_scan_title">Scan address</string>
@@ -173,7 +170,6 @@
     <string name="transaction_row_message_received_direct">This payment has been received directly. There is a risk it might never become spendable.</string>
     <string name="transaction_row_message_received_unconfirmed_delayed">The confirmation of this payment is delayed, likely due to an overload of the Woodcoin network.</string>
     <string name="transaction_row_message_received_unconfirmed_unlocked">This payment should become spendable in a few minutes.</string>
-    <string name="transaction_row_message_received_unconfirmed_chain_forking">Due to maintenance on the Woodcoin network, this transaction should not be trusted until it is fully confirmed.</string>
     <string name="transaction_row_message_received_in_conflict">This payment has an increased risk of being reversed by the sender! If you can, wait for confirmation.</string>
     <string name="transaction_row_message_received_dead">This payment has been reversed by the sender.</string>
     <string name="transaction_row_message_received_dust">This small amount can probably never be spent economically.</string>
@@ -208,7 +204,6 @@
     <string name="export_keys_dialog_title">Back up wallet</string>
     <string name="backup_wallet_dialog_message">Your backup will be encrypted with the chosen password and written to external storage.</string>
     <string name="backup_wallet_dialog_warning_encrypted">Your wallet is protected by a spending PIN. Make sure you remember the PIN in addition to the backup password!</string>
-    <string name="export_keys_dialog_button_export">Back up</string>
     <string name="export_keys_dialog_success"><![CDATA[<p>Your wallet has been backed up to <tt>%s</tt></p><p><b>If the only place your backup exists is on your device, you run the risk of losing both at the same time!</b></p><p>In any case, make sure you remember your backup password.</p>]]></string>
     <string name="export_keys_dialog_failure">Your wallet could not be backed up:\n%s</string>
     <string name="import_export_keys_dialog_password">password</string>
@@ -242,7 +237,6 @@
     <string name="input_parser_invalid_transaction">Invalid transaction:\n%s</string>
     <string name="preferences_activity_title">Settings</string>
     <string name="preferences_category_diagnostics">Diagnostics</string>
-    <string name="preferences_category_labs">Labs</string>
     <string name="preferences_precision_title">Denomination and precision</string>
     <string name="preferences_precision_summary">Unit to show amounts in. This does not affect computations.</string>
     <string name="preferences_precision_labels_8">LOG, 8 decimal places</string>
@@ -303,8 +297,6 @@
     <string name="about_credits_scrypt_title">Scrypt, implemented by Will Glozer and Colin Percival</string>
     <string name="about_market_app_title">Google Play page</string>
     <string name="about_market_app_summary">Review or rate the app</string>
-    <string name="about_faq_title">FAQ</string>
-    <string name="about_faq_summary">Frequently asked questions about the app</string>
     <string name="notification_coins_received_msg">Received %s</string>
     <string name="notification_peers_connected_msg">%d peers connected</string>
     <string name="notification_inactivity_title">You\'ve still got Woodcoins on this device!</string>
@@ -340,7 +332,6 @@
     <string name="action_browse">Browse</string>
 
     <!-- generic strings -->
-    <string name="time_today">today</string>
     <string name="address_unlabeled">(unlabeled)</string>
     <string name="private_key_password">PIN</string>
     <string name="private_key_bad_password">bad PIN!</string>
